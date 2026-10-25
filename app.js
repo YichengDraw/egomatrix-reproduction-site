@@ -50,7 +50,7 @@ function disposeAll(){
 function resetView(){
  if(!currentCase||!threeReady)return;
  $('toggleCamera').checked=false;orbit.enabled=true;
- const rc=viewMode==='robot'&&robotRef?robotRef.meta:null;
+ const rc=viewMode==='robot'&&robotRef?robotRef.meta:viewMode==='policy'&&policyTrace?policyTrace.meta:null;
  const c=rc?rc.center:currentCase.center;
  viewTarget.set(c[0],c[1],c[2]);viewDist=Math.max(.65,(rc?rc.span:currentCase.span)*1.55);
  orbit.target.copy(viewTarget);camera.up.set(0,0,1);camera.position.set(c[0]+viewDist*.68,c[1]-viewDist*1.1,c[2]+viewDist*.78);
@@ -59,7 +59,8 @@ function resetView(){
 function applyVisibility(){
  if(leftHand)leftHand.visible=viewMode==='human'&&$('toggleHands').checked;
  if(rightHand)rightHand.visible=viewMode==='human'&&$('toggleHands').checked;
- for(const piece of robotMeshes)piece.mesh.visible=viewMode==='robot'&&$('toggleHands').checked;
+ for(const piece of robotMeshes)piece.mesh.visible=(viewMode==='robot'||viewMode==='policy')&&$('toggleHands').checked;
+ for(const piece of policyGhosts)piece.mesh.visible=viewMode==='policy'&&$('toggleTarget').checked&&($('toggleHands').checked||piece.kind==='object');
  for(const obj of objects)obj.visible=$('toggleObjects').checked;
  if(grid)grid.visible=$('toggleGrid').checked;
  if(orbit)orbit.enabled=!$('toggleCamera').checked;
@@ -104,6 +105,7 @@ function sampleIndices(f,ids){
 }
 function updateThree(){
  if(viewMode==='robot'){updateRobot3D();return;}
+ if(viewMode==='policy'){updatePolicy3D();return;}
  if(!stageData||!leftHand)return;
  const d=stageData,[a,b,w]=sampleIndices(frame,d.meta.frameIds);
  const lo=d.meta.handQuantMin,sc=d.meta.handQuantScale;
@@ -146,14 +148,15 @@ async function loadStage(stage){
 }
 function timelineUI(){
  if(!currentCase)return;
- const n=currentCase.n;
- $('timeLabel').innerHTML=timeFormat(frame/30)+' <span>/ '+timeFormat((n-1)/30)+'</span>';
- $('timeline').value=Math.round(frame);
- $('timeline').style.setProperty('--track-progress',(frame/(n-1)*100).toFixed(2)+'%');
+ const n=currentCase.n,max=policyMaxFrame();
+ $('timeLabel').innerHTML=timeFormat(frame/30)+' <span>/ '+timeFormat(max/30)+'</span>';
+ $('timeline').value=viewMode==='policy'?Math.round(frame*2)/2:Math.round(frame);
+ $('timeline').style.setProperty('--track-progress',(frame/Math.max(max,.1)*100).toFixed(2)+'%');
+ drawSafetyPlayhead();
  $('videoFrameDisplay').textContent='FRAME '+String(Math.floor(frame)+1).padStart(4,'0');
 }
 function scrub(f){
- if(!currentCase)return;frame=Math.max(0,Math.min(currentCase.n-1,f));dirty=true;
+ if(!currentCase)return;frame=Math.max(0,Math.min(policyMaxFrame(),f));dirty=true;
  const video=$('sourceVideo'),t=frame/30;
  if(video.readyState>=1&&Math.abs(video.currentTime-t)>.04)try{video.currentTime=t;}catch{}
  timelineUI();updateThree();
@@ -162,7 +165,7 @@ function togglePlay(){
  if(!currentCase)return;playing=!playing;
  $('playIcon').textContent=playing?'Ⅱ':'▶';
  if(playing){
-  if(frame>=currentCase.n-1)scrub(0);
+  if(frame>=policyMaxFrame())scrub(0);
   const vid=$('sourceVideo');vid.playbackRate=speed;vid.play().catch(()=>{});
  }else $('sourceVideo').pause();
  lastTime=performance.now();
@@ -186,6 +189,7 @@ function showMetrics(){
   values.forEach((v,i)=>{const td=document.createElement('td');td.textContent=fmt(v,i===2?3:2);if(v==null)td.className='na';tr.appendChild(td);});
   tr.style.cursor='pointer';tr.addEventListener('click',()=>loadStage(k));tbody.appendChild(tr);
  });
+ updateSafety();
 }
 function compareVideo(){
  if(!currentCase)return;
@@ -199,8 +203,9 @@ async function selectCase(id,scroll){
  if(!catalog)return;
  const c=catalog.cases.find(x=>x.id===id);if(!c)return;
  playing=false;$('playIcon').textContent='▶';$('sourceVideo').pause();
- const wasRobot=viewMode==='robot';const token=++caseToken;stageToken++;++robotToken;
- currentCase=c;stageData=null;frame=0;setModeState('human');robotNotice(c);
+ const previousMode=viewMode;const token=++caseToken;stageToken++;++robotToken;
+ currentCase=c;stageData=null;frame=0;policyTrace=null;setModeState('human');robotNotice(c);
+ $('policyView').disabled=!c.rollout_3d;$('openPolicy3D').disabled=!c.rollout_3d;
  document.querySelectorAll('[data-case]').forEach(e=>e.classList.toggle('active',e.dataset.case===id));
  $('activeSequence').textContent=c.title;
  $('activeSequenceMeta').textContent=c.sequence+' · '+c.n+' frames · 30 Hz · independent prediction';
@@ -214,7 +219,7 @@ async function selectCase(id,scroll){
  currentStage=desired;
  const v=$('sourceVideo');v.src='assets/videos/'+id+'-source.mp4';v.poster='assets/thumbs/'+id+'.jpg';v.load();
  $('videoWait').classList.remove('hidden');$('videoWait').textContent='载入原 RGB 视频…';
- $('timeline').max=c.n-1;
+ $('timeline').max=c.n-1;$('timeline').step='1';
  const choices=$('comparisonSelect');choices.replaceChildren();
  Object.keys(c.videos||{}).filter(k=>k!=='policy').forEach(k=>choices.add(new Option(VIDEO_LABELS[k]||k,k)));
  choices.value=c.videos?.aligned?'aligned':'baseline';compareVideo();
@@ -227,7 +232,8 @@ async function selectCase(id,scroll){
   await loadMesh(c,token);
   if(token!==caseToken)return;
   await loadStage(desired);
-  if(wasRobot&&Object.keys(c.retarget||{}).length)await switchView('robot');
+  if(previousMode==='robot'&&Object.keys(c.retarget||{}).length)await switchView('robot');
+  else if(previousMode==='policy'&&c.rollout_3d)await switchView('policy');
   if(scroll)document.querySelector('#explorer').scrollIntoView({behavior:'smooth'});
  }catch(e){if(token===caseToken){console.error(e);$('sceneLoading').textContent='加载失败：'+e.message;}}
 }
@@ -247,6 +253,16 @@ function bindControls(){
  }));
  $('resetView').addEventListener('click',resetView);
  $('sourceVideo').addEventListener('loadeddata',()=>{$('videoWait').classList.add('hidden');});
+ $('sourceVideo').addEventListener('timeupdate',()=>{
+  if(viewMode!=='policy'||!currentCase)return;
+  const video=$('sourceVideo'),max=policyMaxFrame()/30;
+  if(video.currentTime>=max-0.001){
+   if(video.currentTime>max+0.018)video.currentTime=max;
+   if(!video.paused)video.pause();
+   playing=false;frame=policyMaxFrame();dirty=true;
+   $('playIcon').textContent='▶';timelineUI();updateThree();
+  }
+ });
  $('sourceVideo').addEventListener('error',()=>{$('videoWait').textContent='原视频暂不可用，请看下方保存的五列对照。';});
  $('sourceVideo').addEventListener('ended',()=>{playing=false;$('playIcon').textContent='▶';scrub(currentCase.n-1);});
  document.addEventListener('keydown',e=>{
@@ -262,12 +278,13 @@ function animate(t){
  if(playing&&currentCase){
   const video=$('sourceVideo');
   if(video.readyState>=2&&!video.paused&&Number.isFinite(video.currentTime)){
-   const next=Math.max(0,Math.min(currentCase.n-1,video.currentTime*30));
+   const next=Math.max(0,Math.min(policyMaxFrame(),video.currentTime*30));
    if(Math.abs(next-frame)>.02){frame=next;dirty=true;timelineUI();}
+   policyStopIfAtEnd();
   }else{
-   const dt=Math.min(.1,Math.max(0,t-lastTime)/1000),next=Math.min(currentCase.n-1,frame+dt*30*speed);
+   const dt=Math.min(.1,Math.max(0,t-lastTime)/1000),next=Math.min(policyMaxFrame(),frame+dt*30*speed);
    if(next!==frame){frame=next;dirty=true;timelineUI();}
-   if(next>=currentCase.n-1){playing=false;$('playIcon').textContent='▶';}
+   if(next>=policyMaxFrame()){playing=false;$('sourceVideo').pause();$('playIcon').textContent='▶';}
   }
  }
  lastTime=t;
@@ -275,18 +292,20 @@ function animate(t){
  if(threeReady){if(!$('toggleCamera').checked)orbit.update();renderer.render(scene,camera);}
 }
 async function bootstrap(){
- bindControls();bindRetargetControls();
+ bindControls();bindRetargetControls();bindPolicySafety();
  try{initializeThree();}catch(e){console.warn(e);$('sceneLoading').textContent='需要支持 WebGL 的现代浏览器以显示 3D。';}
  try{
   catalog=await getJson('catalog.json');
   const requested=location.hash.substring(1);
   await selectCase(catalog.cases.some(c=>c.id===requested)?requested:'stir',false);
   const qp=new URLSearchParams(location.search);
-  if(qp.get('mode')==='robot'&&Object.keys(currentCase?.retarget||{}).length){
+  if(qp.get('mode')==='policy'&&currentCase?.rollout_3d){await switchView('policy');}
+  else if(qp.get('mode')==='robot'&&Object.keys(currentCase?.retarget||{}).length){
    const selected=qp.get('variant');
    if(selected&&currentCase.retarget[selected])$('retargetSelect').value=selected;
    await switchView('robot');
   }
+  await loadSafetyDB();
  }catch(e){console.error(e);$('sceneLoading').textContent='数据清单载入失败：'+e.message;}
  requestAnimationFrame(animate);
 }
@@ -310,6 +329,7 @@ const DOF_LABELS=[
 ];
 function disposeRobotMeshes(){
  if(!world)return;
+ disposeGhosts();policyTrace=null;
  for(const item of robotMeshes){world.remove(item.mesh);item.mesh.geometry.dispose();item.mesh.material.dispose();}
  robotMeshes=[];robotMeshCase='';robotRef=null;robotJointText=[];robotLastJointFrame=-1;
 }
@@ -330,24 +350,29 @@ function robotNotice(c){
 }
 function setModeState(mode){
  viewMode=mode;
- const robot=mode==='robot';
- $('humanView').classList.toggle('selected',!robot);
- $('robotView').classList.toggle('selected',robot);
- $('humanView').setAttribute('aria-pressed',String(!robot));
- $('robotView').setAttribute('aria-pressed',String(robot));
- $('stageSelect').hidden=robot;
+ const robot=mode==='robot',policy=mode==='policy',human=mode==='human';
+ if(!policy)disposeGhosts();
+ for(const [id,on] of [['humanView',human],['robotView',robot],['policyView',policy]]){
+  $(id).classList.toggle('selected',on);
+  $(id).setAttribute('aria-pressed',String(on));
+ }
+ $('stageSelect').hidden=!human;
  $('retargetSelect').hidden=!robot;
+ $('variantLabel').hidden=policy;
  $('variantLabel').textContent=robot?'机器人参考':'重建阶段';
  $('robotTelemetry').hidden=!robot;
- $('toggleCamera').disabled=robot;
- if(robot)$('toggleCamera').checked=false;
- $('sceneCanvas').parentElement.parentElement.parentElement.classList.toggle('robot-view',robot);
- $('threeModeTitle').textContent=robot?'02 / XHAND RETARGETING REFERENCE':'02 / RECONSTRUCTED WORLD';
- $('threePaneTag').textContent=robot?'60 HZ TARGET · NOT PPO':'LIVE WEBGL / 3D';
- $('threeFooterType').textContent=robot?'XHAND URDF MESH / 24 DOF':'MANO 778 VERTICES / HAND';
- $('viewerNote').innerHTML=robot?
-  '<span class="note-square"></span> 当前显示的是由 A3 输出重定向到 XHand 的完整运动学参考（关节角 + 手腕位姿），物体取自同一实际 RL loader。它没有经过 PPO 控制执行；真实物理 rollout 见下方失败视频。':
-  '<span class="note-square"></span> 3D Mesh 与预测轨迹来自保存的阶段输出；手部以每 2 帧一个关键帧传输、播放时插值。GT 不参与渲染。视频为真实 30 Hz。';
+ $('policyTelemetry').hidden=!policy;
+ $('targetToggleLabel').hidden=!policy;
+ $('toggleCamera').disabled=!human;
+ if(!human)$('toggleCamera').checked=false;
+ $('sceneCanvas').parentElement.parentElement.parentElement.classList.toggle('robot-view',!human);
+ $('threeModeTitle').textContent=policy?'02 / PPO ACTUAL PHYSICS STATES':robot?'02 / XHAND RETARGETING REFERENCE':'02 / RECONSTRUCTED WORLD';
+ $('threePaneTag').textContent=policy?'ISAAC SIM · 9 STEPS · FAILED':robot?'60 HZ TARGET · NOT PPO':'LIVE WEBGL / 3D';
+ $('threeFooterType').textContent=policy?'ACTUAL PHYSICS / OBJECT CONTACT':robot?'XHAND URDF MESH / 24 DOF':'MANO 778 VERTICES / HAND';
+ $('viewerNote').textContent=policy?
+  '本视图逐帧重放 IsaacLab 原生 control_post 的真实物理状态；目标线框与奖励参考索引一致。9 步终止不代表完整任务成功。':
+  robot?'完整 Retargeting 运动学参考由真实 12DOF 手腕/关节数据重建；尚未由 PPO 物理执行。':
+  '3D MANO 与物体网格来自重建保存结果，每2帧传输一组顶点并插值；原视频为真实30Hz，GT仅用于评分。';
 }
 async function loadRobotMeshes(c,token){
  if(robotMeshCase===c.id&&robotMeshes.length)return;
@@ -419,14 +444,21 @@ async function loadRobotRef(variant){
  }catch(e){if(token===robotToken){console.error(e);$('sceneLoading').textContent='XHand 参考载入失败：'+e.message;}}
 }
 async function switchView(mode){
+ if(mode==='policy'){await switchPolicy();return;}
  if(mode==='robot'&&!Object.keys(currentCase?.retarget||{}).length)return;
  if(mode==='human'){
-  ++robotToken;setModeState('human');applyVisibility();
-  if(grid&&currentCase)grid.position.set(...[currentCase.center[0],currentCase.center[1],currentCase.center[2]-currentCase.span*.27]);
-  resetView();dirty=true;showMetrics();updateThree();doneLoading();return;
+  ++robotToken;policyTrace=null;setModeState('human');applyVisibility();
+  $('timeline').max=currentCase.n-1;$('timeline').step='1';
+  if(grid&&currentCase)grid.position.set(currentCase.center[0],currentCase.center[1],currentCase.center[2]-currentCase.span*.27);
+  resetView();frame=Math.min(frame,currentCase.n-1);timelineUI();dirty=true;showMetrics();
+  if($('sourceVideo').readyState>=1)try{$('sourceVideo').currentTime=frame/30;}catch{}
+  if(!stageData)await loadStage(currentStage);else updateThree();
+  doneLoading();return;
  }
- setModeState('robot');
- applyVisibility();showMetrics();
+ policyTrace=null;setModeState('robot');
+ $('timeline').max=currentCase.n-1;$('timeline').step='1';
+ applyVisibility();timelineUI();showMetrics();
+ if($('sourceVideo').readyState>=1)try{$('sourceVideo').currentTime=frame/30;}catch{}
  await loadRobotRef($('retargetSelect').value);
 }
 function updateRobotTelemetry(sample){
@@ -469,5 +501,200 @@ function bindRetargetControls(){
  $('retargetSelect').addEventListener('change',e=>loadRobotRef(e.target.value));
 }
 // original bootstrap below
+
+
+/* Actual IsaacLab 9-step rollout and scoped native safety audit. Offline saved arrays only. */
+let policyTrace=null,policyGhosts=[],safetyIndex=null,currentSafety=null;
+const PFAIL_LABELS={
+ thumb_tip_pos:'拇指跟踪',index_tip_pos:'食指跟踪',middle_tip_pos:'中指跟踪',ring_tip_pos:'无名指跟踪',
+ pinky_tip_pos:'小指跟踪',obj_pos:'物体位置',obj_rot:'物体旋转',tip_no_contact:'指尖接触',
+ level_1_pos:'手部一级关节',level_2_pos:'手部二级关节'
+};
+function disposeGhosts(){
+ if(!world)return;
+ for(const item of policyGhosts){world.remove(item.mesh);item.mesh.material.dispose();}
+ policyGhosts=[];
+}
+function policyMaxFrame(){
+ return viewMode==='policy'?(policyTrace?.meta.control_steps??9)/2:(currentCase?.n??1)-1;
+}
+function policyStopIfAtEnd(){
+ if(viewMode!=='policy'||!playing)return;
+ if(frame >= policyMaxFrame()-1.e-6){
+  playing=false;$('sourceVideo').pause();$('playIcon').textContent='▶';
+ }
+}
+function createGhostMeshes(){
+ disposeGhosts();
+ const matSettings={wireframe:true,transparent:true,opacity:.23,depthWrite:false,side:THREE.DoubleSide};
+ for(const piece of robotMeshes){
+  const m=new THREE.Mesh(piece.mesh.geometry,new THREE.MeshBasicMaterial({...matSettings,color:0xa3f3bb}));
+  m.frustumCulled=false;world.add(m);
+  policyGhosts.push({mesh:m,kind:'link',index:piece.idx});
+ }
+ for(let i=0;i<objects.length;i++){
+  const m=new THREE.Mesh(objects[i].geometry,new THREE.MeshBasicMaterial({...matSettings,color:0xc1ffad,opacity:.31}));
+  m.frustumCulled=false;world.add(m);
+  policyGhosts.push({mesh:m,kind:'object',index:i});
+ }
+}
+async function switchPolicy(){
+ if(!currentCase?.rollout_3d)return;
+ const c=currentCase,token=++robotToken;
+ ++stageToken;
+ playing=false;$('sourceVideo').pause();$('playIcon').textContent='▶';
+ setModeState('policy');applyVisibility();
+ loading('正在读取已保存的原生 9 步物理状态…');
+ try{
+  const meta=await getJson(c.rollout_3d.meta);
+  const [actualLinks,actualObjects,targetLinks,targetObjects,meshesAvailable]=await Promise.all([
+    getBinary(meta.actual_links,Float32Array),
+    getBinary(meta.actual_objects,Float32Array),
+    getBinary(meta.target_links,Float32Array),
+    getBinary(meta.target_objects,Float32Array),
+    loadRobotMeshes(c,token)
+  ]);
+  if(token!==robotToken||c!==currentCase||viewMode!=='policy')return;
+  const L=meta.link_count,N=meta.state_rows,O=meta.object_count;
+  if(actualLinks.length!==N*L*16||targetLinks.length!==N*L*16||
+     actualObjects.length!==N*O*16||targetObjects.length!==N*O*16||
+     meta.reference_index_by_state.length!==N||N!==meta.control_steps+1)
+    throw Error('真实仿真状态与时间索引长度不匹配');
+  const indices=new Map(meta.link_names.map((x,i)=>[x,i]));
+  for(const item of robotMeshes){
+    item.idx=indices.get(item.link);
+    if(item.idx===undefined)throw Error('native body name mapping missing '+item.link);
+  }
+  policyTrace={meta,actualLinks,actualObjects,targetLinks,targetObjects};
+  createGhostMeshes();
+  frame=0;
+  if($('sourceVideo').readyState>=1)try{$('sourceVideo').currentTime=0;}catch{}
+  $('timeline').max=String(meta.control_steps/2);
+  $('timeline').step='.5';
+  $('policyFailureReason').textContent='本次真实执行在第 '+meta.control_steps+
+    ' 步停止。原生终止标志：'+meta.failure_reasons.map(x=>PFAIL_LABELS[x]||x).join('、')+
+    '；所有参考点来自对应 RL Loader，且无 GT 反馈。绿色线框为奖励所用参考索引；控制完成时刻相较参考索引相差一个积分步。';
+  const axes=meta.center;grid.position.set(axes[0],axes[1],axes[2]-meta.span*.28);
+  resetView();applyVisibility();timelineUI();dirty=true;updateThree();doneLoading();
+ }catch(e){if(token===robotToken){console.error(e);$('sceneLoading').textContent='真实 PPO 状态载入失败：'+e.message;}}
+}
+function assignInterpolated(mesh,arr,a,b,w,perFrame,strideIndex){
+ matrixAt(matA,arr,a*perFrame+strideIndex);
+ matrixAt(matB,arr,b*perFrame+strideIndex);
+ matA.decompose(pA,qA,sA);matB.decompose(pB,qB,sB);
+ mesh.position.copy(pA).lerp(pB,w);
+ mesh.quaternion.copy(qA).slerp(qB,w);
+ mesh.scale.copy(sA).lerp(sB,w);
+}
+function updatePolicy3D(){
+ if(!policyTrace||viewMode!=='policy'||!robotMeshes.length)return;
+ const d=policyTrace,meta=d.meta,N=meta.state_rows;
+ const position=Math.max(0,Math.min(meta.control_steps,frame*2));
+ const a=Math.floor(position),b=Math.ceil(position),w=position-a;
+ const frameStride=meta.link_count*16;
+ for(const part of robotMeshes)assignInterpolated(part.mesh,d.actualLinks,a,b,w,frameStride,part.idx*16);
+ for(let i=0;i<objects.length;i++)assignInterpolated(objects[i],d.actualObjects,a,b,w,meta.object_count*16,i*16);
+ for(const part of policyGhosts){
+  const data=part.kind==='link'?d.targetLinks:d.targetObjects;
+  const stride=part.kind==='link'?meta.link_count:meta.object_count;
+  assignInterpolated(part.mesh,data,a,b,w,stride*16,part.index*16);
+ }
+ updatePolicyTelemetry(Math.round(position));
+ dirty=false;
+}
+function updatePolicyTelemetry(step){
+ if(!policyTrace||viewMode!=='policy')return;
+ const m=policyTrace.meta;step=Math.max(0,Math.min(m.control_steps,step));
+ $('policyStepInfo').textContent=step===0?'初始化状态 / 尚未执行物理控制':
+  step===m.control_steps?'第 '+step+' / '+m.control_steps+' 步 · 已触发原生失败':
+  '已实际执行 '+step+' / '+m.control_steps+' 控制步';
+ for(const [side,id] of [['lh','policyLhError'],['rh','policyRhError']]){
+  const list=m.mean_sim_to_target_fingertip_millimeters[side].per_control_step_mm;
+  $(id).textContent=step===0?'初始匹配':list[step-1].toFixed(1)+' mm';
+ }
+ $('policyRefIndex').textContent=m.reference_index_by_state[step]+' / '+(2*currentCase.n-1);
+}
+function openPolicy3D(){
+ if(!currentCase?.rollout_3d)return;
+ switchView('policy');
+ document.querySelector('#explorer').scrollIntoView({behavior:'smooth'});
+}
+async function loadSafetyDB(){
+ try{safetyIndex=await getJson('assets/diagnostics/safety.json');updateSafety();}
+ catch(e){console.warn('Safety audit summary unavailable',e);$('safetyDisclosure').textContent='独立安全审计暂不可用：'+e.message;}
+}
+function updateSafety(){
+ if(!safetyIndex||!currentCase)return;
+ const records=safetyIndex[currentCase.id];
+ if(!records)return;
+ const selected=currentStage,found=records[selected];
+ const fallback=records.A3_aligned_teacher_v1? 'A3_aligned_teacher_v1':'A3';
+ const stage=found?selected:fallback,data=records[stage];
+ if(!data)return;
+ currentSafety={data,stage};
+ $('safetyAuditStage').textContent=stage.replace('A3_aligned_teacher_v1','ALIGNED A3').replace('A3_paper_fixed_objects_v1','PAPER-FIXED A3');
+ $('safetyApplicable').textContent=data.applicable;
+ $('safetyFailures').textContent=data.fail;
+ $('safetyNA').textContent=data.not_applicable;
+ $('safetyDeepest').textContent=data.deepest_bound_signed_mm.toFixed(2);
+ $('safetyDisclosure').textContent=(selected!==stage?'当前所选 '+selected+' 没有相应原生 A3 safety 审计，以下显示 '+stage+'。':'当前显示 '+stage+' 独立原核审计。')+
+    ' 边界判定仅适用于原算法规定的子集；全片最深 signed<0 为真实穿透，包含 N/A 边。负限值允许一定穿透。';
+ const canvas=$('safetyStrip'),ctx=canvas.getContext('2d');
+ const W=canvas.width,H=canvas.height,n=data.safety_strip.length;
+ ctx.clearRect(0,0,W,H);
+ for(let i=0;i<n;i++){
+  ctx.fillStyle=data.safety_strip[i]===2?'#dc8d68':data.safety_strip[i]===1?'#91cb82':'#4a5a50';
+  const x=Math.floor(i*W/n),end=Math.ceil((i+1)*W/n);
+  ctx.fillRect(x,0,Math.max(1,end-x),H);
+ }
+ drawSafetyPlayhead();
+ const failList=$('safetyFailureList');failList.replaceChildren();
+ if(!data.fail){
+  const p=document.createElement('p');p.textContent='本阶段原规则适用边没有报告失败；未适用的 N/A 边仍有可能出现穿透。';failList.appendChild(p);
+ }else{
+  for(const f of data.failures.slice(0,12)){
+   const btn=document.createElement('button');btn.type='button';
+   const why=f.binding_failed?'绑定对象':'非绑定障碍';
+   const obs=f.obstacles_failed[0];
+   const val=f.binding_failed?f.binding_signed_mm:obs?.signed_mm;
+   btn.textContent=f.side+' '+f.from+'→'+f.to+' · '+why+' '+Number(val).toFixed(2)+'mm';
+   btn.addEventListener('click',async()=>{
+    if(viewMode!=='human')await switchView('human');
+    if(currentStage!==stage)await loadStage(stage);
+    scrub(f.from);
+    document.querySelector('#explorer').scrollIntoView({behavior:'smooth'});
+   });
+   failList.appendChild(btn);
+  }
+ }
+}
+function drawSafetyPlayhead(){
+ if(!currentSafety||!currentCase)return;
+ const fraction=Math.max(0,Math.min(1,frame/(currentCase.n-1)));
+ $('safetyPlayhead').style.left=(fraction*100)+'%';
+}
+function bindPolicySafety(){
+ $('policyView').addEventListener('click',()=>switchView('policy'));
+ $('openPolicy3D').addEventListener('click',openPolicy3D);
+ $('toggleTarget').addEventListener('change',()=>{applyVisibility();dirty=true;});
+ const canvas=$('safetyStrip');
+ canvas.addEventListener('mousemove',e=>{
+  if(!currentSafety)return;
+  const width=canvas.getBoundingClientRect().width;
+  const index=Math.min(currentSafety.data.safety_strip.length-1,
+    Math.max(0,Math.floor((e.clientX-canvas.getBoundingClientRect().left)/width*currentSafety.data.safety_strip.length)));
+  const names=['N/A · 只做几何','Pass · 原规则适用','Fail · 原规则适用'];
+  canvas.title='原帧 '+(index+1)+'→'+(index+2)+'，'+names[currentSafety.data.safety_strip[index]];
+ });
+ canvas.addEventListener('click',async e=>{
+  if(!currentSafety)return;
+  const rect=canvas.getBoundingClientRect();
+  const f=Math.min(currentSafety.data.safety_strip.length-1,Math.max(0,Math.round((e.clientX-rect.left)/rect.width*currentSafety.data.safety_strip.length)));
+  if(viewMode!=='human')await switchView('human');
+  if(currentStage!==currentSafety.stage)await loadStage(currentSafety.stage);
+  scrub(f);
+  document.querySelector('#explorer').scrollIntoView({behavior:'smooth'});
+ });
+}
 
 bootstrap();

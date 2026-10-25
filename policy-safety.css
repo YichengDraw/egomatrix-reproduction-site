@@ -1,0 +1,44 @@
+
+/* Native PPO failure replay and scoped safety evidence */
+.policy-telemetry{padding:16px 22px 14px;border-top:1px solid #6c4435;background:linear-gradient(110deg,#231c18,#1d211c 70%)}
+.policy-status-line{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.policy-status-line strong{font:700 11px "Space Grotesk";color:#f4cbb3;letter-spacing:.05em}
+.policy-fail-dot{width:7px;height:7px;background:#e9a879;border-radius:50%;box-shadow:0 0 8px #e9a87991}
+#policyStepInfo{color:#f3e5da;font-size:12px}
+.policy-confirmed{margin-left:auto;color:#efae81;border:1px solid #784831;background:#38261d;padding:4px 9px;font-size:10px}
+.policy-measurements{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:13px 0}
+.policy-measurements>div{border:1px solid #4d4538;background:#22231f;padding:10px 12px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.policy-measurements span{color:#b6b2a8;font-size:10px}
+.policy-measurements strong{color:#f1c2a1;font:600 15px 'Space Grotesk';white-space:nowrap}
+#policyFailureReason{color:#b2b2a3;font-size:11px;line-height:1.7}
+.viewer-mode button{padding:8px 10px}
+.viewer-mode button[data-mode='policy'].selected{background:#f5c29b;color:#322319}
+.policy-open{align-self:flex-start;margin-top:22px;border:1px solid #e7b28c;color:#f0c49f;background:#35291e;padding:10px 15px;font-size:12px}
+.policy-open:hover{background:#e7b28c;color:#221c15}
+#targetToggleLabel{color:#c3d7b8;font-weight:600}
+.safety-card{background:#15211b;border:1px solid #3a4a3c;margin-top:23px;padding:25px 27px}
+.safety-header{display:flex;justify-content:space-between;align-items:start;gap:24px}
+.safety-header>div>span{color:#acdb99;font:600 10px "Space Grotesk";letter-spacing:.12em}
+.safety-header h3{color:#edf5ed;font-size:23px;letter-spacing:-.035em;font-weight:600;margin-top:9px}
+.safety-header p{font-size:12px;color:#9fac9b;margin-top:7px;line-height:1.8}
+#safetyAuditStage{flex-shrink:0;padding:7px 12px;border:1px solid #55704d;color:#c9e2bd;font:600 10px "Space Grotesk";letter-spacing:.04em}
+.safety-sums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#39473b;margin-top:24px;border:1px solid #39473b}
+.safety-sums>span{display:block;background:#1b2c20;padding:17px 20px}
+.safety-sums b{font:500 31px "Space Grotesk";color:#d9f1cd;letter-spacing:-.05em;display:block}
+.safety-sums>span:nth-child(2) b{color:#f2b28f}
+.safety-sums small{display:block;font-size:10px;color:#96a993;margin-top:2px}
+.safety-canvas-holder{position:relative;margin-top:22px;border:1px solid #3c4b3d;background:#101d15}
+#safetyStrip{display:block;width:100%;height:48px;cursor:crosshair;image-rendering:pixelated}
+.safety-playhead{position:absolute;top:0;bottom:0;width:1px;background:#fff;box-shadow:0 0 0 1px #1f221e,0 0 6px #fffd;pointer-events:none;left:0}
+.safety-key{display:flex;gap:25px;flex-wrap:wrap;align-items:center;margin-top:11px;color:#9cad9b;font-size:10px}
+.safety-key span{display:inline-flex;gap:6px;align-items:center}
+.safe-color{display:block;width:9px;height:9px}
+.safe-pass{background:#91cc86}.safe-fail{background:#e4a070}.safe-na{background:#435047}
+.safety-click-help{margin-left:auto;color:#6e9379}
+.safety-disclosure{font-size:11px;color:#7d9785;margin:18px 0 8px;line-height:1.8}
+.safety-failure-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.safety-failure-list button{background:#312920;color:#efbb95;border:1px solid #624736;border-radius:3px;padding:6px 9px;font:600 10px 'Space Grotesk'}
+.safety-failure-list button:hover{background:#503529}
+.safety-failure-list p{font-size:11px;color:#99b99e}
+@media(max-width:1050px){.safety-sums b{font-size:26px}.safety-sums>span{padding:14px}.safety-header h3{font-size:19px}}
+@media(max-width:720px){.policy-status-line{gap:8px}.policy-confirmed{margin-left:0}.policy-measurements{grid-template-columns:1fr}.safety-card{padding:17px 14px}.safety-header{flex-direction:column;gap:13px}.safety-sums{grid-template-columns:repeat(2,1fr)}.safety-key{gap:12px}.safety-click-help{display:none!important}.viewer-mode button{font-size:10px}}

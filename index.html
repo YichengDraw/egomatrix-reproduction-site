@@ -7,7 +7,7 @@
   <meta name="description" content="EgoMatrix 独立复现：从原始 Ego RGB 到可交互 3D 重建、动态接触与策略执行对照。"/>
   <title>EgoMatrix — Egocentric Motion Reconstruction Lab</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
-  <link rel="stylesheet" href="styles.css"/><link rel="stylesheet" href="retarget.css"/>
+  <link rel="stylesheet" href="styles.css"/><link rel="stylesheet" href="retarget.css"/><link rel="stylesheet" href="policy-safety.css"/>
   <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
   <script type="module" src="app.js"></script>
 </head>
@@ -62,7 +62,7 @@
       <div class="section-heading explorer-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> INTERACTIVE VIEWER <span class="eyebrow-index">03 / 05</span></div><h2>同一时刻，<em>两个世界。</em></h2><p>左侧原始 Ego RGB，右侧重建 3D 场景。旋转、缩放、切换阶段，观察手物相对运动。</p></div><div class="explorer-chip"><span class="online-circle"></span> REAL GEOMETRY · NOT A RENDER MOCKUP</div></div>
 
       <div class="viewer-shell">
-        <div class="viewer-topline"><div><strong id="activeSequence">Bowl & ladle · Stirring</strong><span id="activeSequenceMeta">TACO 20231105_019 · 249 frames · 30 Hz</span></div><div class="viewer-settings"><div class="viewer-mode" role="group" aria-label="三维数据类型"><button id="humanView" class="selected" type="button" aria-pressed="true">MANO 人手</button><button id="robotView" type="button" aria-pressed="false">XHand Retarget</button></div><label for="stageSelect" id="variantLabel">3D 阶段</label><select id="stageSelect" aria-label="选择 3D 阶段"><option>A3 · latest</option></select><select id="retargetSelect" aria-label="选择 XHand Retargeting 版本" hidden></select></div></div>
+        <div class="viewer-topline"><div><strong id="activeSequence">Bowl & ladle · Stirring</strong><span id="activeSequenceMeta">TACO 20231105_019 · 249 frames · 30 Hz</span></div><div class="viewer-settings"><div class="viewer-mode" role="group" aria-label="三维数据类型"><button id="humanView" class="selected" type="button" aria-pressed="true">MANO 人手</button><button id="robotView" type="button" aria-pressed="false">XHand Retarget</button><button id="policyView" type="button" aria-pressed="false">PPO 真实执行</button></div><label for="stageSelect" id="variantLabel">3D 阶段</label><select id="stageSelect" aria-label="选择 3D 阶段"><option>A3 · latest</option></select><select id="retargetSelect" aria-label="选择 XHand Retargeting 版本" hidden></select></div></div>
         <div class="reference-notice" id="referenceNotice">
           <div class="reference-marker">05 / ROBOT RETARGETING</div>
           <div class="reference-copy"><strong>完整机器人参考动作已生成</strong><span id="referenceNoticeText">497 帧 · 60 Hz · 双手各 12 DOF · 尚非 PPO 执行</span></div>
@@ -74,10 +74,23 @@
         </div>
 
         <div class="controls"><button class="play-button" id="playButton" title="播放 / 暂停"><span id="playIcon">▶</span></button><div class="time-label" id="timeLabel">00:00.00 <span>/ 00:08.27</span></div><input id="timeline" type="range" min="0" max="248" value="0" step="1" aria-label="拖动查看帧"/><div class="speed-control"><button data-speed="0.5">0.5×</button><button data-speed="1" class="selected">1×</button><button data-speed="2">2×</button></div></div>
-        <div class="viewer-toolbar"><div class="viewer-toggles"><label><input id="toggleHands" type="checkbox" checked/> 双手</label><label><input id="toggleObjects" type="checkbox" checked/> 物体</label><label><input id="toggleGrid" type="checkbox" checked/> 世界坐标网格</label><label><input id="toggleCamera" type="checkbox"/> 跟随预测相机</label></div><button id="resetView" class="subtle-button">重置 3D 视角 ↺</button></div>
+        <div class="viewer-toolbar"><div class="viewer-toggles"><label><input id="toggleHands" type="checkbox" checked/> 双手</label><label><input id="toggleObjects" type="checkbox" checked/> 物体</label><label><input id="toggleGrid" type="checkbox" checked/> 世界坐标网格</label><label><input id="toggleCamera" type="checkbox"/> 跟随预测相机</label><label id="targetToggleLabel" hidden><input id="toggleTarget" type="checkbox" checked/> 目标参考线框</label></div><button id="resetView" class="subtle-button">重置 3D 视角 ↺</button></div>
         <div class="robot-telemetry" id="robotTelemetry" hidden>
           <div class="telemetry-summary"><span class="telemetry-dot"></span><strong>RETARGETED XHAND REFERENCE</strong><span id="robotReferenceStats">读取真实 60 Hz 机器人关节轨迹</span><span class="telemetry-warning">参考动作 ≠ 训练成功 / ≠ Isaac Sim rollout</span></div>
           <details id="jointInspector"><summary>查看当前时刻 24 个关节目标角度（rad）<span>⌄</span></summary><div class="joint-columns" id="jointColumns"></div></details>
+        </div>
+        <div class="policy-telemetry" id="policyTelemetry" hidden>
+          <div class="policy-status-line">
+            <span class="policy-fail-dot"></span><strong>Isaac Sim 真实控制状态</strong>
+            <span id="policyStepInfo">已执行 0 / 9 控制步</span>
+            <span class="policy-confirmed">失败样例 · 本段仅 0.15 秒</span>
+          </div>
+          <div class="policy-measurements">
+            <div><span>左手五指平均跟踪误差</span><strong id="policyLhError">—</strong></div>
+            <div><span>右手五指平均跟踪误差</span><strong id="policyRhError">—</strong></div>
+            <div><span>对应奖励参考索引</span><strong id="policyRefIndex">0 / 497</strong></div>
+          </div>
+          <p id="policyFailureReason">显示的是原生控制后物理状态，而非完整 Retargeting 参考。勾选绿色线框可查看同步奖励参考；误差来自真实机器人连杆而非 GT。</p>
         </div>
         <div class="viewer-note" id="viewerNote"><span class="note-square"></span> 3D Mesh 与预测轨迹来自保存的阶段输出；手部以每 2 帧一个关键帧传输、播放时插值。GT 不参与渲染。视频为真实 30 Hz。</div>
       </div>
@@ -92,7 +105,15 @@
       <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> QUANTITATIVE EVALUATION <span class="eyebrow-index">04 / 05</span></div><h2>动作改善，<em>代价透明。</em></h2><p>同一视频、同一 GT 评分协议，比较手物相对运动、接触穿透和自由物理稳定性。</p></div><div class="evidence-legend">↓ 数值越小越好 <span>·</span> GT 仅独立评价 <span>·</span> N/A 不填造</div></div>
       <div class="metric-highlights"><div class="highlight"><span>本序列 · 最终相对速度误差</span><strong id="metricSpeed">239.41<small>mm/s</small></strong><div class="metric-desc" id="metricSpeedDesc">A1 相比下降 33.7%</div></div><div class="highlight"><span>最终手物几何 CD<sub>h</sub></span><strong id="metricCD">76.06<small>mm</small></strong><div class="metric-desc">Hand–object reconstruction</div></div><div class="highlight"><span>最终最大穿透时间均值</span><strong id="metricPen">1.270<small>mm</small></strong><div class="metric-desc">Bound hand–object pair · Dpen</div></div><div class="highlight"><span>最终自由仿真位移</span><strong id="metricSD">83.38<small>mm</small></strong><div class="metric-desc">Fixed hand · 35 × 1/240 s</div></div></div>
       <div class="metrics-table-card"><div class="table-heading"><span>STAGE-BY-STAGE METRICS</span><span id="metricScope">249 frames / 248 pairs · common timeline</span></div><div class="table-overflow"><table><thead><tr><th>阶段</th><th>CD<sub>h</sub> <small>mm</small></th><th>腕物速度误差 <small>mm/s</small></th><th>Dpen <small>mm</small></th><th>SD <small>mm</small></th></tr></thead><tbody id="metricsTbody"></tbody></table></div><div class="table-footer" id="metricFooter">含历史候选与论文对齐分支；请留意不同阶段的实现边界。</div></div>
-      <div class="policy-panel"><div class="policy-overview"><span class="panel-kicker">DOWNSTREAM EXECUTION / ACTUAL POLICY</span><h3>Retarget 完成，<span>PPO 尚未成功。</span></h3><p>Retargeting 已产生完整双手关节和手腕参考轨迹，网站上方可直接播放机器人 3D 动作。PPO 的训练与仿真代码也确实运行，但目前 checkpoint 对应的 frame 0 rollout 在第 9 个控制步因跟踪失败而终止。<strong>完整参考轨迹不是训练成功的机器人策略。</strong></p><div class="policy-facts"><span><b id="referenceLength">497</b> retarget frames @ 60 Hz</span><span><b>9</b> rollout control steps</span><span><b>0 / 3</b> full task successes</span></div></div><div class="policy-video-card"><div class="pane-heading"><span>RECORDED POLICY FAILURE</span><span>ACTUAL ISAAC SIM</span></div><video id="policyVideo" controls muted playsinline preload="none"></video><div class="policy-video-foot" id="policyVideoCaption">单次已有策略诊断 · 与重建评估独立</div></div></div>
+      <div class="safety-card" id="safetyCard">
+        <div class="safety-header"><div><span>ORIGINAL NATIVE GEOMETRY AUDIT</span><h3>接触、安全与穿透：完整时序</h3><p>仅原规则适用的边显示 Pass / Fail；其余 N/A 仍保留几何距离，不能称为“无穿透”。</p></div><span id="safetyAuditStage">A3 · ALIGNED</span></div>
+        <div class="safety-sums"><span><b id="safetyApplicable">—</b><small>原规则适用边</small></span><span><b id="safetyFailures">—</b><small>其中失败</small></span><span><b id="safetyNA">—</b><small>规则 N/A 边</small></span><span><b id="safetyDeepest">—</b><small>全片最深绑定穿透（mm）</small></span></div>
+        <div class="safety-canvas-holder"><canvas id="safetyStrip" width="1140" height="38" aria-label="逐帧安全判定条，点击跳转对应帧"></canvas><span class="safety-playhead" id="safetyPlayhead"></span></div>
+        <div class="safety-key"><span><i class="safe-color safe-pass"></i> 原规则通过</span><span><i class="safe-color safe-fail"></i> 原规则失败</span><span><i class="safe-color safe-na"></i> N/A · 仅几何</span><span class="safety-click-help">点击色带，跳转帧</span></div>
+        <p class="safety-disclosure" id="safetyDisclosure">此模块显示原核的实际适用范围，并单独保留未适用时的真实有符号几何。</p>
+        <div class="safety-failure-list" id="safetyFailureList"></div>
+      </div>
+      <div class="policy-panel"><div class="policy-overview"><span class="panel-kicker">DOWNSTREAM EXECUTION / ACTUAL POLICY</span><h3>Retarget 完成，<span>PPO 尚未成功。</span></h3><p>Retargeting 已产生完整双手关节和手腕参考轨迹，网站上方可直接播放机器人 3D 动作。PPO 的训练与仿真代码也确实运行，但目前 checkpoint 对应的 frame 0 rollout 在第 9 个控制步因跟踪失败而终止。<strong>完整参考轨迹不是训练成功的机器人策略。</strong></p><button id="openPolicy3D" type="button" class="policy-open">在 3D 中对比目标 vs 实际执行 ↗</button><div class="policy-facts"><span><b id="referenceLength">497</b> retarget frames @ 60 Hz</span><span><b>9</b> rollout control steps</span><span><b>0 / 3</b> full task successes</span></div></div><div class="policy-video-card"><div class="pane-heading"><span>RECORDED POLICY FAILURE</span><span>ACTUAL ISAAC SIM</span></div><video id="policyVideo" controls muted playsinline preload="none"></video><div class="policy-video-foot" id="policyVideoCaption">单次已有策略诊断 · 与重建评估独立</div></div></div>
     </section>
 
     <section class="method section-shell" id="method">

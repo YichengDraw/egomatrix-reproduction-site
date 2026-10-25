@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#0b1111"/>
+  <meta name="description" content="EgoMatrix 独立复现：从原始 Ego RGB 到可交互 3D 重建、动态接触与策略执行对照。"/>
+  <title>EgoMatrix — Egocentric Motion Reconstruction Lab</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="EgoMatrix 首页">
+      <span class="brand-mark"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-name">EGO<span>MATRIX</span><small>REPRODUCTION LAB</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#overview">概览</a><a href="#samples">实验样本</a><a href="#explorer">3D Explorer</a><a href="#evidence">定量结果</a><a href="#method">方法与边界</a>
+    </nav>
+    <div class="header-actions"><span class="status-dot"></span><span class="status-label">RESEARCH PREVIEW · 2026.10.25</span><a class="header-link" href="https://spikew726.github.io/EgoMatrix/" target="_blank" rel="noopener">论文主页 <span>↗</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="overview">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> EGOCENTRIC VIDEO → WORLD ACTION <span class="eyebrow-index">01 / 05</span></div>
+        <h1>从第一视角视频，<br/>重建<span class="light-word">真实的</span><em>动作世界。</em></h1>
+        <p class="hero-desc">EgoMatrix 独立复现实验室。以少量 TACO 完整序列验证<strong>手—物三维轨迹、接触几何、物理一致性</strong>，并追踪从视觉重建到机器人策略的完整链路。</p>
+        <div class="hero-buttons"><a class="primary-action" href="#explorer">进入 3D Explorer <span>↗</span></a><a class="secondary-action" href="#evidence">查看定量评测 <span>→</span></a></div>
+        <div class="hero-disclaimer"><span class="annotation-pip"></span> 独立复现 · GT 仅用于评分 · 原始失败与不确定性保留</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-top"><span>RECONSTRUCTION / 001</span><span>RGB INPUT + 3D MOTION</span></div>
+        <div class="hero-photo" id="heroPhoto"><img src="assets/thumbs/stir.jpg" alt="TACO 搅拌任务的原始 RGB 帧"/></div>
+        <div class="hero-photo-label"><div><span class="small-index">FEATURED SEQUENCE</span><strong id="heroPhotoTitle">Bowl & ladle · Stirring</strong></div><span class="hero-image-badge">TACO · 249 FRAMES</span></div>
+        <div class="hero-rail"><span>FRAME <strong>112 / 249</strong></span><span class="rail-line"><i></i></span><span>30 Hz</span></div>
+      </div>
+    </section>
+
+    <section class="numbers section-shell" aria-label="实验概览">
+      <div class="number"><span class="num">04</span><span>原始完整视频序列<small>3 GT-evaluable + 1 visual/physics</small></span></div>
+      <div class="number"><span class="num">918</span><span>保留的真实视频帧<small>249 + 200 + 209 + 260</small></span></div>
+      <div class="number"><span class="num">04</span><span>重建阶段<small>A1 / Scene / A2 / A3</small></span></div>
+      <div class="number"><span class="num warning-num">0/3</span><span>完整机器人任务成功<small>短程 API 已跑通，formal PPO 训练中</small></span></div>
+    </section>
+
+    <section class="samples section-shell" id="samples">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> SEQUENCES <span class="eyebrow-index">02 / 05</span></div><h2>真实视频，<em>完整时序。</em></h2><p>选择序列，查看各阶段输出；每一帧与原视频使用同一时间轴。</p></div><span class="section-hint">SELECT TO EXPLORE ↘</span></div>
+      <div class="sample-grid" id="sampleGrid">
+        <button class="sample-card active" data-case="stir"><span class="card-image"><img src="assets/thumbs/stir.jpg" alt="Bowl and ladle" loading="lazy"/><span class="card-no">01</span></span><span class="card-bottom"><span><strong>Bowl & ladle</strong><small>Stirring · 249 frames</small></span><span class="card-arrow">↗</span></span></button>
+        <button class="sample-card" data-case="cut"><span class="card-image"><img src="assets/thumbs/cut.jpg" alt="Board and knife" loading="lazy"/><span class="card-no">02</span></span><span class="card-bottom"><span><strong>Board & knife</strong><small>Cutting · 200 frames</small></span><span class="card-arrow">↗</span></span></button>
+        <button class="sample-card" data-case="brush"><span class="card-image"><img src="assets/thumbs/brush.jpg" alt="Bowl and dish brush" loading="lazy"/><span class="card-no">03</span></span><span class="card-bottom"><span><strong>Bowl & brush</strong><small>Brushing · 209 frames</small></span><span class="card-arrow">↗</span></span></button>
+        <button class="sample-card" data-case="brush260"><span class="card-image"><img src="assets/thumbs/brush260.jpg" alt="Alternate brushing sequence" loading="lazy"/><span class="card-no">04</span></span><span class="card-bottom"><span><strong>Brush · alternate</strong><small>260 frames · visual/physics only</small></span><span class="card-arrow">↗</span></span></button>
+      </div>
+    </section>
+
+    <section class="explorer section-shell" id="explorer">
+      <div class="section-heading explorer-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> INTERACTIVE VIEWER <span class="eyebrow-index">03 / 05</span></div><h2>同一时刻，<em>两个世界。</em></h2><p>左侧原始 Ego RGB，右侧重建 3D 场景。旋转、缩放、切换阶段，观察手物相对运动。</p></div><div class="explorer-chip"><span class="online-circle"></span> REAL GEOMETRY · NOT A RENDER MOCKUP</div></div>
+
+      <div class="viewer-shell">
+        <div class="viewer-topline"><div><strong id="activeSequence">Bowl & ladle · Stirring</strong><span id="activeSequenceMeta">TACO 20231105_019 · 249 frames · 30 Hz</span></div><div class="viewer-settings"><label for="stageSelect">3D 阶段</label><select id="stageSelect" aria-label="选择 3D 阶段"><option>A3 · latest</option></select></div></div>
+        <div class="viewer-panes">
+          <div class="viewer-panel source-panel"><div class="pane-heading"><span><span class="source-circle"></span> 01 / ORIGINAL RGB</span><span class="pane-tag">UNMODIFIED SOURCE</span></div><div class="video-canvas"><video id="sourceVideo" muted playsinline preload="metadata" poster="assets/thumbs/stir.jpg"></video><div class="video-wait" id="videoWait">正在载入原视频…</div></div><div class="pane-foot"><span>Original egocentric observation</span><span id="videoFrameDisplay">FRAME 0001</span></div></div>
+          <div class="viewer-panel three-panel"><div class="pane-heading"><span><span class="viewer-circle"></span> 02 / RECONSTRUCTED WORLD</span><span class="pane-tag">LIVE WEBGL / 3D</span></div><div class="scene-canvas-wrap"><canvas id="sceneCanvas" aria-label="交互三维场景"></canvas><div class="scene-loading" id="sceneLoading"><span class="loading-ring"></span> 正在载入真实三维网格…</div><div class="axis-indicator">Z ↑<span>WORLD COORDINATES · M</span></div><div class="orbit-hint">拖拽旋转 · 滚轮缩放</div></div><div class="pane-foot"><span><i class="hand-key left"></i> Left hand <i class="hand-key right"></i> Right hand <i class="hand-key object"></i> Objects</span><span>MANO 778 VERTICES / HAND</span></div></div>
+        </div>
+
+        <div class="controls"><button class="play-button" id="playButton" title="播放 / 暂停"><span id="playIcon">▶</span></button><div class="time-label" id="timeLabel">00:00.00 <span>/ 00:08.27</span></div><input id="timeline" type="range" min="0" max="248" value="0" step="1" aria-label="拖动查看帧"/><div class="speed-control"><button data-speed="0.5">0.5×</button><button data-speed="1" class="selected">1×</button><button data-speed="2">2×</button></div></div>
+        <div class="viewer-toolbar"><div class="viewer-toggles"><label><input id="toggleHands" type="checkbox" checked/> 双手</label><label><input id="toggleObjects" type="checkbox" checked/> 物体</label><label><input id="toggleGrid" type="checkbox" checked/> 世界坐标网格</label><label><input id="toggleCamera" type="checkbox"/> 跟随预测相机</label></div><button id="resetView" class="subtle-button">重置 3D 视角 ↺</button></div>
+        <div class="viewer-note"><span class="note-square"></span> 3D Mesh 与预测轨迹来自保存的阶段输出；手部以每 2 帧一个关键帧传输、播放时插值。GT 不参与渲染。视频为真实 30 Hz。</div>
+      </div>
+    </section>
+
+    <section class="comparison section-shell" id="comparison">
+      <div class="section-heading compact-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> SIDE-BY-SIDE EVIDENCE</div><h2>逐阶段 <em>视觉对照。</em></h2><p>保存的原生 5 列视频，展示同帧 RGB 和 A1 / Scene / A2 / A3。不同方法变体分开保留。</p></div><label class="compare-choice" for="comparisonSelect">比较版本 <select id="comparisonSelect"><option value="baseline">原始完整复现</option></select></label></div>
+      <div class="comparison-video-wrap"><video id="comparisonVideo" muted playsinline controls preload="none" poster="assets/thumbs/stir.jpg"></video><div class="comparison-corner">RECORDED FULL-SEQUENCE COMPARISON</div></div><p class="caption-under" id="comparisonCaption">真实原 RGB + A1 / Scene / A2 / A3，249 帧。所有结果保持同一原视频时钟。</p>
+    </section>
+
+    <section class="evidence section-shell" id="evidence">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> QUANTITATIVE EVALUATION <span class="eyebrow-index">04 / 05</span></div><h2>动作改善，<em>代价透明。</em></h2><p>同一视频、同一 GT 评分协议，比较手物相对运动、接触穿透和自由物理稳定性。</p></div><div class="evidence-legend">↓ 数值越小越好 <span>·</span> GT 仅独立评价 <span>·</span> N/A 不填造</div></div>
+      <div class="metric-highlights"><div class="highlight"><span>本序列 · 最终相对速度误差</span><strong id="metricSpeed">239.41<small>mm/s</small></strong><div class="metric-desc" id="metricSpeedDesc">A1 相比下降 33.7%</div></div><div class="highlight"><span>最终手物几何 CD<sub>h</sub></span><strong id="metricCD">76.06<small>mm</small></strong><div class="metric-desc">Hand–object reconstruction</div></div><div class="highlight"><span>最终最大穿透时间均值</span><strong id="metricPen">1.270<small>mm</small></strong><div class="metric-desc">Bound hand–object pair · Dpen</div></div><div class="highlight"><span>最终自由仿真位移</span><strong id="metricSD">83.38<small>mm</small></strong><div class="metric-desc">Fixed hand · 35 × 1/240 s</div></div></div>
+      <div class="metrics-table-card"><div class="table-heading"><span>STAGE-BY-STAGE METRICS</span><span id="metricScope">249 frames / 248 pairs · common timeline</span></div><div class="table-overflow"><table><thead><tr><th>阶段</th><th>CD<sub>h</sub> <small>mm</small></th><th>腕物速度误差 <small>mm/s</small></th><th>Dpen <small>mm</small></th><th>SD <small>mm</small></th></tr></thead><tbody id="metricsTbody"></tbody></table></div><div class="table-footer" id="metricFooter">含历史候选与论文对齐分支；请留意不同阶段的实现边界。</div></div>
+      <div class="policy-panel"><div class="policy-overview"><span class="panel-kicker">DOWNSTREAM EXECUTION / ACTUAL POLICY</span><h3>完整策略仍是<span>开放问题。</span></h3><p>Retarget → PPO → Isaac Sim 均已跑通，但已保存的 frame 0 rollout 在第 9 个控制步因指尖或物体跟踪失败，无法覆盖完整任务。短时物体保持稳定，不计为完整动作成功。</p><div class="policy-facts"><span><b>9</b> control steps</span><span><b>0.15</b> seconds</span><span><b>0</b> complete successes</span></div></div><div class="policy-video-card"><div class="pane-heading"><span>RECORDED POLICY FAILURE</span><span>ACTUAL ISAAC SIM</span></div><video id="policyVideo" controls muted playsinline preload="none"></video><div class="policy-video-foot" id="policyVideoCaption">单次已有策略诊断 · 与重建评估独立</div></div></div>
+    </section>
+
+    <section class="method section-shell" id="method">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> REPRODUCTION PROTOCOL <span class="eyebrow-index">05 / 05</span></div><h2>忠实流程，<em>公开差异。</em></h2><p>优先完成论文链路；发现与论文明确描述不一致的步骤后，使用少量完整序列作通用组件修复。</p></div></div>
+      <div class="pipeline"><div class="pipeline-step"><div class="step-number">01</div><strong>A1 · Reconstruction</strong><p>RGB、MANO、相机与物体形状/姿态初始化</p><span>ALL SEQUENCES COMPLETE</span></div><div class="pipeline-arrow">↗</div><div class="pipeline-step"><div class="step-number">02</div><strong>Scene · Alignment</strong><p>几何与场景约束；当前教师深度已对齐</p><span>RAW / ALIGNED TEACHER</span></div><div class="pipeline-arrow">↗</div><div class="pipeline-step"><div class="step-number">03</div><strong>A2 · Dynamic aware</strong><p>多起点候选、DP、时序和安全优化</p><span>FULL BUDGET · RECORDED</span></div><div class="pipeline-arrow">↗</div><div class="pipeline-step"><div class="step-number">04</div><strong>A3 · Contact</strong><p>HACO 接触、MANO 局部优化与物理评分</p><span>PAPER-FIXED VARIANT</span></div><div class="pipeline-arrow">↗</div><div class="pipeline-step"><div class="step-number">05</div><strong>RL · Policy</strong><p>Retarget 与 Isaac Sim PPO 评估</p><span>EXECUTABLE · TASK NOT PASSED</span></div></div>
+      <div class="method-grid"><article class="method-note"><span class="note-index">01 / INTERPRETATION</span><h3>原文与候选代码分开。</h3><p>论文 A3 描述固定物体轨迹优化手部。候选代码在特定任务额外执行 touch-table grounding；该分支单列为 <code>Grounding＋A3</code>，另提供 <code>paper-fixed-objects</code> 严格对照。</p></article><article class="method-note"><span class="note-index">02 / TEACHER INPUT</span><h3>深度尺度统一。</h3><p>论文相对深度使用对齐后的 MoGe 深度。新分支 Scene / A2 使用已生成的 aligned-depth 输入，历史 raw-depth 结果保持可追溯。</p></article><article class="method-note"><span class="note-index">03 / LIMITATIONS</span><h3>视觉质量仍有差距。</h3><p>勺柄末帧朝向、指形、刷体外轮廓存在明显偏差。Dpen 改善和相对速度改善可能方向不同；原适用安全检查及未定义边范围分别列示。</p></article></div>
+      <div class="sources-row"><div><span>TRACEABLE ARTIFACTS</span><strong>独立复现记录 · 2026-10-25</strong><p>TACO 原视频按原帧与时间轴保留；文中指标引用独立 evaluation；不使用 GT 挑模型、调优化参数或生成视觉演示。</p></div><div class="source-links"><a href="https://spikew726.github.io/EgoMatrix/" target="_blank" rel="noopener">EgoMatrix paper ↗</a><a href="https://github.com/EgoMatrix2027/EgoMatrix" target="_blank" rel="noopener">Anonymous candidate implementation ↗</a><a href="#top">Back to top ↑</a></div></div>
+    </section>
+  </main>
+
+  <footer><span class="footer-brand">EGO<span>MATRIX</span> / REPRODUCTION LAB</span><p>Research preview built from saved outputs. Not an official author release. Candidate code attribution remains unconfirmed.</p><span>RGB → 3D → ACTION © 2026</span></footer>
+  <noscript>此交互网站需要启用 JavaScript。</noscript>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"version":2,"headers":[{"source":"/assets/3d/(.*)","headers":[{"key":"Cache-Control","value":"public,max-age=86400"}]},{"source":"/assets/videos/(.*)","headers":[{"key":"Cache-Control","value":"public,max-age=86400"}]}]}

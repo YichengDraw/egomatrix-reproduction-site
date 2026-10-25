@@ -1,0 +1,7 @@
+node_modules/
+preview-*.png
+preview-*.jpg
+site-test-*.png
+site-test-*.jpg
+.DS_Store
+*.log

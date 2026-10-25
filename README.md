@@ -11,3 +11,8 @@ Source evidence stays in private working area: FIRST_FULL_BASELINE_STATUS_202610
 Run locally: python3 -m http.server 8766 in the directory, then visit http://localhost:8766 . ES modules need HTTP rather than file:// .
 
 Original TACO data belongs to dataset creators. Paper: https://spikew726.github.io/EgoMatrix/ . Anonymous candidate implementation: https://github.com/EgoMatrix2027/EgoMatrix . Attribution to named paper authors has not been confirmed.
+
+## XHand Retargeting preview
+The 3D Explorer now offers a separate **XHand Retarget** view with the actual saved 60 Hz `opt_*` joint and wrist reference arrays (497/399/417 frames across three GT-evaluable samples). Robot link geometry comes from saved public XHand URDF visual meshes, with full-frame forward kinematics verified against saved 18-link center positions (maximum observed error 0.048 mm). The source video runs at 30 Hz; robot reference and interpolated link poses are synchronized to the same timestamp. Use `?mode=robot#stir` to open the robot view. Baseline, paper-fixed cut and aligned-teacher references remain separate. There is no retargeting reference for alternate brush260.
+
+**Retargeting is not PPO.** These robot frames are offline target trajectories. The policy evaluation video remains separate and shows early termination after 9 control steps in the saved experiments. A full-length robot target is not a successful physical rollout.

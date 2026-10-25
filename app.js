@@ -43,19 +43,23 @@ function initializeThree(){
  resize();new ResizeObserver(resize).observe(canvasWrap);threeReady=true;
 }
 function disposeAll(){
+ disposeRobotMeshes();
  for(const m of meshes){world.remove(m);m.geometry.dispose();m.material.dispose();}
  meshes=[];objects=[];leftHand=null;rightHand=null;stageData=null;
 }
 function resetView(){
  if(!currentCase||!threeReady)return;
  $('toggleCamera').checked=false;orbit.enabled=true;
- const c=currentCase.center;viewTarget.set(c[0],c[1],c[2]);viewDist=Math.max(.65,currentCase.span*1.55);
+ const rc=viewMode==='robot'&&robotRef?robotRef.meta:null;
+ const c=rc?rc.center:currentCase.center;
+ viewTarget.set(c[0],c[1],c[2]);viewDist=Math.max(.65,(rc?rc.span:currentCase.span)*1.55);
  orbit.target.copy(viewTarget);camera.up.set(0,0,1);camera.position.set(c[0]+viewDist*.68,c[1]-viewDist*1.1,c[2]+viewDist*.78);
  camera.fov=45;camera.near=.005;camera.far=30;camera.updateProjectionMatrix();orbit.update();
 }
 function applyVisibility(){
- if(leftHand)leftHand.visible=$('toggleHands').checked;
- if(rightHand)rightHand.visible=$('toggleHands').checked;
+ if(leftHand)leftHand.visible=viewMode==='human'&&$('toggleHands').checked;
+ if(rightHand)rightHand.visible=viewMode==='human'&&$('toggleHands').checked;
+ for(const piece of robotMeshes)piece.mesh.visible=viewMode==='robot'&&$('toggleHands').checked;
  for(const obj of objects)obj.visible=$('toggleObjects').checked;
  if(grid)grid.visible=$('toggleGrid').checked;
  if(orbit)orbit.enabled=!$('toggleCamera').checked;
@@ -99,6 +103,7 @@ function sampleIndices(f,ids){
  return [a,next,a===next?0:Math.max(0,Math.min(1,(f-ids[a])/(ids[next]-ids[a])))];
 }
 function updateThree(){
+ if(viewMode==='robot'){updateRobot3D();return;}
  if(!stageData||!leftHand)return;
  const d=stageData,[a,b,w]=sampleIndices(frame,d.meta.frameIds);
  const lo=d.meta.handQuantMin,sc=d.meta.handQuantScale;
@@ -171,6 +176,7 @@ function showMetrics(){
  $('metricSpeedDesc').textContent=base!=null&&v!=null?'同序列 A1 相比'+(v<=base?'下降 ':'增加 ')+Math.abs((1-v/base)*100).toFixed(1)+'%':'该序列无可靠对应 GT，动态指标 N/A';
  $('metricScope').textContent=currentCase.n+' frames / '+(currentCase.n-1)+' pairs · '+currentStage;
  $('metricFooter').textContent=currentCase.id==='brush260'?'该段原 RGB 260帧、标注262行，缺精确映射。GT动态/手物误差保留 N/A；仅评估预测物理。':'GT 仅离线评分。原候选、aligned teacher 和论文固定物体分支各自独立保留，不以 GT 选点。';
+ if(viewMode==='robot')$('metricFooter').textContent='当前表格是 MANO 重建阶段的独立离线评价，并非 XHand retargeting 的任务成功率。上方机器人视图展示的是完整参考轨迹。';
  const tbody=$('metricsTbody');tbody.replaceChildren();
  ORDER.filter(k=>currentCase.stages[k]).forEach(k=>{
   const values=all[k]||[null,null,null,null],tr=document.createElement('tr');
@@ -193,7 +199,8 @@ async function selectCase(id,scroll){
  if(!catalog)return;
  const c=catalog.cases.find(x=>x.id===id);if(!c)return;
  playing=false;$('playIcon').textContent='▶';$('sourceVideo').pause();
- const token=++caseToken;stageToken++;currentCase=c;stageData=null;frame=0;
+ const wasRobot=viewMode==='robot';const token=++caseToken;stageToken++;++robotToken;
+ currentCase=c;stageData=null;frame=0;setModeState('human');robotNotice(c);
  document.querySelectorAll('[data-case]').forEach(e=>e.classList.toggle('active',e.dataset.case===id));
  $('activeSequence').textContent=c.title;
  $('activeSequenceMeta').textContent=c.sequence+' · '+c.n+' frames · 30 Hz · independent prediction';
@@ -220,6 +227,7 @@ async function selectCase(id,scroll){
   await loadMesh(c,token);
   if(token!==caseToken)return;
   await loadStage(desired);
+  if(wasRobot&&Object.keys(c.retarget||{}).length)await switchView('robot');
   if(scroll)document.querySelector('#explorer').scrollIntoView({behavior:'smooth'});
  }catch(e){if(token===caseToken){console.error(e);$('sceneLoading').textContent='加载失败：'+e.message;}}
 }
@@ -267,13 +275,199 @@ function animate(t){
  if(threeReady){if(!$('toggleCamera').checked)orbit.update();renderer.render(scene,camera);}
 }
 async function bootstrap(){
- bindControls();
+ bindControls();bindRetargetControls();
  try{initializeThree();}catch(e){console.warn(e);$('sceneLoading').textContent='需要支持 WebGL 的现代浏览器以显示 3D。';}
  try{
   catalog=await getJson('catalog.json');
   const requested=location.hash.substring(1);
   await selectCase(catalog.cases.some(c=>c.id===requested)?requested:'stir',false);
+  const qp=new URLSearchParams(location.search);
+  if(qp.get('mode')==='robot'&&Object.keys(currentCase?.retarget||{}).length){
+   const selected=qp.get('variant');
+   if(selected&&currentCase.retarget[selected])$('retargetSelect').value=selected;
+   await switchView('robot');
+  }
  }catch(e){console.error(e);$('sceneLoading').textContent='数据清单载入失败：'+e.message;}
  requestAnimationFrame(animate);
 }
+
+// Retargeting reference player: saved XHand URDF FK, 60 Hz, separate from PPO rollout.
+// No pretrained policy or control code runs in the browser.
+let viewMode='human';
+let robotRef=null, robotMeshes=[], robotMeshCase='', robotToken=0;
+let robotJointText=[],robotLastJointFrame=-1,retargetMeshManifest=null;
+const ROBOT_VARIANTS={
+ baseline:'原始 Retargeting 参考',
+ fixed:'固定物体 A3 → Retargeting',
+ aligned:'Aligned teacher + fixed A3 → Retargeting'
+};
+const DOF_LABELS=[
+ 'Index · spread','Index · proximal','Index · distal',
+ 'Middle · proximal','Middle · distal',
+ 'Pinky · proximal','Pinky · distal',
+ 'Ring · proximal','Ring · distal',
+ 'Thumb · spread','Thumb · proximal','Thumb · distal'
+];
+function disposeRobotMeshes(){
+ if(!world)return;
+ for(const item of robotMeshes){world.remove(item.mesh);item.mesh.geometry.dispose();item.mesh.material.dispose();}
+ robotMeshes=[];robotMeshCase='';robotRef=null;robotJointText=[];robotLastJointFrame=-1;
+}
+function robotNotice(c){
+ const options=Object.keys(c.retarget||{});
+ const enabled=options.length>0;
+ $('referenceNotice').hidden=!enabled;
+ $('robotView').disabled=!enabled;
+ const samples=2*c.n-1;
+ $('referenceNoticeText').textContent=enabled?samples+' 帧 · 60 Hz · 双手各 12 DOF · 已保存完整参考，未执行整段物理控制':'此序列没有保存的机器人 retargeting 参考';
+ $('referenceLength').textContent=enabled?samples:'N/A';
+ const sel=$('retargetSelect');sel.replaceChildren();
+ for(const type of ['baseline','fixed','aligned']){
+  if(!c.retarget?.[type])continue;
+  sel.add(new Option(ROBOT_VARIANTS[type]+' · '+c.retarget[type].task,type));
+ }
+ sel.value=c.retarget?.aligned?'aligned':(c.retarget?.fixed?'fixed':'baseline');
+}
+function setModeState(mode){
+ viewMode=mode;
+ const robot=mode==='robot';
+ $('humanView').classList.toggle('selected',!robot);
+ $('robotView').classList.toggle('selected',robot);
+ $('humanView').setAttribute('aria-pressed',String(!robot));
+ $('robotView').setAttribute('aria-pressed',String(robot));
+ $('stageSelect').hidden=robot;
+ $('retargetSelect').hidden=!robot;
+ $('variantLabel').textContent=robot?'机器人参考':'重建阶段';
+ $('robotTelemetry').hidden=!robot;
+ $('toggleCamera').disabled=robot;
+ if(robot)$('toggleCamera').checked=false;
+ $('sceneCanvas').parentElement.parentElement.parentElement.classList.toggle('robot-view',robot);
+ $('threeModeTitle').textContent=robot?'02 / XHAND RETARGETING REFERENCE':'02 / RECONSTRUCTED WORLD';
+ $('threePaneTag').textContent=robot?'60 HZ TARGET · NOT PPO':'LIVE WEBGL / 3D';
+ $('threeFooterType').textContent=robot?'XHAND URDF MESH / 24 DOF':'MANO 778 VERTICES / HAND';
+ $('viewerNote').innerHTML=robot?
+  '<span class="note-square"></span> 当前显示的是由 A3 输出重定向到 XHand 的完整运动学参考（关节角 + 手腕位姿），物体取自同一实际 RL loader。它没有经过 PPO 控制执行；真实物理 rollout 见下方失败视频。':
+  '<span class="note-square"></span> 3D Mesh 与预测轨迹来自保存的阶段输出；手部以每 2 帧一个关键帧传输、播放时插值。GT 不参与渲染。视频为真实 30 Hz。';
+}
+async function loadRobotMeshes(c,token){
+ if(robotMeshCase===c.id&&robotMeshes.length)return;
+ if(robotMeshes.length)disposeRobotMeshes();
+ if(!retargetMeshManifest)retargetMeshManifest=await getJson('assets/robot/mesh_manifest.json');
+ const specs=['lh','rh'].flatMap(side=>retargetMeshManifest.hand_links[side].map(item=>({...item,side})));
+ const files=await Promise.all(specs.flatMap(spec=>[getBinary(spec.positions,Float32Array),getBinary(spec.faces,Uint32Array)]));
+ if(token!==robotToken||c!==currentCase)return false;
+ for(let i=0;i<specs.length;i++){
+  const spec=specs[i];
+  const geom=new THREE.BufferGeometry();
+  geom.setAttribute('position',new THREE.BufferAttribute(files[2*i],3));
+  geom.setIndex(new THREE.BufferAttribute(files[2*i+1],1));
+  geom.computeVertexNormals();
+  const mat=new THREE.MeshStandardMaterial({
+   color:spec.side==='lh'?0x89cdae:0xe5bd91,
+   metalness:.33,roughness:.48,side:THREE.DoubleSide
+  });
+  const mesh=new THREE.Mesh(geom,mat);
+  mesh.name='XHand '+spec.link;
+  mesh.frustumCulled=false;
+  mesh.visible=false;
+  world.add(mesh);
+  robotMeshes.push({mesh,link:spec.link,side:spec.side,idx:-1});
+ }
+ robotMeshCase=c.id;
+ return true;
+}
+function rebuildJointInspector(){
+ const root=$('jointColumns');
+ root.replaceChildren();robotJointText=[];
+ for(let h=0;h<2;h++){
+  const table=document.createElement('table');table.className='joint-table';
+  const head=document.createElement('thead'),hr=document.createElement('tr');
+  const cell=document.createElement('th');cell.colSpan=2;cell.textContent=h===0?'LH · 左手 · 12DOF':'RH · 右手 · 12DOF';hr.appendChild(cell);head.appendChild(hr);table.appendChild(head);
+  const tbody=document.createElement('tbody');
+  for(let j=0;j<12;j++){
+   const tr=document.createElement('tr'),name=document.createElement('td'),value=document.createElement('td');
+   name.textContent=DOF_LABELS[j];value.textContent='—';robotJointText.push(value);
+   tr.appendChild(name);tr.appendChild(value);tbody.appendChild(tr);
+  }
+  table.appendChild(tbody);root.appendChild(table);
+ }
+ robotLastJointFrame=-1;
+}
+async function loadRobotRef(variant){
+ if(!currentCase?.retarget?.[variant])return;
+ const c=currentCase,token=++robotToken;
+ loading('读取 XHand 真实连杆模型及 60Hz 关节参考…');
+ try{
+  const meta=await getJson(c.retarget[variant].meta);
+  const assets=await Promise.all([getBinary(meta.links,Float32Array),getBinary(meta.objects,Float32Array),getBinary(meta.dofs,Float32Array),loadRobotMeshes(c,token)]);
+  if(token!==robotToken||c!==currentCase||viewMode!=='robot')return;
+  const [links,poses,dof]=assets;
+  if(links.length!==meta.frameCount*meta.linkCount*16||
+     poses.length!==meta.frameCount*meta.objectCount*16||
+     dof.length!==meta.frameCount*2*12)throw Error('机器人参考数组尺寸校验失败');
+  const linkIdx=new Map(meta.linkNames.map((name,i)=>[name,i]));
+  for(const m of robotMeshes){
+   m.idx=linkIdx.get(m.link);
+   if(m.idx==null)throw Error('机器人连杆名称无法对齐: '+m.link);
+  }
+  robotRef={meta,links,poses,dof,variant};
+  rebuildJointInspector();
+  $('robotReferenceStats').textContent=meta.frameCount+' / '+meta.frameCount+
+   ' frames · 60 Hz · 12DOF/手 · FK 最大差 '+(meta.fk_max_error_m*1e3).toFixed(3)+'mm · '+meta.task;
+  if(grid)grid.position.set(meta.center[0],meta.center[1],meta.center[2]-meta.span*.28);
+  resetView();applyVisibility();dirty=true;updateThree();doneLoading();
+ }catch(e){if(token===robotToken){console.error(e);$('sceneLoading').textContent='XHand 参考载入失败：'+e.message;}}
+}
+async function switchView(mode){
+ if(mode==='robot'&&!Object.keys(currentCase?.retarget||{}).length)return;
+ if(mode==='human'){
+  ++robotToken;setModeState('human');applyVisibility();
+  if(grid&&currentCase)grid.position.set(...[currentCase.center[0],currentCase.center[1],currentCase.center[2]-currentCase.span*.27]);
+  resetView();dirty=true;showMetrics();updateThree();doneLoading();return;
+ }
+ setModeState('robot');
+ applyVisibility();showMetrics();
+ await loadRobotRef($('retargetSelect').value);
+}
+function updateRobotTelemetry(sample){
+ if(!$('jointInspector').open||!robotRef||robotLastJointFrame===sample)return;
+ robotLastJointFrame=sample;
+ const {meta,dof}=robotRef;
+ for(let k=0;k<24;k++)robotJointText[k].textContent=dof[sample*24+k].toFixed(3);
+}
+function updateRobot3D(){
+ if(viewMode!=='robot'||!robotRef||!robotMeshes.length)return;
+ const {meta,links,poses}=robotRef,step=Math.max(0,Math.min(meta.frameCount-1,frame*2));
+ const a=Math.floor(step),b=Math.ceil(step),w=step-a;
+ for(const piece of robotMeshes){
+  const idx=piece.idx,mesh=piece.mesh;
+  matrixAt(matA,links,(a*meta.linkCount+idx)*16);
+  matrixAt(matB,links,(b*meta.linkCount+idx)*16);
+  matA.decompose(pA,qA,sA);matB.decompose(pB,qB,sB);
+  mesh.position.copy(pA).lerp(pB,w);
+  mesh.quaternion.copy(qA).slerp(qB,w);
+  mesh.scale.copy(sA).lerp(sB,w);
+ }
+ for(let i=0;i<objects.length;i++){
+  matrixAt(matA,poses,(a*meta.objectCount+i)*16);
+  matrixAt(matB,poses,(b*meta.objectCount+i)*16);
+  matA.decompose(pA,qA,sA);matB.decompose(pB,qB,sB);
+  objects[i].position.copy(pA).lerp(pB,w);
+  objects[i].quaternion.copy(qA).slerp(qB,w);
+  objects[i].scale.copy(sA).lerp(sB,w);
+ }
+ updateRobotTelemetry(Math.round(step));
+ dirty=false;
+}
+function bindRetargetControls(){
+ $('robotView').addEventListener('click',()=>switchView('robot'));
+ $('humanView').addEventListener('click',()=>switchView('human'));
+ $('openRobot3D').addEventListener('click',()=>{
+  switchView('robot');
+  document.querySelector('#explorer').scrollIntoView({behavior:'smooth'});
+ });
+ $('retargetSelect').addEventListener('change',e=>loadRobotRef(e.target.value));
+}
+// original bootstrap below
+
 bootstrap();

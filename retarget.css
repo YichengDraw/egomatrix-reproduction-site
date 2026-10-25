@@ -1,0 +1,43 @@
+
+/* Retargeting extension · independent kinematic robot reference, never PPO output */
+[hidden]{display:none!important}
+.viewer-topline{flex-wrap:wrap;row-gap:14px}
+.viewer-settings{flex-wrap:wrap;justify-content:flex-end}
+.viewer-mode{display:inline-flex;gap:2px;background:#101b16;border:1px solid #445845;border-radius:3px;padding:3px}
+.viewer-mode button{border:0;background:transparent;color:#94a99a;font:600 11px 'Space Grotesk',sans-serif;padding:8px 12px;border-radius:2px;white-space:nowrap;transition:background .15s}
+.viewer-mode button.selected{background:#baf18f;color:#182617}
+.viewer-mode button:hover:not(.selected){color:#c8e3c8;background:#283a2b}
+.viewer-mode button:disabled{opacity:.34;cursor:not-allowed}
+.reference-notice{display:flex;align-items:center;gap:16px;padding:13px 22px;background:linear-gradient(90deg,#1c2d22,#17261d 70%,#15231a);border-bottom:1px solid #3e5142;min-height:72px}
+.reference-marker{flex-shrink:0;font:700 9px 'Space Grotesk';color:#baf18f;letter-spacing:.1em;border-right:1px solid #536c53;padding-right:16px}
+.reference-copy{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.reference-copy strong{font-size:12px;font-weight:650;letter-spacing:.01em;color:#e1f3dd}
+.reference-copy span{font-size:10px;color:#98b19e}
+.reference-open{border:1px solid #a6d69a;color:#c2f4ab;background:transparent;padding:9px 13px;font-size:11px;white-space:nowrap;border-radius:3px}
+.reference-open:hover{background:#baf18f;color:#192517}
+.robot-telemetry{padding:13px 22px 10px;border-top:1px solid #2f4b39;background:#16251c}
+.telemetry-summary{display:flex;gap:13px;align-items:center;flex-wrap:wrap;min-height:25px}
+.telemetry-dot{height:7px;width:7px;background:#baf18f;border-radius:50%;box-shadow:0 0 12px #baf18f66}
+.telemetry-summary strong{font:700 10px 'Space Grotesk';letter-spacing:.085em;color:#baf18f}
+.telemetry-summary>span:not(.telemetry-dot):not(.telemetry-warning){font-size:11px;color:#b3c9b9}
+.telemetry-warning{margin-left:auto;border:1px solid #605141;background:#29251e;padding:3px 8px;font-size:10px;color:#e5bd95}
+#jointInspector{border-top:1px solid #354839;margin-top:11px;padding-top:9px}
+#jointInspector summary{color:#bed6c1;font:500 11px 'Space Grotesk';cursor:pointer;list-style:none}
+#jointInspector summary::-webkit-details-marker{display:none}
+#jointInspector summary span{color:#a5ce9e;padding-left:5px}
+.joint-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:15px 0 6px}
+.joint-table{width:100%;border:1px solid #2c4534;min-width:0}
+.joint-table th{padding:8px 10px;font-size:11px;background:#1a2d21;color:#baf18f}
+.joint-table td{padding:5px 10px;font-size:10px;letter-spacing:.01em}
+.joint-table td:last-child{font-variant-numeric:tabular-nums;color:#dcf0d8}
+.robot-view .axis-indicator{color:#f1c88f}
+.robot-view .viewer-panel.three-panel{background:#111b18}
+.pipeline{grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.pipeline-arrow{display:none}
+.pipeline-step{padding-right:12px;border-right:1px solid #2f4535}
+.pipeline-step:last-child{border-right:0}
+.pipeline-step strong{font-size:12px}
+.pipeline-step p{font-size:10px;min-height:74px}
+@media(max-width:1150px){.viewer-topline{align-items:start}.viewer-settings{justify-content:flex-start}.reference-marker{display:none}.pipeline{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:22px}.pipeline-step:nth-of-type(3n){border-right:0}}
+@media(max-width:720px){.viewer-topline{gap:10px}.viewer-settings{width:100%;gap:9px}.viewer-settings label{display:none}.viewer-settings select{flex:1;max-width:none}.viewer-mode{width:100%}.viewer-mode button{flex:1}.reference-notice{align-items:start;flex-wrap:wrap;gap:8px;padding:12px}.reference-copy{min-width:180px}.reference-open{width:100%}.telemetry-summary{gap:8px}.telemetry-warning{margin-left:0}.joint-columns{grid-template-columns:1fr}.pipeline{grid-template-columns:repeat(2,minmax(0,1fr))}.pipeline-step{border-right:0}.pipeline-step p{min-height:0}}
+@media(max-width:450px){.pipeline{grid-template-columns:1fr}.reference-copy span{font-size:9px}}

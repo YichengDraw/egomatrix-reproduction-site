@@ -489,7 +489,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461350.392916667
+2461350.4277083334
   9
 $TDUCREATE
  40
@@ -497,7 +497,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461350.392916667
+2461350.4277083334
   9
 $TDUUPDATE
  40
@@ -549,7 +549,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-FC
+139
   9
 $SURFTAB1
  70
@@ -929,11 +929,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{397CEA45-AF16-4D83-83F0-D268ABEB30CB}
+{4D34C01B-BB5F-4A23-BCFF-B8247C994E7A}
   9
 $VERSIONGUID
   2
-{70FC6EE5-3102-46E5-B56A-19EFF19E68E8}
+{7C5952B3-A7D4-47E6-9E4B-DEF709F25CF4}
   9
 $EXTNAMES
 290
@@ -1323,9 +1323,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1339,9 +1339,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -2233,7 +2233,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-8
+9
   0
 LAYER
   5
@@ -2420,6 +2420,30 @@ WARNING
 0
  62
 1
+  6
+Continuous
+370
+-3
+390
+13
+347
+21
+  0
+LAYER
+  5
+90
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+OPENINGS
+ 70
+0
+ 62
+5
   6
 Continuous
 370
@@ -3229,7 +3253,7 @@ ACAD
   0
 APPID
   5
-F9
+136
 330
 3
 100
@@ -3243,7 +3267,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-FA
+137
 330
 3
 100
@@ -5355,30 +5379,6 @@ ENTITIES
   0
 TEXT
   5
-90
-330
-17
-100
-AcDbEntity
-  8
-WARNING
-100
-AcDbText
- 10
-0.0
- 20
-13700.0
- 30
-0.0
- 40
-360.0
-  1
-PRELIMINARY CONCEPT - NOT FOR CONSTRUCTION
-100
-AcDbText
-  0
-TEXT
-  5
 91
 330
 17
@@ -5391,13 +5391,13 @@ AcDbText
  10
 0.0
  20
-13300.0
+14800.0
  30
 0.0
  40
-170.0
+380.0
   1
-UNITS: mm | ALL MEMBER SIZES, CONNECTIONS AND FOUNDATIONS: STRUCTURAL DESIGN REQUIRED
+CONCEPT ONLY - NOT FOR CONSTRUCTION
 100
 AcDbText
   0
@@ -5415,13 +5415,13 @@ AcDbText
  10
 0.0
  20
-13050.0
+14420.0
  30
 0.0
  40
-170.0
+210.0
   1
-DOORS, WINDOWS, BRACING AND ROOF DRAINAGE DETAILS: TO BE DETERMINED
+ALL OPENINGS AND THEIR POSITIONS ARE EXAMPLES - CONFIRM BEFORE DESIGN
 100
 AcDbText
   0
@@ -5433,23 +5433,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+WARNING
 100
 AcDbText
  10
 0.0
  20
-12600.0
+14130.0
  30
 0.0
  40
-250.0
+190.0
   1
-1. ROOF / COLUMN GRID PLAN
+RESIDENTIAL USE; HIDDEN ROOF FALL SHOWN SCHEMATICALLY; DESIGN REQUIRED
 100
 AcDbText
   0
-LWPOLYLINE
+TEXT
   5
 94
 330
@@ -5457,31 +5457,23 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-OUTLINE
+WARNING
 100
-AcDbPolyline
- 90
-4
- 70
-1
+AcDbText
  10
 0.0
  20
-6000.0
- 10
-7200.0
- 20
-6000.0
- 10
-7200.0
- 20
-12000.0
- 10
+13870.0
+ 30
 0.0
- 20
-12000.0
+ 40
+170.0
+  1
+ALL STRUCTURAL MEMBERS, CONNECTIONS, BRACING AND FOUNDATIONS REQUIRE DESIGN
+100
+AcDbText
   0
-LINE
+TEXT
   5
 95
 330
@@ -5489,23 +5481,23 @@ LINE
 100
 AcDbEntity
   8
-FRAMING
+TEXT
 100
-AcDbLine
+AcDbText
  10
 0.0
  20
-6000.0
+13300.0
  30
 0.0
- 11
-0.0
- 21
-12000.0
- 31
-0.0
+ 40
+240.0
+  1
+1. FLOOR PLAN - EXAMPLE OPENINGS
+100
+AcDbText
   0
-CIRCLE
+LINE
   5
 96
 330
@@ -5513,19 +5505,23 @@ CIRCLE
 100
 AcDbEntity
   8
-GRID
+OUTLINE
 100
-AcDbCircle
+AcDbLine
  10
 0.0
  20
-6000.0
+7000.0
  30
 0.0
- 40
-90.0
+ 11
+1050.0
+ 21
+7000.0
+ 31
+0.0
   0
-CIRCLE
+LINE
   5
 97
 330
@@ -5533,19 +5529,23 @@ CIRCLE
 100
 AcDbEntity
   8
-GRID
+OUTLINE
 100
-AcDbCircle
+AcDbLine
  10
-0.0
+1950.0
  20
-12000.0
+7000.0
  30
 0.0
- 40
-90.0
+ 11
+3150.0
+ 21
+7000.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 98
 330
@@ -5553,31 +5553,21 @@ TEXT
 100
 AcDbEntity
   8
-GRID
+OUTLINE
 100
-AcDbText
+AcDbLine
  10
-0.0
+4350.0
  20
-12200.0
+7000.0
  30
 0.0
- 40
-160.0
-  1
-1
- 72
-1
  11
-0.0
+7200.0
  21
-12200.0
+7000.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -5587,23 +5577,23 @@ LINE
 100
 AcDbEntity
   8
-FRAMING
+OUTLINE
 100
 AcDbLine
  10
-2400.0
+0.0
  20
-6000.0
+7000.0
  30
 0.0
  11
-2400.0
+0.0
  21
-12000.0
+13000.0
  31
 0.0
   0
-CIRCLE
+LINE
   5
 9A
 330
@@ -5611,19 +5601,23 @@ CIRCLE
 100
 AcDbEntity
   8
-GRID
+OUTLINE
 100
-AcDbCircle
+AcDbLine
  10
-2400.0
+0.0
  20
-6000.0
+13000.0
  30
 0.0
- 40
-90.0
+ 11
+7200.0
+ 21
+13000.0
+ 31
+0.0
   0
-CIRCLE
+LINE
   5
 9B
 330
@@ -5631,19 +5625,23 @@ CIRCLE
 100
 AcDbEntity
   8
-GRID
+OUTLINE
 100
-AcDbCircle
+AcDbLine
  10
-2400.0
+7200.0
  20
-12000.0
+7000.0
  30
 0.0
- 40
-90.0
+ 11
+7200.0
+ 21
+9400.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 9C
 330
@@ -5651,31 +5649,21 @@ TEXT
 100
 AcDbEntity
   8
-GRID
+OUTLINE
 100
-AcDbText
+AcDbLine
  10
-2400.0
+7200.0
  20
-12200.0
+10600.0
  30
 0.0
- 40
-160.0
-  1
-2
- 72
-1
  11
-2400.0
+7200.0
  21
-12200.0
+13000.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -5685,23 +5673,23 @@ LINE
 100
 AcDbEntity
   8
-FRAMING
+OPENINGS
 100
 AcDbLine
  10
-4800.0
+1050.0
  20
-6000.0
+7000.0
  30
 0.0
  11
-4800.0
+1050.0
  21
-12000.0
+7900.0
  31
 0.0
   0
-CIRCLE
+ARC
   5
 9E
 330
@@ -5709,19 +5697,25 @@ CIRCLE
 100
 AcDbEntity
   8
-GRID
+OPENINGS
 100
 AcDbCircle
  10
-4800.0
+1050.0
  20
-6000.0
+7000.0
  30
 0.0
  40
+900.0
+100
+AcDbArc
+ 50
+0.0
+ 51
 90.0
   0
-CIRCLE
+LINE
   5
 9F
 330
@@ -5729,19 +5723,23 @@ CIRCLE
 100
 AcDbEntity
   8
-GRID
+OPENINGS
 100
-AcDbCircle
+AcDbLine
  10
-4800.0
+3150.0
  20
-12000.0
+6955.0
  30
 0.0
- 40
-90.0
+ 11
+4350.0
+ 21
+6955.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 A0
 330
@@ -5749,31 +5747,21 @@ A0
 100
 AcDbEntity
   8
-GRID
+OPENINGS
 100
-AcDbText
+AcDbLine
  10
-4800.0
+3150.0
  20
-12200.0
+7045.0
  30
 0.0
- 40
-160.0
-  1
-3
- 72
-1
  11
-4800.0
+4350.0
  21
-12200.0
+7045.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -5783,23 +5771,23 @@ A1
 100
 AcDbEntity
   8
-FRAMING
+OPENINGS
 100
 AcDbLine
  10
-7200.0
+7155.0
  20
-6000.0
+9400.0
  30
 0.0
  11
-7200.0
+7155.0
  21
-12000.0
+10600.0
  31
 0.0
   0
-CIRCLE
+LINE
   5
 A2
 330
@@ -5807,19 +5795,23 @@ A2
 100
 AcDbEntity
   8
-GRID
+OPENINGS
 100
-AcDbCircle
+AcDbLine
  10
-7200.0
+7245.0
  20
-6000.0
+9400.0
  30
 0.0
- 40
-90.0
+ 11
+7245.0
+ 21
+10600.0
+ 31
+0.0
   0
-CIRCLE
+LINE
   5
 A3
 330
@@ -5827,19 +5819,23 @@ A3
 100
 AcDbEntity
   8
-GRID
+FRAMING
 100
-AcDbCircle
+AcDbLine
  10
-7200.0
+0.0
  20
-12000.0
+7180.0
  30
 0.0
- 40
-90.0
+ 11
+0.0
+ 21
+12820.0
+ 31
+0.0
   0
-TEXT
+CIRCLE
   5
 A4
 330
@@ -5849,31 +5845,17 @@ AcDbEntity
   8
 GRID
 100
-AcDbText
+AcDbCircle
  10
-7200.0
+0.0
  20
-12200.0
+7000.0
  30
 0.0
  40
-160.0
-  1
-4
- 72
-1
- 11
-7200.0
- 21
-12200.0
- 31
-0.0
-100
-AcDbText
- 73
-1
+90.0
   0
-TEXT
+CIRCLE
   5
 A5
 330
@@ -5881,23 +5863,19 @@ A5
 100
 AcDbEntity
   8
-TEXT
+GRID
 100
-AcDbText
+AcDbCircle
  10
-250.0
+0.0
  20
-6450.0
+13000.0
  30
 0.0
  40
-150.0
-  1
-HIGH EDGE +2800
-100
-AcDbText
+90.0
   0
-TEXT
+LINE
   5
 A6
 330
@@ -5905,23 +5883,23 @@ A6
 100
 AcDbEntity
   8
-TEXT
+FRAMING
 100
-AcDbText
+AcDbLine
  10
-250.0
+2400.0
  20
-11600.0
+7180.0
  30
 0.0
- 40
-150.0
-  1
-LOW EDGE +2680
-100
-AcDbText
+ 11
+2400.0
+ 21
+12820.0
+ 31
+0.0
   0
-LINE
+CIRCLE
   5
 A7
 330
@@ -5931,21 +5909,17 @@ AcDbEntity
   8
 GRID
 100
-AcDbLine
+AcDbCircle
  10
-6100.0
+2400.0
  20
-6800.0
+7000.0
  30
 0.0
- 11
-6100.0
- 21
-11100.0
- 31
-0.0
+ 40
+90.0
   0
-LINE
+CIRCLE
   5
 A8
 330
@@ -5955,19 +5929,15 @@ AcDbEntity
   8
 GRID
 100
-AcDbLine
+AcDbCircle
  10
-6100.0
+2400.0
  20
-11100.0
+13000.0
  30
 0.0
- 11
-5900.0
- 21
-10800.0
- 31
-0.0
+ 40
+90.0
   0
 LINE
   5
@@ -5977,23 +5947,23 @@ A9
 100
 AcDbEntity
   8
-GRID
+FRAMING
 100
 AcDbLine
  10
-6100.0
+4800.0
  20
-11100.0
+7180.0
  30
 0.0
  11
-6300.0
+4800.0
  21
-10800.0
+12820.0
  31
 0.0
   0
-TEXT
+CIRCLE
   5
 AA
 330
@@ -6001,23 +5971,19 @@ AA
 100
 AcDbEntity
   8
-TEXT
+GRID
 100
-AcDbText
+AcDbCircle
  10
-500.0
+4800.0
  20
-8700.0
+7000.0
  30
 0.0
  40
-160.0
-  1
-ROOF FALL 2%
-100
-AcDbText
+90.0
   0
-LINE
+CIRCLE
   5
 AB
 330
@@ -6025,21 +5991,17 @@ AB
 100
 AcDbEntity
   8
-DIMENSIONS
+GRID
 100
-AcDbLine
+AcDbCircle
  10
-0.0
+4800.0
  20
-6000.0
+13000.0
  30
 0.0
- 11
-0.0
- 21
-5640.0
- 31
-0.0
+ 40
+90.0
   0
 LINE
   5
@@ -6049,23 +6011,23 @@ AC
 100
 AcDbEntity
   8
-DIMENSIONS
+FRAMING
 100
 AcDbLine
  10
 7200.0
  20
-6000.0
+7180.0
  30
 0.0
  11
 7200.0
  21
-5640.0
+12820.0
  31
 0.0
   0
-LINE
+CIRCLE
   5
 AD
 330
@@ -6073,23 +6035,19 @@ AD
 100
 AcDbEntity
   8
-DIMENSIONS
+GRID
 100
-AcDbLine
+AcDbCircle
  10
-0.0
+7200.0
  20
-5500.0
+7000.0
  30
 0.0
- 11
-7200.0
- 21
-5500.0
- 31
-0.0
+ 40
+90.0
   0
-LINE
+CIRCLE
   5
 AE
 330
@@ -6097,23 +6055,19 @@ AE
 100
 AcDbEntity
   8
-DIMENSIONS
+GRID
 100
-AcDbLine
+AcDbCircle
  10
--70.0
+7200.0
  20
-5430.0
+13000.0
  30
 0.0
- 11
-70.0
- 21
-5570.0
- 31
-0.0
+ 40
+90.0
   0
-LINE
+TEXT
   5
 AF
 330
@@ -6121,21 +6075,21 @@ AF
 100
 AcDbEntity
   8
-DIMENSIONS
+OPENINGS
 100
-AcDbLine
+AcDbText
  10
-7130.0
+300.0
  20
-5430.0
+8300.0
  30
 0.0
- 11
-7270.0
- 21
-5570.0
- 31
-0.0
+ 40
+150.0
+  1
+D1: 900 x 2100
+100
+AcDbText
   0
 TEXT
   5
@@ -6145,33 +6099,23 @@ B0
 100
 AcDbEntity
   8
-DIMENSIONS
+OPENINGS
 100
 AcDbText
  10
-3600.0
+2800.0
  20
-5580.0
+7900.0
  30
 0.0
  40
-150.0
+145.0
   1
-7200
- 72
-1
- 11
-3600.0
- 21
-5580.0
- 31
-0.0
+W1: 1200 x 1200; SILL 900
 100
 AcDbText
- 73
-1
   0
-LINE
+TEXT
   5
 B1
 330
@@ -6179,23 +6123,23 @@ B1
 100
 AcDbEntity
   8
-DIMENSIONS
+OPENINGS
 100
-AcDbLine
+AcDbText
  10
-0.0
+4100.0
  20
-6000.0
+10200.0
  30
 0.0
- 11
-0.0
- 21
-5940.0
- 31
-0.0
+ 40
+145.0
+  1
+W2: 1200 x 1200; SILL 900
+100
+AcDbText
   0
-LINE
+TEXT
   5
 B2
 330
@@ -6203,21 +6147,21 @@ B2
 100
 AcDbEntity
   8
-DIMENSIONS
+TEXT
 100
-AcDbLine
+AcDbText
  10
-2400.0
+650.0
  20
-6000.0
+11800.0
  30
 0.0
- 11
-2400.0
- 21
-5940.0
- 31
-0.0
+ 40
+150.0
+  1
+ROOF PERIMETER LEVEL; MAX HEIGHT +2800 ABOVE EXTERIOR GROUND
+100
+AcDbText
   0
 LINE
   5
@@ -6233,13 +6177,13 @@ AcDbLine
  10
 0.0
  20
-5800.0
+7000.0
  30
 0.0
  11
-2400.0
+0.0
  21
-5800.0
+6280.0
  31
 0.0
   0
@@ -6255,15 +6199,15 @@ DIMENSIONS
 100
 AcDbLine
  10
--70.0
+7200.0
  20
-5730.0
+7000.0
  30
 0.0
  11
-70.0
+7200.0
  21
-5870.0
+6280.0
  31
 0.0
   0
@@ -6279,19 +6223,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-2330.0
+0.0
  20
-5730.0
+6200.0
  30
 0.0
  11
-2470.0
+7200.0
  21
-5870.0
+6200.0
  31
 0.0
   0
-TEXT
+LINE
   5
 B6
 330
@@ -6301,29 +6245,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-1200.0
+-55.0
  20
-5880.0
+6145.0
  30
 0.0
- 40
-150.0
-  1
-2400
- 72
-1
  11
-1200.0
+55.0
  21
-5880.0
+6255.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -6337,19 +6271,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-2400.0
+7145.0
  20
-6000.0
+6145.0
  30
 0.0
  11
-2400.0
+7255.0
  21
-5940.0
+6255.0
  31
 0.0
   0
-LINE
+TEXT
   5
 B8
 330
@@ -6359,19 +6293,29 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-4800.0
+3600.0
  20
-6000.0
+6270.0
  30
 0.0
+ 40
+135.0
+  1
+7200
+ 72
+1
  11
-4800.0
+3600.0
  21
-5940.0
+6270.0
  31
 0.0
+100
+AcDbText
+ 73
+1
   0
 LINE
   5
@@ -6385,15 +6329,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-2400.0
+0.0
  20
-5800.0
+7000.0
  30
 0.0
  11
-4800.0
+0.0
  21
-5800.0
+6660.0
  31
 0.0
   0
@@ -6409,15 +6353,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-2330.0
+1050.0
  20
-5730.0
+7000.0
  30
 0.0
  11
-2470.0
+1050.0
  21
-5870.0
+6660.0
  31
 0.0
   0
@@ -6433,19 +6377,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-4730.0
+0.0
  20
-5730.0
+6580.0
  30
 0.0
  11
-4870.0
+1050.0
  21
-5870.0
+6580.0
  31
 0.0
   0
-TEXT
+LINE
   5
 BC
 330
@@ -6455,29 +6399,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-3600.0
+-55.0
  20
-5880.0
+6525.0
  30
 0.0
- 40
-150.0
-  1
-2400
- 72
-1
  11
-3600.0
+55.0
  21
-5880.0
+6635.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -6491,19 +6425,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-4800.0
+995.0
  20
-6000.0
+6525.0
  30
 0.0
  11
-4800.0
+1105.0
  21
-5940.0
+6635.0
  31
 0.0
   0
-LINE
+TEXT
   5
 BE
 330
@@ -6513,19 +6447,29 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-7200.0
+525.0
  20
-6000.0
+6650.0
  30
 0.0
+ 40
+135.0
+  1
+1050
+ 72
+1
  11
-7200.0
+525.0
  21
-5940.0
+6650.0
  31
 0.0
+100
+AcDbText
+ 73
+1
   0
 LINE
   5
@@ -6539,15 +6483,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-4800.0
+1050.0
  20
-5800.0
+7000.0
  30
 0.0
  11
-7200.0
+1050.0
  21
-5800.0
+6660.0
  31
 0.0
   0
@@ -6563,15 +6507,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-4730.0
+1950.0
  20
-5730.0
+7000.0
  30
 0.0
  11
-4870.0
+1950.0
  21
-5870.0
+6660.0
  31
 0.0
   0
@@ -6587,19 +6531,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-7130.0
+1050.0
  20
-5730.0
+6580.0
  30
 0.0
  11
-7270.0
+1950.0
  21
-5870.0
+6580.0
  31
 0.0
   0
-TEXT
+LINE
   5
 C2
 330
@@ -6609,29 +6553,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-6000.0
+995.0
  20
-5880.0
+6525.0
  30
 0.0
- 40
-150.0
-  1
-2400
- 72
-1
  11
-6000.0
+1105.0
  21
-5880.0
+6635.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -6645,19 +6579,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-0.0
+1895.0
  20
-6000.0
+6525.0
  30
 0.0
  11
--740.0
+2005.0
  21
-6000.0
+6635.0
  31
 0.0
   0
-LINE
+TEXT
   5
 C4
 330
@@ -6667,19 +6601,29 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-0.0
+1500.0
  20
-12000.0
+6650.0
  30
 0.0
+ 40
+135.0
+  1
+900
+ 72
+1
  11
--740.0
+1500.0
  21
-12000.0
+6650.0
  31
 0.0
+100
+AcDbText
+ 73
+1
   0
 LINE
   5
@@ -6693,15 +6637,15 @@ DIMENSIONS
 100
 AcDbLine
  10
--600.0
+1950.0
  20
-6000.0
+7000.0
  30
 0.0
  11
--600.0
+1950.0
  21
-12000.0
+6660.0
  31
 0.0
   0
@@ -6717,15 +6661,15 @@ DIMENSIONS
 100
 AcDbLine
  10
--670.0
+3150.0
  20
-5930.0
+7000.0
  30
 0.0
  11
--530.0
+3150.0
  21
-6070.0
+6660.0
  31
 0.0
   0
@@ -6741,19 +6685,19 @@ DIMENSIONS
 100
 AcDbLine
  10
--670.0
+1950.0
  20
-11930.0
+6580.0
  30
 0.0
  11
--530.0
+3150.0
  21
-12070.0
+6580.0
  31
 0.0
   0
-TEXT
+LINE
   5
 C8
 330
@@ -6763,21 +6707,21 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
--500.0
+1895.0
  20
-9000.0
+6525.0
  30
 0.0
- 40
-150.0
-  1
-6000
-100
-AcDbText
+ 11
+2005.0
+ 21
+6635.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 C9
 330
@@ -6785,21 +6729,21 @@ C9
 100
 AcDbEntity
   8
-TEXT
+DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-0.0
+3095.0
  20
-5000.0
+6525.0
  30
 0.0
- 40
-150.0
-  1
-Lines: conceptual transverse frames; circles: proposed column locations.
-100
-AcDbText
+ 11
+3205.0
+ 21
+6635.0
+ 31
+0.0
   0
 TEXT
   5
@@ -6809,23 +6753,33 @@ CA
 100
 AcDbEntity
   8
-TEXT
+DIMENSIONS
 100
 AcDbText
  10
-0.0
+2550.0
  20
-4770.0
+6650.0
  30
 0.0
  40
-150.0
+135.0
   1
-Purlins and lateral bracing are subject to structural design.
+1200
+ 72
+1
+ 11
+2550.0
+ 21
+6650.0
+ 31
+0.0
 100
 AcDbText
+ 73
+1
   0
-TEXT
+LINE
   5
 CB
 330
@@ -6833,23 +6787,23 @@ CB
 100
 AcDbEntity
   8
-TEXT
+DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-0.0
+3150.0
  20
-4250.0
+7000.0
  30
 0.0
- 40
-250.0
-  1
-2. HIGH-SIDE ELEVATION
-100
-AcDbText
+ 11
+3150.0
+ 21
+6660.0
+ 31
+0.0
   0
-LWPOLYLINE
+LINE
   5
 CC
 330
@@ -6857,29 +6811,21 @@ CC
 100
 AcDbEntity
   8
-OUTLINE
+DIMENSIONS
 100
-AcDbPolyline
- 90
-4
- 70
-1
+AcDbLine
  10
+4350.0
+ 20
+7000.0
+ 30
 0.0
- 20
-800.0
- 10
-7200.0
- 20
-800.0
- 10
-7200.0
- 20
-3600.0
- 10
+ 11
+4350.0
+ 21
+6660.0
+ 31
 0.0
- 20
-3600.0
   0
 LINE
   5
@@ -6889,19 +6835,19 @@ CD
 100
 AcDbEntity
   8
-GRID
+DIMENSIONS
 100
 AcDbLine
  10
-2400.0
+3150.0
  20
-800.0
+6580.0
  30
 0.0
  11
-2400.0
+4350.0
  21
-3600.0
+6580.0
  31
 0.0
   0
@@ -6913,19 +6859,19 @@ CE
 100
 AcDbEntity
   8
-GRID
+DIMENSIONS
 100
 AcDbLine
  10
-4800.0
+3095.0
  20
-800.0
+6525.0
  30
 0.0
  11
-4800.0
+3205.0
  21
-3600.0
+6635.0
  31
 0.0
   0
@@ -6941,19 +6887,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-0.0
+4295.0
  20
-800.0
+6525.0
  30
 0.0
  11
-0.0
+4405.0
  21
-490.0
+6635.0
  31
 0.0
   0
-LINE
+TEXT
   5
 D0
 330
@@ -6963,19 +6909,29 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-7200.0
+3750.0
  20
-800.0
+6650.0
  30
 0.0
+ 40
+135.0
+  1
+1200
+ 72
+1
  11
-7200.0
+3750.0
  21
-490.0
+6650.0
  31
 0.0
+100
+AcDbText
+ 73
+1
   0
 LINE
   5
@@ -6989,15 +6945,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-0.0
+4350.0
  20
-350.0
+7000.0
  30
 0.0
  11
-7200.0
+4350.0
  21
-350.0
+6660.0
  31
 0.0
   0
@@ -7013,15 +6969,15 @@ DIMENSIONS
 100
 AcDbLine
  10
--70.0
+7200.0
  20
-280.0
+7000.0
  30
 0.0
  11
-70.0
+7200.0
  21
-420.0
+6660.0
  31
 0.0
   0
@@ -7037,19 +6993,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-7130.0
+4350.0
  20
-280.0
+6580.0
  30
 0.0
  11
-7270.0
+7200.0
  21
-420.0
+6580.0
  31
 0.0
   0
-TEXT
+LINE
   5
 D4
 330
@@ -7059,29 +7015,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-3600.0
+4295.0
  20
-430.0
+6525.0
  30
 0.0
- 40
-150.0
-  1
-7200
- 72
-1
  11
-3600.0
+4405.0
  21
-430.0
+6635.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -7095,19 +7041,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-0.0
+7145.0
  20
-800.0
+6525.0
  30
 0.0
  11
--740.0
+7255.0
  21
-800.0
+6635.0
  31
 0.0
   0
-LINE
+TEXT
   5
 D6
 330
@@ -7117,19 +7063,29 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-0.0
+5775.0
  20
-3600.0
+6650.0
  30
 0.0
+ 40
+135.0
+  1
+2850
+ 72
+1
  11
--740.0
+5775.0
  21
-3600.0
+6650.0
  31
 0.0
+100
+AcDbText
+ 73
+1
   0
 LINE
   5
@@ -7143,15 +7099,15 @@ DIMENSIONS
 100
 AcDbLine
  10
--600.0
+0.0
  20
-800.0
+7000.0
  30
 0.0
  11
--600.0
+-730.0
  21
-3600.0
+7000.0
  31
 0.0
   0
@@ -7167,15 +7123,15 @@ DIMENSIONS
 100
 AcDbLine
  10
--670.0
+0.0
  20
-730.0
+13000.0
  30
 0.0
  11
--530.0
+-730.0
  21
-870.0
+13000.0
  31
 0.0
   0
@@ -7191,19 +7147,19 @@ DIMENSIONS
 100
 AcDbLine
  10
--670.0
+-650.0
  20
-3530.0
+7000.0
  30
 0.0
  11
--530.0
+-650.0
  21
-3670.0
+13000.0
  31
 0.0
   0
-TEXT
+LINE
   5
 DA
 330
@@ -7213,21 +7169,21 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
--500.0
+-705.0
  20
-2200.0
+6945.0
  30
 0.0
- 40
-150.0
-  1
-2800
-100
-AcDbText
+ 11
+-595.0
+ 21
+7055.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 DB
 330
@@ -7235,21 +7191,21 @@ DB
 100
 AcDbEntity
   8
-TEXT
+DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-0.0
+-705.0
  20
--100.0
+12945.0
  30
 0.0
- 40
-150.0
-  1
-Finished ground reference +/-0; openings TBD.
-100
-AcDbText
+ 11
+-595.0
+ 21
+13055.0
+ 31
+0.0
   0
 TEXT
   5
@@ -7259,23 +7215,23 @@ DC
 100
 AcDbEntity
   8
-TEXT
+DIMENSIONS
 100
 AcDbText
  10
-10000.0
+-560.0
  20
-4250.0
+10000.0
  30
 0.0
  40
-250.0
+135.0
   1
-3. SIDE ELEVATION / ROOF FALL
+6000
 100
 AcDbText
   0
-LWPOLYLINE
+LINE
   5
 DD
 330
@@ -7283,29 +7239,21 @@ DD
 100
 AcDbEntity
   8
-OUTLINE
+DIMENSIONS
 100
-AcDbPolyline
- 90
-4
- 70
-1
+AcDbLine
  10
-10000.0
+7200.0
  20
-800.0
- 10
-16000.0
- 20
-800.0
- 10
-16000.0
- 20
-3480.0
- 10
-10000.0
- 20
-3600.0
+7000.0
+ 30
+0.0
+ 11
+7820.0
+ 21
+7000.0
+ 31
+0.0
   0
 LINE
   5
@@ -7319,15 +7267,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-10000.0
+7200.0
  20
-800.0
+9400.0
  30
 0.0
  11
-10000.0
+7820.0
  21
-490.0
+9400.0
  31
 0.0
   0
@@ -7343,15 +7291,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-16000.0
+7900.0
  20
-800.0
+7000.0
  30
 0.0
  11
-16000.0
+7900.0
  21
-490.0
+9400.0
  31
 0.0
   0
@@ -7367,15 +7315,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-10000.0
+7845.0
  20
-350.0
+6945.0
  30
 0.0
  11
-16000.0
+7955.0
  21
-350.0
+7055.0
  31
 0.0
   0
@@ -7391,19 +7339,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-9930.0
+7845.0
  20
-280.0
+9345.0
  30
 0.0
  11
-10070.0
+7955.0
  21
-420.0
+9455.0
  31
 0.0
   0
-LINE
+TEXT
   5
 E2
 330
@@ -7413,21 +7361,21 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-15930.0
+7990.0
  20
-280.0
+8200.0
  30
 0.0
- 11
-16070.0
- 21
-420.0
- 31
-0.0
+ 40
+135.0
+  1
+2400
+100
+AcDbText
   0
-TEXT
+LINE
   5
 E3
 330
@@ -7437,29 +7385,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-13000.0
+7200.0
  20
-430.0
+9400.0
  30
 0.0
- 40
-150.0
-  1
-6000
- 72
-1
  11
-13000.0
+7820.0
  21
-430.0
+9400.0
  31
 0.0
-100
-AcDbText
- 73
-1
   0
 LINE
   5
@@ -7473,15 +7411,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-10000.0
+7200.0
  20
-800.0
+10600.0
  30
 0.0
  11
-9260.0
+7820.0
  21
-800.0
+10600.0
  31
 0.0
   0
@@ -7497,15 +7435,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-10000.0
+7900.0
  20
-3600.0
+9400.0
  30
 0.0
  11
-9260.0
+7900.0
  21
-3600.0
+10600.0
  31
 0.0
   0
@@ -7521,15 +7459,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-9400.0
+7845.0
  20
-800.0
+9345.0
  30
 0.0
  11
-9400.0
+7955.0
  21
-3600.0
+9455.0
  31
 0.0
   0
@@ -7545,19 +7483,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-9330.0
+7845.0
  20
-730.0
+10545.0
  30
 0.0
  11
-9470.0
+7955.0
  21
-870.0
+10655.0
  31
 0.0
   0
-LINE
+TEXT
   5
 E8
 330
@@ -7567,21 +7505,21 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-9330.0
+7990.0
  20
-3530.0
+10000.0
  30
 0.0
- 11
-9470.0
- 21
-3670.0
- 31
-0.0
+ 40
+135.0
+  1
+1200
+100
+AcDbText
   0
-TEXT
+LINE
   5
 E9
 330
@@ -7591,19 +7529,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbText
+AcDbLine
  10
-9500.0
+7200.0
  20
-2200.0
+10600.0
  30
 0.0
- 40
-150.0
-  1
-2800
-100
-AcDbText
+ 11
+7820.0
+ 21
+10600.0
+ 31
+0.0
   0
 LINE
   5
@@ -7617,15 +7555,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-16000.0
+7200.0
  20
-800.0
+13000.0
  30
 0.0
  11
-16460.0
+7820.0
  21
-800.0
+13000.0
  31
 0.0
   0
@@ -7641,15 +7579,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-16000.0
+7900.0
  20
-3480.0
+10600.0
  30
 0.0
  11
-16460.0
+7900.0
  21
-3480.0
+13000.0
  31
 0.0
   0
@@ -7665,15 +7603,15 @@ DIMENSIONS
 100
 AcDbLine
  10
-16600.0
+7845.0
  20
-800.0
+10545.0
  30
 0.0
  11
-16600.0
+7955.0
  21
-3480.0
+10655.0
  31
 0.0
   0
@@ -7689,19 +7627,19 @@ DIMENSIONS
 100
 AcDbLine
  10
-16530.0
+7845.0
  20
-730.0
+12945.0
  30
 0.0
  11
-16670.0
+7955.0
  21
-870.0
+13055.0
  31
 0.0
   0
-LINE
+TEXT
   5
 EE
 330
@@ -7711,19 +7649,19 @@ AcDbEntity
   8
 DIMENSIONS
 100
-AcDbLine
+AcDbText
  10
-16530.0
+7990.0
  20
-3410.0
+11800.0
  30
 0.0
- 11
-16670.0
- 21
-3550.0
- 31
-0.0
+ 40
+135.0
+  1
+2400
+100
+AcDbText
   0
 TEXT
   5
@@ -7733,19 +7671,19 @@ EF
 100
 AcDbEntity
   8
-DIMENSIONS
+TEXT
 100
 AcDbText
  10
-16700.0
+0.0
  20
-2140.0
+5550.0
  30
 0.0
  40
-150.0
+155.0
   1
-2680
+Grid circles indicate conceptual columns at x = 0 / 2400 / 4800 / 7200.
 100
 AcDbText
   0
@@ -7757,19 +7695,19 @@ F0
 100
 AcDbEntity
   8
-TEXT
+WARNING
 100
 AcDbText
  10
-10250.0
+0.0
  20
-3900.0
+5310.0
  30
 0.0
  40
-150.0
+155.0
   1
-HIGH +2800
+Opening dimensions and locations are illustrative and subject to confirmation.
 100
 AcDbText
   0
@@ -7785,19 +7723,19 @@ TEXT
 100
 AcDbText
  10
-14050.0
+0.0
  20
-3750.0
+4800.0
  30
 0.0
  40
-150.0
+235.0
   1
-LOW +2680
+2. 7200 LONG WALL ELEVATION
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 F2
 330
@@ -7805,23 +7743,31 @@ F2
 100
 AcDbEntity
   8
-TEXT
+OUTLINE
 100
-AcDbText
+AcDbPolyline
+ 90
+4
+ 70
+1
  10
-10000.0
- 20
--100.0
- 30
 0.0
- 40
-150.0
-  1
-120 fall over 6000 = 2%; drainage design TBD.
-100
-AcDbText
+ 20
+1600.0
+ 10
+7200.0
+ 20
+1600.0
+ 10
+7200.0
+ 20
+4400.0
+ 10
+0.0
+ 20
+4400.0
   0
-TEXT
+LINE
   5
 F3
 330
@@ -7829,23 +7775,23 @@ F3
 100
 AcDbEntity
   8
-WARNING
+GRID
 100
-AcDbText
+AcDbLine
  10
-10000.0
+2400.0
  20
-6000.0
+1600.0
  30
 0.0
- 40
-190.0
-  1
-Frame spacing is illustrative; loads, site and applicable codes govern final design.
-100
-AcDbText
+ 11
+2400.0
+ 21
+4400.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 F4
 330
@@ -7853,23 +7799,23 @@ F4
 100
 AcDbEntity
   8
-WARNING
+GRID
 100
-AcDbText
+AcDbLine
  10
-10000.0
+4800.0
  20
-5700.0
+1600.0
  30
 0.0
- 40
-190.0
-  1
-Foundation, anchors, roof build-up, bracing and wall openings require engineering.
-100
-AcDbText
+ 11
+4800.0
+ 21
+4400.0
+ 31
+0.0
   0
-TEXT
+LWPOLYLINE
   5
 F5
 330
@@ -7877,23 +7823,31 @@ F5
 100
 AcDbEntity
   8
-TEXT
+OPENINGS
 100
-AcDbText
+AcDbPolyline
+ 90
+4
+ 70
+1
  10
-10000.0
+1050.0
  20
-5400.0
- 30
-0.0
- 40
-190.0
-  1
-Dimensioned geometry at 1:1 in model space. Confirm print scale in CAD.
-100
-AcDbText
+1600.0
+ 10
+1950.0
+ 20
+1600.0
+ 10
+1950.0
+ 20
+3700.0
+ 10
+1050.0
+ 20
+3700.0
   0
-TEXT
+LWPOLYLINE
   5
 F6
 330
@@ -7901,23 +7855,31 @@ F6
 100
 AcDbEntity
   8
-WARNING
+OPENINGS
 100
-AcDbText
+AcDbPolyline
+ 90
+4
+ 70
+1
  10
-10000.0
+3150.0
  20
-5100.0
- 30
-0.0
- 40
-170.0
-  1
-MATERIAL CANDIDATES - SUBJECT TO STRUCTURAL DESIGN:
-100
-AcDbText
+2500.0
+ 10
+4350.0
+ 20
+2500.0
+ 10
+4350.0
+ 20
+3700.0
+ 10
+3150.0
+ 20
+3700.0
   0
-TEXT
+LINE
   5
 F7
 330
@@ -7925,21 +7887,21 @@ F7
 100
 AcDbEntity
   8
-TEXT
+OPENINGS
 100
-AcDbText
+AcDbLine
  10
-10000.0
+3150.0
  20
-4850.0
+3100.0
  30
 0.0
- 40
-170.0
-  1
-PRIMARY BEAMS AND COLUMNS: Q355B STEEL.
-100
-AcDbText
+ 11
+4350.0
+ 21
+3100.0
+ 31
+0.0
   0
 TEXT
   5
@@ -7949,19 +7911,1529 @@ F8
 100
 AcDbEntity
   8
+OPENINGS
+100
+AcDbText
+ 10
+900.0
+ 20
+3850.0
+ 30
+0.0
+ 40
+130.0
+  1
+D1 900 x 2100
+100
+AcDbText
+  0
+TEXT
+  5
+F9
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbText
+ 10
+3000.0
+ 20
+3850.0
+ 30
+0.0
+ 40
+130.0
+  1
+W1 1200 x 1200
+100
+AcDbText
+  0
+LINE
+  5
+FA
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+0.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+0.0
+ 21
+1180.0
+ 31
+0.0
+  0
+LINE
+  5
+FB
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+7200.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+7200.0
+ 21
+1180.0
+ 31
+0.0
+  0
+LINE
+  5
+FC
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+0.0
+ 20
+1100.0
+ 30
+0.0
+ 11
+7200.0
+ 21
+1100.0
+ 31
+0.0
+  0
+LINE
+  5
+FD
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+-55.0
+ 20
+1045.0
+ 30
+0.0
+ 11
+55.0
+ 21
+1155.0
+ 31
+0.0
+  0
+LINE
+  5
+FE
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+7145.0
+ 20
+1045.0
+ 30
+0.0
+ 11
+7255.0
+ 21
+1155.0
+ 31
+0.0
+  0
+TEXT
+  5
+FF
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbText
+ 10
+3600.0
+ 20
+1170.0
+ 30
+0.0
+ 40
+135.0
+  1
+7200
+ 72
+1
+ 11
+3600.0
+ 21
+1170.0
+ 31
+0.0
+100
+AcDbText
+ 73
+1
+  0
+LINE
+  5
+100
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+0.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+-730.0
+ 21
+1600.0
+ 31
+0.0
+  0
+LINE
+  5
+101
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+0.0
+ 20
+4400.0
+ 30
+0.0
+ 11
+-730.0
+ 21
+4400.0
+ 31
+0.0
+  0
+LINE
+  5
+102
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+-650.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+-650.0
+ 21
+4400.0
+ 31
+0.0
+  0
+LINE
+  5
+103
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+-705.0
+ 20
+1545.0
+ 30
+0.0
+ 11
+-595.0
+ 21
+1655.0
+ 31
+0.0
+  0
+LINE
+  5
+104
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+-705.0
+ 20
+4345.0
+ 30
+0.0
+ 11
+-595.0
+ 21
+4455.0
+ 31
+0.0
+  0
+TEXT
+  5
+105
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbText
+ 10
+-560.0
+ 20
+3000.0
+ 30
+0.0
+ 40
+135.0
+  1
+2800
+100
+AcDbText
+  0
+TEXT
+  5
+106
+330
+17
+100
+AcDbEntity
+  8
 TEXT
 100
 AcDbText
  10
 10000.0
  20
-4600.0
+4800.0
  30
 0.0
  40
-170.0
+235.0
   1
-PURLINS AND WALL STUDS: Q235B OR Q355B STEEL.
+3. ADJOINING 6000 WALL ELEVATION
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+107
+330
+17
+100
+AcDbEntity
+  8
+OUTLINE
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 10
+10000.0
+ 20
+1600.0
+ 10
+16000.0
+ 20
+1600.0
+ 10
+16000.0
+ 20
+4400.0
+ 10
+10000.0
+ 20
+4400.0
+  0
+LWPOLYLINE
+  5
+108
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbPolyline
+ 90
+4
+ 70
+1
+ 10
+12400.0
+ 20
+2500.0
+ 10
+13600.0
+ 20
+2500.0
+ 10
+13600.0
+ 20
+3700.0
+ 10
+12400.0
+ 20
+3700.0
+  0
+LINE
+  5
+109
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbLine
+ 10
+12400.0
+ 20
+3100.0
+ 30
+0.0
+ 11
+13600.0
+ 21
+3100.0
+ 31
+0.0
+  0
+TEXT
+  5
+10A
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbText
+ 10
+12250.0
+ 20
+3850.0
+ 30
+0.0
+ 40
+130.0
+  1
+W2 1200 x 1200
+100
+AcDbText
+  0
+LINE
+  5
+10B
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+10000.0
+ 21
+1180.0
+ 31
+0.0
+  0
+LINE
+  5
+10C
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+16000.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+1180.0
+ 31
+0.0
+  0
+LINE
+  5
+10D
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+1100.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+1100.0
+ 31
+0.0
+  0
+LINE
+  5
+10E
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+9945.0
+ 20
+1045.0
+ 30
+0.0
+ 11
+10055.0
+ 21
+1155.0
+ 31
+0.0
+  0
+LINE
+  5
+10F
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+15945.0
+ 20
+1045.0
+ 30
+0.0
+ 11
+16055.0
+ 21
+1155.0
+ 31
+0.0
+  0
+TEXT
+  5
+110
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbText
+ 10
+13000.0
+ 20
+1170.0
+ 30
+0.0
+ 40
+135.0
+  1
+6000
+ 72
+1
+ 11
+13000.0
+ 21
+1170.0
+ 31
+0.0
+100
+AcDbText
+ 73
+1
+  0
+LINE
+  5
+111
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+9270.0
+ 21
+1600.0
+ 31
+0.0
+  0
+LINE
+  5
+112
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+4400.0
+ 30
+0.0
+ 11
+9270.0
+ 21
+4400.0
+ 31
+0.0
+  0
+LINE
+  5
+113
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+9350.0
+ 20
+1600.0
+ 30
+0.0
+ 11
+9350.0
+ 21
+4400.0
+ 31
+0.0
+  0
+LINE
+  5
+114
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+9295.0
+ 20
+1545.0
+ 30
+0.0
+ 11
+9405.0
+ 21
+1655.0
+ 31
+0.0
+  0
+LINE
+  5
+115
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+9295.0
+ 20
+4345.0
+ 30
+0.0
+ 11
+9405.0
+ 21
+4455.0
+ 31
+0.0
+  0
+TEXT
+  5
+116
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbText
+ 10
+9440.0
+ 20
+3000.0
+ 30
+0.0
+ 40
+135.0
+  1
+2800
+100
+AcDbText
+  0
+TEXT
+  5
+117
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+500.0
+ 30
+0.0
+ 40
+145.0
+  1
+Sill +900; head +2100; max roof +2800 from exterior ground.
+100
+AcDbText
+  0
+TEXT
+  5
+118
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+260.0
+ 30
+0.0
+ 40
+155.0
+  1
+7200 wall joins this elevation at its left edge (y = 0).
+100
+AcDbText
+  0
+TEXT
+  5
+119
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+12700.0
+ 30
+0.0
+ 40
+165.0
+  1
+PRIMARY BEAM / COLUMN CANDIDATE: Q355B STEEL; SECTIONS TBD.
+100
+AcDbText
+  0
+TEXT
+  5
+11A
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+12450.0
+ 30
+0.0
+ 40
+165.0
+  1
+PURLIN / WALL STUD CANDIDATES: Q235B OR Q355B; SECTIONS TBD.
+100
+AcDbText
+  0
+TEXT
+  5
+11B
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+12000.0
+ 30
+0.0
+ 40
+165.0
+  1
+RESIDENTIAL USE; ROOF SYSTEM AND MATERIAL LOADS TBD.
+100
+AcDbText
+  0
+TEXT
+  5
+11C
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+11750.0
+ 30
+0.0
+ 40
+165.0
+  1
+NO PV, AC UNIT OR WATER TANK CURRENTLY PLANNED.
+100
+AcDbText
+  0
+TEXT
+  5
+11D
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+11050.0
+ 30
+0.0
+ 40
+165.0
+  1
+ROOF ACCESS FOR MAINTENANCE ONLY; MAINTENANCE LOAD TBD.
+100
+AcDbText
+  0
+TEXT
+  5
+11E
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+10550.0
+ 30
+0.0
+ 40
+145.0
+  1
+CLEAR HEIGHT, ROOF BUILDUP, LOADS AND DETAILS TBD.
+100
+AcDbText
+  0
+TEXT
+  5
+11F
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+10800.0
+ 30
+0.0
+ 40
+165.0
+  1
+STRUCTURAL AND WATERPROOFING DESIGN REQUIRED.
+100
+AcDbText
+  0
+TEXT
+  5
+120
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+11400.0
+ 30
+0.0
+ 40
+165.0
+  1
+MODEL SPACE 1:1 IN mm. NO STRUCTURAL CALCULATION PROVIDED.
+100
+AcDbText
+  0
+TEXT
+  5
+121
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+10250.0
+ 30
+0.0
+ 40
+205.0
+  1
+4. HIDDEN ROOF FALL - SCHEMATIC / NOT TO SCALE
+100
+AcDbText
+  0
+TEXT
+  5
+122
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+10000.0
+ 20
+9980.0
+ 30
+0.0
+ 40
+145.0
+  1
+LEVEL EAVES +2800 MAX ABOVE EXTERIOR GROUND
+100
+AcDbText
+  0
+LINE
+  5
+123
+330
+17
+100
+AcDbEntity
+  8
+OUTLINE
+100
+AcDbLine
+ 10
+10000.0
+ 20
+9500.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+9500.0
+ 31
+0.0
+  0
+LINE
+  5
+124
+330
+17
+100
+AcDbEntity
+  8
+OUTLINE
+100
+AcDbLine
+ 10
+10000.0
+ 20
+9000.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+9000.0
+ 31
+0.0
+  0
+LINE
+  5
+125
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+9400.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+9170.0
+ 31
+0.0
+  0
+LINE
+  5
+126
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbLine
+ 10
+15400.0
+ 20
+9190.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+9170.0
+ 31
+0.0
+  0
+LINE
+  5
+127
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbLine
+ 10
+15700.0
+ 20
+9270.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+9170.0
+ 31
+0.0
+  0
+LINE
+  5
+128
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbLine
+ 10
+15700.0
+ 20
+9080.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+9170.0
+ 31
+0.0
+  0
+TEXT
+  5
+129
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbText
+ 10
+10300.0
+ 20
+9620.0
+ 30
+0.0
+ 40
+145.0
+  1
+WATERPROOF / DRAINAGE LAYER: 2% TOWARD DRAIN
+100
+AcDbText
+  0
+TEXT
+  5
+12A
+330
+17
+100
+AcDbEntity
+  8
+OPENINGS
+100
+AcDbText
+ 10
+16100.0
+ 20
+9110.0
+ 30
+0.0
+ 40
+145.0
+  1
+DRAIN
+100
+AcDbText
+  0
+TEXT
+  5
+12B
+330
+17
+100
+AcDbEntity
+  8
+TEXT
+100
+AcDbText
+ 10
+11500.0
+ 20
+8790.0
+ 30
+0.0
+ 40
+145.0
+  1
+LEVEL INTERIOR CEILING
+100
+AcDbText
+  0
+LINE
+  5
+12C
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+9000.0
+ 30
+0.0
+ 11
+10000.0
+ 21
+8500.0
+ 31
+0.0
+  0
+LINE
+  5
+12D
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+16000.0
+ 20
+9000.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+8500.0
+ 31
+0.0
+  0
+LINE
+  5
+12E
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+10000.0
+ 20
+8420.0
+ 30
+0.0
+ 11
+16000.0
+ 21
+8420.0
+ 31
+0.0
+  0
+LINE
+  5
+12F
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+9945.0
+ 20
+8365.0
+ 30
+0.0
+ 11
+10055.0
+ 21
+8475.0
+ 31
+0.0
+  0
+LINE
+  5
+130
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbLine
+ 10
+15945.0
+ 20
+8365.0
+ 30
+0.0
+ 11
+16055.0
+ 21
+8475.0
+ 31
+0.0
+  0
+TEXT
+  5
+131
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbText
+ 10
+13000.0
+ 20
+8490.0
+ 30
+0.0
+ 40
+135.0
+  1
+Y = 6000; NOMINAL FALL = 120
+ 72
+1
+ 11
+13000.0
+ 21
+8490.0
+ 31
+0.0
+100
+AcDbText
+ 73
+1
+  0
+TEXT
+  5
+132
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+7950.0
+ 30
+0.0
+ 40
+145.0
+  1
+2% MINIMUM FOR ORDINARY FLAT ROOF WATERPROOFING;
+100
+AcDbText
+  0
+TEXT
+  5
+133
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+7720.0
+ 30
+0.0
+ 40
+145.0
+  1
+METAL ROOF SYSTEMS MAY REQUIRE A GREATER SLOPE.
+100
+AcDbText
+  0
+TEXT
+  5
+134
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+7440.0
+ 30
+0.0
+ 40
+145.0
+  1
+LAYER THICKNESS, LEVELS AND DRAIN DETAIL ARE ILLUSTRATIVE;
+100
+AcDbText
+  0
+TEXT
+  5
+135
+330
+17
+100
+AcDbEntity
+  8
+WARNING
+100
+AcDbText
+ 10
+10000.0
+ 20
+7210.0
+ 30
+0.0
+ 40
+145.0
+  1
+FINAL DETAILS REQUIRE STRUCTURAL AND WATERPROOFING DESIGN.
 100
 AcDbText
   0
@@ -9055,7 +10527,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-FB
+138
   0
 DICTIONARYVAR
   5
@@ -9067,7 +10539,7 @@ DictionaryVariables
 280
 0
   1
-1.4.2 @ 2026-11-05T01:25:48.632586+00:00
+1.4.2 @ 2026-11-05T02:15:54.466704+00:00
   0
 VISUALSTYLE
   5
@@ -9771,7 +11243,7 @@ X-Ray
   0
 DICTIONARYVAR
   5
-FB
+138
 330
 2D
 100
@@ -9779,7 +11251,7 @@ DictionaryVariables
 280
 0
   1
-1.4.2 @ 2026-11-05T01:25:48.637812+00:00
+1.4.2 @ 2026-11-05T02:15:54.480052+00:00
   0
 ENDSEC
   0

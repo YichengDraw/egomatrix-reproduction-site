@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" role="img" aria-label="Floor framing and soil support: feasibility unresolved">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="50.0" y="45.0" font-family="Arial,sans-serif" font-size="18.0" fill="#a83222">FLOOR AND GROUND SUPPORT / FEASIBILITY UNVERIFIED</text>
+<text x="50.0" y="82.0" font-family="Arial,sans-serif" font-size="13.0" fill="#14221b">Requested: direct placement on soil; pads, ballast and anchors are restricted.</text>
+<text x="50.0" y="114.0" font-family="Arial,sans-serif" font-size="13.0" fill="#14221b">118 numbered members cover UPPER STRUCTURE ONLY; floor framing is excluded.</text>
+<line x1="100.0" y1="510.0" x2="820.0" y2="510.0" stroke="#a8b0aa" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="820.0" y1="510.0" x2="820.0" y2="230.0" stroke="#a8b0aa" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="820.0" y1="230.0" x2="100.0" y2="230.0" stroke="#a8b0aa" stroke-width="1" stroke-dasharray="5 4"/>
+<line x1="100.0" y1="230.0" x2="100.0" y2="510.0" stroke="#a8b0aa" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="140.0" y="275.0" font-family="Arial,sans-serif" font-size="12.0" fill="#14221b">7200 x 6000 EXTERIOR ENVELOPE - PLAN NOT TO SCALE</text>
+<text x="140.0" y="335.0" font-family="Arial,sans-serif" font-size="13.0" fill="#a83222">FLOOR DECK, JOISTS AND BOTTOM BEAMS: NOT DESIGNED</text>
+<text x="140.0" y="385.0" font-family="Arial,sans-serif" font-size="12.0" fill="#14221b">SUPPORT / SOIL CONTACT LOCATIONS AND AREAS: UNRESOLVED</text>
+<text x="140.0" y="435.0" font-family="Arial,sans-serif" font-size="12.0" fill="#14221b">COLUMN-TO-BASE LOAD TRANSFER / UPLIFT RESTRAINT: UNRESOLVED</text>
+<text x="50.0" y="558.0" font-family="Arial,sans-serif" font-size="13.0" fill="#14221b">SITE CHECKS: bearing, settlement, wind uplift, sliding and overturning.</text>
+<text x="50.0" y="597.0" font-family="Arial,sans-serif" font-size="13.0" fill="#14221b">Maximum roof height remains 2800 above outdoor ground.</text>
+<text x="50.0" y="632.0" font-family="Arial,sans-serif" font-size="13.0" fill="#14221b">Raised floor and roof build-up consume this height; interior clear height TBD.</text>
+<text x="50.0" y="685.0" font-family="Arial,sans-serif" font-size="13.0" fill="#a83222">FINAL PIPE SECTIONS AND CUT LENGTHS ON HOLD PENDING COMPLETE DESIGN.</text>
+</svg>

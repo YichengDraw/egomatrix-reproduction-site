@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 561" role="img" aria-label="West wall coordination diagram">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="77.71739130434783" y="38.26086956521739" font-family="Arial,sans-serif" font-size="20.32608695652174" fill="#14221b">WEST WALL / SYMBOLIC VERTICAL SCALE</text>
+<text x="77.71739130434783" y="71.73913043478261" font-family="Arial,sans-serif" font-size="13.152173913043478" fill="#14221b">H = wall framing top above finished floor; H and column ends TBD.</text>
+<text x="77.71739130434783" y="96.84782608695653" font-family="Arial,sans-serif" font-size="12.554347826086957" fill="#14221b">600 grid is a draft panel module; final spacing requires panel and wind design.</text>
+<line x1="95.65217391304348" y1="460.32608695652175" x2="95.65217391304348" y2="149.45652173913044" stroke="#a8b0aa" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="100.43478260869566" y="135.1086956521739" font-family="Arial,sans-serif" font-size="9.565217391304348" fill="#a8b0aa">Z01 ref</text>
+<line x1="813.0434782608696" y1="460.32608695652175" x2="813.0434782608696" y2="149.45652173913044" stroke="#a8b0aa" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="817.8260869565217" y="135.1086956521739" font-family="Arial,sans-serif" font-size="9.565217391304348" fill="#a8b0aa">Z02 ref</text>
+<line x1="95.65217391304348" y1="149.45652173913044" x2="382.60869565217394" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="227.17391304347828" y="143.47826086956522" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W01</text>
+<line x1="382.60869565217394" y1="149.45652173913044" x2="669.5652173913044" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="514.1304347826087" y="143.47826086956522" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W02</text>
+<line x1="669.5652173913044" y1="149.45652173913044" x2="813.0434782608696" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="729.3478260869565" y="143.47826086956522" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W03</text>
+<line x1="95.65217391304348" y1="460.32608695652175" x2="382.60869565217394" y2="460.32608695652175" stroke="#057e94" stroke-width="2"/>
+<text x="227.17391304347828" y="481.84782608695656" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W04</text>
+<line x1="382.60869565217394" y1="460.32608695652175" x2="669.5652173913044" y2="460.32608695652175" stroke="#057e94" stroke-width="2"/>
+<text x="514.1304347826087" y="481.84782608695656" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W05</text>
+<line x1="669.5652173913044" y1="460.32608695652175" x2="813.0434782608696" y2="460.32608695652175" stroke="#057e94" stroke-width="2"/>
+<text x="729.3478260869565" y="481.84782608695656" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W06</text>
+<line x1="167.3913043478261" y1="460.32608695652175" x2="167.3913043478261" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="171.57608695652175" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W07</text>
+<line x1="239.13043478260872" y1="460.32608695652175" x2="239.13043478260872" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="243.31521739130434" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W08</text>
+<line x1="310.8695652173913" y1="460.32608695652175" x2="310.8695652173913" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="315.05434782608694" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W09</text>
+<line x1="382.60869565217394" y1="460.32608695652175" x2="382.60869565217394" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="386.79347826086956" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W10</text>
+<line x1="454.34782608695656" y1="460.32608695652175" x2="454.34782608695656" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="458.5326086956522" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W11</text>
+<line x1="526.0869565217391" y1="460.32608695652175" x2="526.0869565217391" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="530.2717391304348" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W12</text>
+<line x1="597.8260869565217" y1="460.32608695652175" x2="597.8260869565217" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="602.0108695652174" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W13</text>
+<line x1="669.5652173913044" y1="460.32608695652175" x2="669.5652173913044" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="673.75" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W14</text>
+<line x1="741.304347826087" y1="460.32608695652175" x2="741.304347826087" y2="149.45652173913044" stroke="#057e94" stroke-width="2"/>
+<text x="745.4891304347826" y="298.9130434782609" font-family="Arial,sans-serif" font-size="10.16304347826087" fill="#14221b">W15</text>
+<line x1="95.65217391304348" y1="526.0869565217391" x2="813.0434782608696" y2="526.0869565217391" stroke="#8e5c19" stroke-width="1"/>
+<line x1="90.86956521739131" y1="530.8695652173914" x2="100.43478260869566" y2="521.304347826087" stroke="#8e5c19" stroke-width="1"/>
+<line x1="808.2608695652174" y1="530.8695652173914" x2="817.8260869565217" y2="521.304347826087" stroke="#8e5c19" stroke-width="1"/>
+<text x="385.59782608695656" y="515.3260869565217" font-family="Arial,sans-serif" font-size="10.760869565217392" fill="#8e5c19">6000 EXTERIOR REFERENCE</text>
+<text x="77.71739130434783" y="550.0" font-family="Arial,sans-serif" font-size="11.956521739130435" fill="#14221b">FFL z=0; sill z=900; opening head z=2100. Outdoor-to-FFL level TBD.</text>
+<text x="834.5652173913044" y="304.8913043478261" font-family="Arial,sans-serif" font-size="17.934782608695652" fill="#8e5c19">H</text>
+</svg>

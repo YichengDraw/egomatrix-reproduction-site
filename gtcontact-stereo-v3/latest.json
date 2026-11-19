@@ -1,5 +1,5 @@
 {
-  "round": "V3-F",
+  "round": "V3-D-wrist-range",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -21,7 +21,8 @@
     "V3-E-friction-positive",
     "V3-D-feedback-frozen-mass",
     "V3-D-budget-16",
-    "V3-F"
+    "V3-F",
+    "V3-D-wrist-range"
   ],
-  "manifest_sha256": "553b01142a782d13ec7fd90eda2a403c460d0600917b539160fbf157528cd359"
+  "manifest_sha256": "b0289ac1d9f5a5e815f1544f424acafdf9d08ccf36447dcf151ba9e34d77d8ad"
 }

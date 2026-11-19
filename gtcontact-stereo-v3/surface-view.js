@@ -29,7 +29,7 @@
     const media = row.media;
     const filename = ref => ref.split('/').pop();
     const sources = {source: filename(media.source)};
-    if (media.actual || media.baseline) sources.robot = row.robot+'_'+row.side+'.json.gz';
+    if (media.actual || media.baseline) sources.robot = row.surface_model || row.robot+'_'+row.side+'.json.gz';
     if (media.actual) sources.actual = filename(media.actual);
     if (media.baseline) sources.baseline = filename(media.baseline);
     const loaded = {};

@@ -23,7 +23,7 @@ function renderContactTraces(doc, frame, row) {
             const label=document.createElement('strong');label.textContent=title;
             const span=document.createElement('span');span.textContent=units;caption.append(label,span);
             const canvas=document.createElement('canvas');canvas.width=850;canvas.height=70;
-            const series=frames.map(measure),values=series.flat().filter(Number.isFinite);
+            const series=frames.map(f=>measure(normalizedTraceFrame(f))),values=series.flat().filter(Number.isFinite);
             const low=Math.min(0,...values),high=Math.max(low+.00001,...values);
             const ctx=canvas.getContext('2d');ctx.clearRect(0,0,850,70);
             const end=frames.at(-1).time_s || .001;
@@ -51,4 +51,18 @@ function renderContactTraces(doc, frame, row) {
     document.getElementById('traceValues').textContent=JSON.stringify(display,null,2);
     document.getElementById('traceClock').textContent=current.time_s.toFixed(3)+' s · 源帧 '+current.source_frame+
         ' · '+(current.support?.phase || '')+' · S '+lab(row.S)+' / C '+lab(row.C)+' / J '+lab(row.J);
+}
+
+function normalizedTraceFrame(f) {
+    if (!Object.keys(f.full_gt || {}).some(k=>['left','right'].includes(k)) &&
+        !Object.keys(f.selected || {}).some(k=>['left','right'].includes(k))) return f;
+    const flatten = x=>Object.fromEntries(Object.entries(x || {}).flatMap(([side,y])=>Object.entries(y).map(([k,v])=>[side+'/'+k,v])));
+    const errors=Object.values(f.errors || {});
+    const mean=k=>{const x=errors.filter(z=>Number.isFinite(z[k]));return x.length?x.reduce((a,z)=>a+z[k],0)/x.length:null;};
+    const force={};['correct_Ns','wrong_Ns','gt_unknown_Ns','measurement_unmapped_Ns'].forEach((k,i)=>{
+        force[k]=Object.values(f.force || {}).reduce((a,z)=>a+(z[i]||0),0);
+    });
+    return {...f,full_gt:flatten(f.full_gt),selected:flatten(f.selected),errors:{ideal_mm:mean('ideal_mm'),actual_mm:mean('actual_mm')},
+        force,task:{...f.task,actual_displacement_from_start_m:f.task?.actual_displacement_m,
+        source_displacement_from_start_m:f.task?.target_displacement_m}};
 }

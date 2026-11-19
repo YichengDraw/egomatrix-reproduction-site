@@ -63,7 +63,7 @@ function draw(){
  const top=marks.reduce((m,v)=>!m||m[3]<v[3]?v:m,null);$('witness').textContent=top?'此帧最大受力点 '+top[3]+' N · '+top[5]+' · 实际手面 '+(top[6]?.join(', ')||'未知')+' · 最近相容源手面 '+(top[7]?.join(', ')||'未知')+'。绿色为双位置容差内，红色为偏离，黄色为源参考未知，黑色为映射缺失。':'此帧没有已记录的正向受力点。';
  paintGraphs(k,marks,top);$('frame').value=k;$('clock').textContent=data.t[k].toFixed(3)+' 秒'+(data.source?.ids?' · 源帧 '+data.source.ids[k]:'');
 }
-function stereoTime(k){return row.sourceVideoFPS&&data.source?.ids ? data.source.ids[k]/row.sourceVideoFPS : data.t[k]}
+function stereoTime(k){return row.sourceVideoFPS&&data.source?.ids ? (data.source.ids[k]-(row.sourceVideoFirstFrame||0))/row.sourceVideoFPS : data.t[k]}
 function sync(k,video=true){frame=Math.max(0,Math.min(data.t.length-1,k));draw();if(video&&row.stereo&&!playing&&Number.isFinite($('stereo').duration))$('stereo').currentTime=stereoTime(frame)}
 function tick(t){if(!playing||!data)return;const time=(t-clocktime)/1000;while(frame+1<data.t.length&&data.t[frame+1]<=time)frame++;draw();if(frame+1==data.t.length){stop();return}requestAnimationFrame(tick)}
 function stop(){playing=false;$('play').textContent='播放';$('stereo').pause()}
@@ -91,7 +91,9 @@ async function init(){
  try{doc=await get(new URL('rounds/'+r+'/manifest.json.gz',base),true)}catch(e){doc=await get(new URL('rounds/'+r+'/manifest.json',base))};rows=doc.rows;$('heading').textContent=r+' · '+doc.title;$('intro').replaceChildren();if(doc.cohort){const c=doc.cohort;add('p',(c.registered_source_parents||c.parents)+' 个父录制'+(c.applicable_source_parents!=null?'，其中 '+c.applicable_source_parents+' 个可操作':'')+'。详细表含 '+c.registered_replay_or_unavailable_rows+' 条按方法、种子和步长登记的记录，'+c.native_records+' 条有原生回放回执。',$('intro'))}for(const p of doc.summary)add('p',p,$('intro'));
  if(r==='R6'){const v=add('p','原登记中四条降低支撑面的回放在运行时移动了静态几何。更正版先从 XML 重新编译碰撞模型，再执行相同条件。',$('intro'));if(list.rounds.includes('R6-correction')){const l=add('a','查看更正和追加放置结果',v);l.href=new URL('rounds/R6-correction/',base)}}
  if(r==='R1'&&list.rounds.includes('R1-followup')){const p=add('p','原登记之外的放置修复另表报告。',$('intro'));add('a','查看追加放置回放',p).href=new URL('rounds/R1-followup/',base)}
- const applicable=rows.filter(x=>x.score && Object.hasOwn(x.score,'J_validated'));if(applicable.length){const m=document.createElement('table'),h=m.createTHead().insertRow();for(const t of ['指标','通过','失败','未知','有该项判定的记录'])add('th',t,h);
+ const observational=rows.filter(x=>x.status==='not_applicable_observation');
+ if(observational.length)add('p',new Set(observational.map(x=>x.episode)).size+' 个预登记观察场景单列，操作任务汇总不含这些场景。',$('intro'));
+ const applicable=rows.filter(x=>x.status!=='not_applicable_observation'&&x.score&&Object.hasOwn(x.score,'J_validated'));if(applicable.length){const m=document.createElement('table'),h=m.createTHead().insertRow();for(const t of ['指标','通过','失败','未知','有该项判定的记录'])add('th',t,h);
  for(const [k,label] of [['S_behavior','任务行为'],['Q_phys','运行物理'],['Q_geom','场景几何'],['C_native','原生接触'],['J_validated','联合验证']]){const vals=applicable.filter(x=>Object.hasOwn(x.score,k)).map(x=>x.score[k]),tr=m.insertRow();for(const v of [label,vals.filter(x=>x===true).length,vals.filter(x=>x===false).length,vals.filter(x=>x===null).length,vals.length])add('td',v,tr)}$('intro').append(m)}$('download').href=currentfile();
  get(new URL('extra-evidence.json',base)).then(extra=>{for(const item of extra[r]||[]){const a=add('a',item.label,$('intro'));a.href=new URL(item.path,base);$('intro').append('　')}}).catch(()=>{});
  $('search').oninput=()=>{pageNumber=0;table()};if($('paging')){$('prevpage').onclick=()=>{pageNumber--;table()};$('nextpage').onclick=()=>{pageNumber++;table()}};const preferred=rows.find(x=>x.id===q.get('row'))||rows.find(x=>x.media)||rows[0];if(preferred)await show(preferred)

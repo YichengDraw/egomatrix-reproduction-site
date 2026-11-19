@@ -1,5 +1,5 @@
 {
-  "round": "V3-D-budget-16",
+  "round": "V3-F",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -20,7 +20,8 @@
     "V3-D-final-development",
     "V3-E-friction-positive",
     "V3-D-feedback-frozen-mass",
-    "V3-D-budget-16"
+    "V3-D-budget-16",
+    "V3-F"
   ],
-  "manifest_sha256": "879c9a1cff960cc6666251ff9b88554c9b0c130fc6ce36bc49803ea24a639df0"
+  "manifest_sha256": "553b01142a782d13ec7fd90eda2a403c460d0600917b539160fbf157528cd359"
 }

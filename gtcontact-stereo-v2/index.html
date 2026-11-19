@@ -5,7 +5,7 @@
 <p>输入采用 HOT3D 人手真值。物体从片段首帧开始自由运动。S 表示任务与基本物理要求通过，C 表示同一次碰撞在物体和手面上的位置均达标，J 表示两项同时通过。</p>
 <h2 id="roundTitle"></h2><p id="scope"></p><div class="scroll"><table id="summary"></table></div>
 <p><a id="coverage">全部登记来源与覆盖原因</a> · <a id="changes">配对救回与损害表</a> · <a id="cost">本轮计算成本</a></p><h2>逐条回放</h2><div class="flex"><label>设备 <select id="device"></select></label><label>机器手 <select id="robot"></select></label><label>方法 <select id="method"></select></label><label>积分步长 <select id="dt"></select></label></div><div class="scroll"><table id="rows"></table></div>
-<h2 id="caseTitle"></h2><p id="details"></p><p class="message" id="error" role="status"></p>
+<h2 id="caseTitle"></h2><p id="details"></p><details id="more"><summary>查看本条评分与容差曲线</summary><pre style="white-space:pre-wrap;max-height:250px;overflow:auto" id="metrics"></pre></details><p class="message" id="error" role="status"></p>
 <section id="player" hidden><div class="panels"><figure><figcaption>人手与物体真值</figcaption><canvas id="gt"></canvas></figure><figure><figcaption>直接执行 · B0</figcaption><canvas id="baseline"></canvas></figure><figure><figcaption>所选方法实际回放</figcaption><canvas id="actual"></canvas></figure></div><p><small>拖动旋转三维视角。蓝色为手，橙色为物体，红点为实际受力接触，绿色为真值几何推导的接触目标。</small></p>
 <div class="flex"><button id="play">播放</button><input id="frame" type="range" min="0" value="0"><output id="clock"></output></div>
 <h2>同步双目输入</h2><video id="stereo" class="video" muted playsinline preload="metadata"></video>

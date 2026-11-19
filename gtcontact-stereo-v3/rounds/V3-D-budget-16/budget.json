@@ -1,0 +1,34 @@
+{
+  "fa2cfa35564deac2d7f7e899065d70ae96d57438f7e53a55bfb136c04cdc9d92": {
+    "generation_steps": 414,
+    "wall_s": 10.913613538257778
+  },
+  "129975751224ef203d122ff98dd8ae7ea8867d90d3a52b3eeaeea25ade3f1ca5": {
+    "generation_steps": 194436,
+    "wall_s": 9.658142865635455
+  },
+  "4689563126236cf3318de8b6c8e956baed0273c272eefbc6f5f909fb76404ef5": {
+    "generation_steps": 575364,
+    "wall_s": 6.455658111721277
+  },
+  "63e75ecae5286566d4e92c3e7422a2a1c919b37702a35b781c6dd8ab8ae09b39": {
+    "generation_steps": 1527684,
+    "wall_s": 6.707065921276808
+  },
+  "0438d6d0d0499d41b2d540e052d7da62297b6d6476bdc9da82306ac4151f5edf": {
+    "generation_steps": 574,
+    "wall_s": 6.5675069922581315
+  },
+  "4bcd19772048eaa03958643ffb61fc470f12c41baf74c9e63364ac053690821e": {
+    "generation_steps": 263508,
+    "wall_s": 8.342163294553757
+  },
+  "368ef54933cee516a27a2be54e3118b55d33481b8c1f2565535bbef7c530d4b8": {
+    "generation_steps": 779604,
+    "wall_s": 5.9297987492755055
+  },
+  "efbcd2be4357cb66b0b769746140c8bbaa5f30750d18078af0737475852b4fa9": {
+    "generation_steps": 2069844,
+    "wall_s": 5.851937564089894
+  }
+}

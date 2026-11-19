@@ -1,0 +1,6626 @@
+{
+  "clip-002778/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002778/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002340/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003297/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 3,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002160/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002364/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 4,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 4,
+      "known": 4,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003329/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002889/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002103/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": null,
+      "hypotheses": 2,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 5,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 5,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000900/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 5,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 5,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 5,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000373/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 5,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001052/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000726/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001127/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 5,
+      "known": 5,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000570/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001039/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-000751/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 2,
+      "known": 2,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001134/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 3,
+      "known": 3,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 1,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-003033/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002441/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002749/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-002519/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001191/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/sharpa/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/sharpa/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/sharpa/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/shadow/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/shadow/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/shadow/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/inspire/B2/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 1,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/inspire/B3/fixed_actions": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 1,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "clip-001193/inspire/B3/frozen_feedback": {
+    "S": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "C": {
+      "nominal": null,
+      "hypotheses": 1,
+      "known": 0,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    },
+    "J": {
+      "nominal": false,
+      "hypotheses": 1,
+      "known": 1,
+      "mean_lower": 0.0,
+      "range_lower": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

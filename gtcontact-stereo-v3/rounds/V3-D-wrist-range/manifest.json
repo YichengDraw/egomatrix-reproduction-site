@@ -1,0 +1,130 @@
+{
+  "round": "V3-D-wrist-range",
+  "downloads": {
+    "两种腕范围的受力、穿透与跟踪偏差": "wrist_comparison.json",
+    "六个开发录制的腕限幅记录及选例规则": "development_selection.json"
+  },
+  "scope": "开发诊断。固定 Inspire 右手、压泥器与盘的原场景和初态，比较 30 毫米/20 度与 60 毫米/40 度的腕位姿补偿上限。两组均未通过任务和接触。",
+  "rows": [
+    {
+      "episode": "clip-001976",
+      "robot": "inspire",
+      "side": "right",
+      "source": "P0002_016222d1",
+      "device": "Aria",
+      "method": "B2",
+      "variant": "腕补偿 30 mm / 20°",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "seed": 1009,
+      "source_frames": [
+        0,
+        149
+      ],
+      "task_type": "pose_surrogate",
+      "object": "potato_masher",
+      "task_scope": "approximate_tool_subtask",
+      "reason": "object_progress_or_target_failed",
+      "control_id": "cb90854ce8bdca351a08701ffad4184390621f658dd96fe097821dbe16660844",
+      "eligible": true,
+      "status": "complete",
+      "S": false,
+      "C": false,
+      "J": false,
+      "score_record": "d7a29183afe8620c.json.gz",
+      "mass_factor": 1.0,
+      "friction_factor": 1.0,
+      "target_friction": null,
+      "eval_id": "GTS-native-v3.2",
+      "scene_sha256": "d75723c4fc62c87793f305c5e13b6a42dc92256e179f5cf8d56a7a5cf1226e9b",
+      "initial_state_id": "87d28b0ce606d1049d897684b46ef3f6ee258b30ba5993b6b03ea846c1bf9590",
+      "product": "fixed_actions",
+      "media": {
+        "source": "../../media/clip-001976-native.json.gz",
+        "stereo": "../../../gtcontact-stereo-v2/media/clip-001976.mp4",
+        "actual": "../../media/native-f782b3e6d27e93fad11f66f070.json.gz",
+        "baseline": "../../media/native-f782b3e6d27e93fad11f66f070.json.gz"
+      },
+      "surface_model": "native-inspire-right-solo.json.gz",
+      "timeline": "timelines/d7a29183afe8620c.json.gz",
+      "world": "../../media/clip-001976-world.json.gz",
+      "hypothesis": "nominal",
+      "baseline_label": "B2 · contact · 固定动作"
+    },
+    {
+      "episode": "clip-001976",
+      "robot": "inspire",
+      "side": "right",
+      "source": "P0002_016222d1",
+      "device": "Aria",
+      "method": "B2",
+      "variant": "腕补偿 60 mm / 40°",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "seed": 1009,
+      "source_frames": [
+        0,
+        149
+      ],
+      "task_type": "pose_surrogate",
+      "object": "potato_masher",
+      "task_scope": "approximate_tool_subtask",
+      "reason": "object_progress_or_target_failed",
+      "control_id": "89328600efe45678f2d62ca60356f2dd842b60f0a41479233e088374d6b8b965",
+      "eligible": true,
+      "status": "complete",
+      "S": false,
+      "C": false,
+      "J": false,
+      "score_record": "649bb8b054ec2a23.json.gz",
+      "mass_factor": 1.0,
+      "friction_factor": 1.0,
+      "target_friction": null,
+      "eval_id": "GTS-native-v3.2",
+      "scene_sha256": "d75723c4fc62c87793f305c5e13b6a42dc92256e179f5cf8d56a7a5cf1226e9b",
+      "initial_state_id": "87d28b0ce606d1049d897684b46ef3f6ee258b30ba5993b6b03ea846c1bf9590",
+      "product": "fixed_actions",
+      "media": {
+        "source": "../../media/clip-001976-native.json.gz",
+        "stereo": "../../../gtcontact-stereo-v2/media/clip-001976.mp4",
+        "actual": "../../media/native-f7054be2a4f74843066ef5b652.json.gz",
+        "baseline": "../../media/native-f782b3e6d27e93fad11f66f070.json.gz"
+      },
+      "surface_model": "native-inspire-right-solo.json.gz",
+      "timeline": "timelines/649bb8b054ec2a23.json.gz",
+      "world": "../../media/clip-001976-world.json.gz",
+      "hypothesis": "nominal",
+      "baseline_label": "B2 · contact · 固定动作"
+    }
+  ],
+  "summary": [
+    {
+      "device": "Aria",
+      "robot": "inspire",
+      "method": "B2 / 腕补偿 30 mm / 20°",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "product": "fixed_actions",
+      "N": 1,
+      "C_known": 1,
+      "S": 0,
+      "C": 0,
+      "J": 0
+    },
+    {
+      "device": "Aria",
+      "robot": "inspire",
+      "method": "B2 / 腕补偿 60 mm / 40°",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "product": "fixed_actions",
+      "N": 1,
+      "C_known": 1,
+      "S": 0,
+      "C": 0,
+      "J": 0
+    }
+  ],
+  "raw_rows": 2,
+  "source_recordings": 1
+}

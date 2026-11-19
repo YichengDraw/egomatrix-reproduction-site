@@ -1,0 +1,178 @@
+{
+  "episode": "clip-001976",
+  "robot": "inspire",
+  "original": {
+    "control_id": "cb90854ce8bdca351a08701ffad4184390621f658dd96fe097821dbe16660844",
+    "native_steps": 994,
+    "failure": null,
+    "score": {
+      "S": false,
+      "C": false,
+      "J": false,
+      "S_pose": false
+    },
+    "per_side": {
+      "right": {
+        "paired_support_recall": 0.0003953871022241758,
+        "impulses_Ns": {
+          "correct": 0.2389709589872179,
+          "wrong": 39.69607744457017,
+          "gt_unknown": 24.41622676018683,
+          "measurement_unmapped": 0.0
+        },
+        "first_correct_loaded_s": 0.0
+      }
+    },
+    "hold_coverage": null,
+    "physical": {
+      "error_m": 0.003588232423470743,
+      "physical_valid": true,
+      "physical_reasons": [],
+      "required_body_physics": {
+        "79582884925181": {
+          "valid": true,
+          "reasons": [],
+          "legacy_depth_added_steps": null,
+          "legacy_depth_pose_check_max_m": null,
+          "legacy_depth_peak_before_m": null,
+          "hardware_speed_ratio_peak": null,
+          "hardware_speed_excess_longest_s": null,
+          "penetration_threshold_m": 0.007176464846941486,
+          "penetration_max_m": 0.004329125533952782,
+          "speed_limit": "hardware_limit_unknown"
+        },
+        "248247003992116": {
+          "error_m": 0.0022315705638333836,
+          "penetration_threshold_m": 0.005,
+          "valid": true,
+          "reasons": [],
+          "penetration_max_m": 0.004329125533952782,
+          "longest_excess_s": 0.0
+        }
+      },
+      "penetration_threshold_m": 0.007176464846941486,
+      "S": false,
+      "C": false,
+      "J": false
+    },
+    "depth_peaks": {
+      "hand_object": 0.0036120281016131977,
+      "object_environment": 0.004329125533952782,
+      "hand_environment": 0.0,
+      "hand_self": 0.0010350149274707524,
+      "between_hands": 0.0
+    }
+  },
+  "wider": {
+    "control_id": "89328600efe45678f2d62ca60356f2dd842b60f0a41479233e088374d6b8b965",
+    "native_steps": 994,
+    "failure": null,
+    "score": {
+      "S": false,
+      "C": false,
+      "J": false,
+      "S_pose": false
+    },
+    "per_side": {
+      "right": {
+        "paired_support_recall": 0.0006585900356597927,
+        "impulses_Ns": {
+          "correct": 0.30871552788498774,
+          "wrong": 89.69653978906582,
+          "gt_unknown": 56.532111809095625,
+          "measurement_unmapped": 0.6954038259697023
+        },
+        "first_correct_loaded_s": 0.0
+      }
+    },
+    "hold_coverage": null,
+    "physical": {
+      "error_m": 0.003588232423470743,
+      "physical_valid": false,
+      "physical_reasons": [
+        "sustained_tool_partner_penetration"
+      ],
+      "required_body_physics": {
+        "79582884925181": {
+          "valid": true,
+          "reasons": [],
+          "legacy_depth_added_steps": null,
+          "legacy_depth_pose_check_max_m": null,
+          "legacy_depth_peak_before_m": null,
+          "hardware_speed_ratio_peak": null,
+          "hardware_speed_excess_longest_s": null,
+          "penetration_threshold_m": 0.007176464846941486,
+          "penetration_max_m": 0.014757748035493555,
+          "speed_limit": "hardware_limit_unknown"
+        },
+        "248247003992116": {
+          "error_m": 0.0022315705638333836,
+          "penetration_threshold_m": 0.005,
+          "valid": false,
+          "reasons": [
+            "sustained_tool_partner_penetration"
+          ],
+          "penetration_max_m": 0.006548636547993517,
+          "longest_excess_s": 0.12499999999999734
+        }
+      },
+      "penetration_threshold_m": 0.007176464846941486,
+      "S": false,
+      "C": false,
+      "J": false
+    },
+    "depth_peaks": {
+      "hand_object": 0.014757748035493555,
+      "object_environment": 0.006548636547993517,
+      "hand_environment": 0.0,
+      "hand_self": 0.0013068457239589944,
+      "between_hands": 0.0
+    }
+  },
+  "archived_original_wrist": [
+    {
+      "episode": "clip-001976",
+      "robot": "inspire",
+      "hand": "right",
+      "hypothesis": "nominal",
+      "source_steps": 994,
+      "active_contact_steps": 994,
+      "translation_on_projection": 981,
+      "rotation_on_projection": 884,
+      "any_projection": 994,
+      "active_on_projection": 994,
+      "active_on_projection_fraction": 1.0,
+      "max_ideal_translation_m": 0.02999000000000014,
+      "max_ideal_rotation_deg": 19.99946410728735,
+      "ideal_p95_translation_m": 0.029990000000000065,
+      "native_tracking_p95_translation_m": 0.054224406923933106,
+      "native_tracking_p95_rotation_deg": 20.775430439333643,
+      "native_tracking_above_translation_limit": 524,
+      "native_tracking_above_rotation_limit": 417,
+      "replay_samples_compared": 994
+    }
+  ],
+  "wider_wrist": [
+    {
+      "episode": "clip-001976",
+      "robot": "inspire",
+      "hand": "right",
+      "hypothesis": "nominal",
+      "source_steps": 994,
+      "active_contact_steps": 994,
+      "translation_on_projection": 442,
+      "rotation_on_projection": 671,
+      "any_projection": 861,
+      "active_on_projection": 861,
+      "active_on_projection_fraction": 0.8661971830985915,
+      "max_ideal_translation_m": 0.05999000000000009,
+      "max_ideal_rotation_deg": 39.9994270422052,
+      "ideal_p95_translation_m": 0.05999000000000005,
+      "native_tracking_p95_translation_m": 0.11676004588488469,
+      "native_tracking_p95_rotation_deg": 40.652697698640694,
+      "native_tracking_above_translation_limit": 593,
+      "native_tracking_above_rotation_limit": 271,
+      "replay_samples_compared": 994
+    }
+  ]
+}

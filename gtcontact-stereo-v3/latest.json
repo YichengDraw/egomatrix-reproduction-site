@@ -1,5 +1,5 @@
 {
-  "round": "V3-E-friction-positive",
+  "round": "V3-D-feedback-frozen-mass",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -18,7 +18,8 @@
     "V3-B-observed-edges",
     "V3-D-surface-calibrated",
     "V3-D-final-development",
-    "V3-E-friction-positive"
+    "V3-E-friction-positive",
+    "V3-D-feedback-frozen-mass"
   ],
-  "manifest_sha256": "db24c9bc619e77472f5127305cd77a24007071a25d333920c084c05d51f9bfa6"
+  "manifest_sha256": "e79211ec159b115c7b88a6b39def2280e927f221fedd81f5cb8c7368e056d93c"
 }

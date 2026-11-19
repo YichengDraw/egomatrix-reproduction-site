@@ -1,5 +1,5 @@
 {
-  "round": "V3-D-wrist-range",
+  "round": "V3-E-worlds",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -22,7 +22,8 @@
     "V3-D-feedback-frozen-mass",
     "V3-D-budget-16",
     "V3-F",
-    "V3-D-wrist-range"
+    "V3-D-wrist-range",
+    "V3-E-worlds"
   ],
-  "manifest_sha256": "b0289ac1d9f5a5e815f1544f424acafdf9d08ccf36447dcf151ba9e34d77d8ad"
+  "manifest_sha256": "ca5db5a683f576955c2c273f6c21368bc5808e54f98ca407dea934213f0a148e"
 }

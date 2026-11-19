@@ -1,5 +1,5 @@
 {
-  "round": "V3-B-surface-calibrated",
+  "round": "V3-C-surface-calibrated",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -10,7 +10,8 @@
     "V3-B-sensitivity",
     "V3-C-material",
     "V3-D-stages",
-    "V3-B-surface-calibrated"
+    "V3-B-surface-calibrated",
+    "V3-C-surface-calibrated"
   ],
-  "manifest_sha256": "a768c615a6c64facb635708eceac9a523a177ae8ab1f9c6559c49d47d649a08a"
+  "manifest_sha256": "40fcd790cb8a0cc2aa9e5b792f3d9d20dfdba29b50446996ffccc5b5f2d732af"
 }

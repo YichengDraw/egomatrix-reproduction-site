@@ -8,17 +8,45 @@ function assetURL(path){
     return path?.startsWith('../../media/') && path.endsWith('.json.gz') && manifest?.media_revision
         ? new URL('media/'+path.split('/').pop(),mediaRoot()) : new URL(path,folder);
 }
-async function json(u){
-    let url=new URL(u),r;
-    try{r=await fetch(url);if(!r.ok)throw Error(r.status+' '+url);}
-    catch(err){
-        if(url.hostname!=='cdn.jsdelivr.net')throw err;
-        const parts=url.pathname.match(/^\/gh\/([^/]+)\/([^@]+)@([^/]+)\/(.*)$/);
-        if(!parts)throw err;
-        r=await fetch('https://raw.githubusercontent.com/'+parts.slice(1).join('/'));if(!r.ok)throw Error(r.status+' '+url);
+let replayHashes;
+let replayHost = 'cdn.jsdelivr.net';
+async function json(u) {
+    const url = new URL(u);
+    const gzip = url.pathname.endsWith('.json.gz');
+    async function decode(response) {
+        if (!response.ok) throw Error(response.status+' '+url.pathname);
+        return gzip ? new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json() : response.json();
     }
-    if(url.pathname.endsWith('.json.gz'))return new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json();
-    return r.json();
+    if (url.hostname !== 'cdn.jsdelivr.net') return decode(await fetch(url));
+    const [,owner,repo,revision,path] = url.pathname.match(/^\/gh\/([^/]+)\/([^@]+)@([^/]+)\/(.*)$/);
+    const hosts = [...new Set([replayHost,'cdn.jsdelivr.net','cdn.jsdmirror.com','raw.githubusercontent.com','api.github.com'])];
+    let lastError;
+    for (const host of hosts) {
+        try {
+            let target = 'https://'+host+url.pathname;
+            const options = {signal:AbortSignal.timeout(10000)};
+            if (host === 'raw.githubusercontent.com') target = 'https://'+host+'/'+[owner,repo,revision,path].join('/');
+            if (host === 'api.github.com') {
+                target = 'https://'+host+'/repos/'+owner+'/'+repo+'/contents/'+path+'?ref='+revision;
+                options.headers = {Accept:'application/vnd.github.raw+json'};
+            }
+            let response = await fetch(target,options);
+            if (!response.ok) throw Error('HTTP '+response.status);
+            if (host === 'cdn.jsdmirror.com') {
+                replayHashes ??= json(new URL('replay-hashes.json',root)).catch(error=>{replayHashes=null;throw error});
+                const expected = (await replayHashes)[revision]?.[path];
+                const bytes = await response.arrayBuffer();
+                const digest = await crypto.subtle.digest('SHA-256',bytes);
+                const actual = Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');
+                if (actual !== expected) throw Error('回放文件校验失败 '+path);
+                response = new Response(bytes);
+            }
+            const data = await decode(response);
+            replayHost = host;
+            return data;
+        } catch (error) { lastError = error; }
+    }
+    throw lastError;
 }
 const lab=v=>v===true?'通过':v===false?'失败':'未知', fmt=v=>v==null?'—':String(v);
 let manifest,rows,active,playData,epoch=0,index=0,playing=false,folder;

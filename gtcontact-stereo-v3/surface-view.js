@@ -18,7 +18,7 @@
       cache.set(key, old);
       return old;
     }
-    const promise = json(key);
+    const promise = json(key).catch(error => { cache.delete(key); throw error; });
     cache.set(key, promise);
     if (cache.size > 16) cache.delete(cache.keys().next().value);
     return promise;

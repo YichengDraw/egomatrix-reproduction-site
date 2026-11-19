@@ -4,7 +4,7 @@
 <style>body{font:17px/1.6 system-ui,sans-serif;max-width:800px;margin:3rem auto;padding:0 1rem;color:#192825;background:#f8f9f6}h1{font-size:1.8em}h2{margin-top:1.6em}a{color:#146358}li{margin:.7em 0}footer{margin-top:2em}</style>
 <h1>数据与模型署名 · Data and model credits</h1>
 <h2>HOT3D · Meta Platforms Technologies, LLC</h2>
-<p>本研究使用公开训练集的 Aria 和 Quest 3 双目画面、相机标定、物体位姿、UmeTrack 人手标注和原始物体模型。页面选取连续源帧，通过 HOT3D-Clips 官方可视化程序采用的针孔投影逐眼去畸变，顺时针旋转 90° 后并排显示。默认视频为校正后的左右原图；开启叠加可在相同源帧上查看按校正相机重投影的手和物体。三维视图展示重采样的手面和物体表面。机器人动作、自由物体轨迹与评分由本研究生成。
+<p>本研究使用公开训练集的 Aria 和 Quest 3 双目画面、相机标定、物体位姿、UmeTrack 人手标注和评估用物体模型。页面选取连续源帧，通过 HOT3D-Clips 官方可视化程序采用的针孔投影逐眼去畸变，顺时针旋转 90° 后并排显示。默认视频为校正后的左右原图；开启叠加可在相同源帧上查看按校正相机重投影的手和物体。三维视图展示重采样的手面和物体表面。机器人动作、自由物体轨迹与评分由本研究生成。
 <a href="https://facebookresearch.github.io/hot3d/">HOT3D 项目</a> · <a href="https://huggingface.co/datasets/bop-benchmark/hot3d">HOT3D-Clips</a> · <a href="https://huggingface.co/datasets/bop-benchmark/hot3d/resolve/main/hot3d_dataset_license_agreement.pdf">数据集完整条款</a></p>
 <p lang="en">We use HOT3D public training clips, stereo imagery, camera calibration, object poses, UmeTrack hand annotations, and object models. Each eye is undistorted at native resolution with the HOT3D-Clips pinhole camera and rotated 90° clockwise for upright display. The default synchronized video shows both camera images. The optional hand and object overlay is projected with the same per-frame pinhole cameras. The 3D views sample the hand and CAD surfaces. Simulated robot controls, simulated trajectories, and scores are produced by this study.</p>
 <ul>
@@ -15,6 +15,8 @@
 <p>手部网格通过 Meta 的官方工具生成。Hand surfaces use the official UmeTrack full-mesh forward kinematics.
 <a href="https://github.com/facebookresearch/hand_tracking_toolkit/tree/bc628e9286c18444b47a0971a89d075ea6f00747">Hand Tracking Toolkit, Apache 2.0</a>.</p>
 <p>相机和影像处理依据 Meta 发布的 <a href="https://github.com/facebookresearch/hot3d/blob/2aaf8d1c265feba21f2d05610188983481b13b23/hot3d/clips/vis_clips.py#L109-L117">HOT3D-Clips 去畸变入口</a>、<a href="https://github.com/facebookresearch/hot3d/blob/2aaf8d1c265feba21f2d05610188983481b13b23/hot3d/clips/vis_clips.py#L183-L189">画面方向</a>与 <a href="https://github.com/facebookresearch/hand_tracking_toolkit/blob/bc628e9286c18444b47a0971a89d075ea6f00747/hand_tracking_toolkit/dataset.py#L160-L207">Hand Tracking Toolkit 反向映射</a>。</p>
+<h2 id="collision-scope">这五轮实际参与碰撞的模型</h2>
+<p>Sharpa 每只手使用 15 个胶囊和 1 个掌部盒子，来自项目历史场景。厂家另有现成的 Wave 左右手仿真资产。Shadow 使用 MuJoCo Menagerie 发布的转换模型，Inspire 使用 Correll Lab 的转换模型并经过项目适配。主比较里的六件物体使用 HOT3D 的评估用简化 CAD，经 CoACD 凸分解后参与碰撞。支撑面是无限平面，质量和摩擦含估计值。网页中手的形状按实际碰撞模型绘制，物体按参考 CAD 显示。<a href="https://github.com/sharpa-robotics/sharpa-urdf-usd-xml">Sharpa 厂家资产</a></p>
 <h2>机器手模型 · Robot models</h2>
 <p>页面显示仿真时采样的实际机器人表面点。研究中复用了以下模型和驱动定义，并为仿真建立浮腕、碰撞配置与表面坐标。
 The viewer plots samples from the simulated robot surfaces. Floating carriers, collision configurations, and surface coordinates were prepared for this study.</p>

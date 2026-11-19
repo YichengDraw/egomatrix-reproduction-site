@@ -25,6 +25,7 @@ button:hover{background:#e4efe9}button:focus-visible,select:focus-visible,canvas
 header{align-items:flex-start;flex-wrap:wrap}.camera-help{font-size:13px}}
 </style><header><h1>双目手物接触实验</h1><label>实验轮次 <select id="history"></select></label></header>
 <p>输入采用 HOT3D 人手真值。物体从片段首帧开始自由运动。S 表示任务与基本物理要求通过，C 表示同一次碰撞在物体和手面上的位置均达标，J 表示两项同时通过。</p>
+<p>这五轮使用历史碰撞模型。Sharpa 每只手为 15 个胶囊和 1 个掌部盒子，目标物体由评估用 CAD 凸分解生成。<a href="attribution.html#collision-scope">查看各模型的实际来源</a></p>
 <details class="round-info"><summary><span id="roundTitle"></span> · 本轮统计与数据</summary><p id="scope"></p><div class="scroll"><table id="summary"></table></div>
 <p><a id="coverage">全部登记来源与覆盖原因</a> · <a id="changes">配对救回与损害表</a> · <a id="cost">本轮计算成本</a></p><p id="decisionLine" hidden><a id="decision">开发集改动与晋级记录</a></p></details><h2 id="picker">选择回放</h2><label id="splitBox" hidden>回放集合 <select id="split"><option value="core">主比较 CORE</option><option value="pilot">本轮改动 PILOT</option></select></label><div class="flex"><label>设备 <select id="device"></select></label><label>机器手 <select id="robot"></select></label><label>方法 <select id="method"></select></label><label>积分步长 <select id="dt"></select></label></div><div class="scroll run-list"><table id="rows"></table></div>
 <h2 id="caseTitle"></h2><p id="details"></p><details id="more"><summary>查看本条评分与容差曲线</summary><pre style="white-space:pre-wrap;max-height:250px;overflow:auto" id="metrics"></pre></details><p class="message" id="error" role="status"></p>

@@ -1,5 +1,5 @@
 {
-  "round": "V3-E-worlds",
+  "round": "V3-E",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -23,7 +23,8 @@
     "V3-D-budget-16",
     "V3-F",
     "V3-D-wrist-range",
-    "V3-E-worlds"
+    "V3-E-worlds",
+    "V3-E"
   ],
-  "manifest_sha256": "ca5db5a683f576955c2c273f6c21368bc5808e54f98ca407dea934213f0a148e"
+  "manifest_sha256": "d4817d3d1dcb9b82641f2b6337eff1d908dc28ee13b95172db0bb371536e2617"
 }

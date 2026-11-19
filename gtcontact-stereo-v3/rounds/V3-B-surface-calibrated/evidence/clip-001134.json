@@ -1,0 +1,971 @@
+{
+  "episode": "clip-001134",
+  "source": "P0018_2188e5dc",
+  "group": "CORE",
+  "device": "Quest3",
+  "target_name": "flask",
+  "scope": "single_robot",
+  "required_sides": [
+    "right"
+  ],
+  "replay_s": 4.434999999999928,
+  "steps": 887,
+  "expected_steps": 887,
+  "status": "completed",
+  "hypotheses": 2,
+  "alternative_steps": 887,
+  "alternative_runs": 1,
+  "surfaces": 1,
+  "environment_mode": "finite_surface",
+  "depth_frames": 16,
+  "reconstruction_points": 83790,
+  "max_target_environment_penetration_mm": 15.399889943465196,
+  "primary_collision": "published_PhysX_cooking_export",
+  "shape_count": 256,
+  "depth_source": "official HOT3D cameras + metric binocular SGBM fusion",
+  "data": "data/clip-001134.json",
+  "stereo": "media/clip-001134.mp4",
+  "evidence": "media/clip-001134-fusion.jpg",
+  "participant": "P0018",
+  "roles": {
+    "left": {
+      "required": false,
+      "driven_object_uids": [],
+      "valid_at_t0": true,
+      "first_valid_frame": 0,
+      "contact_windows": {},
+      "source_labels": {}
+    },
+    "right": {
+      "required": true,
+      "driven_object_uids": [
+        "4111539686391"
+      ],
+      "valid_at_t0": true,
+      "first_valid_frame": 0,
+      "contact_windows": {
+        "4111539686391": [
+          {
+            "first": 0,
+            "last": 127,
+            "frames": 128,
+            "span_s": 4.233333333
+          }
+        ]
+      },
+      "source_labels": {
+        "4111539686391": "hands/right/labels.npz"
+      }
+    }
+  },
+  "source_hand_target": {
+    "left": {
+      "27078911029651": {
+        "observed_frames": 134,
+        "triangle_min_m": 0.48774302424743105,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "4111539686391": {
+        "observed_frames": 134,
+        "triangle_min_m": 0.3794479862980646,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      }
+    },
+    "right": {
+      "27078911029651": {
+        "observed_frames": 134,
+        "triangle_min_m": 0.08565939051713976,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "4111539686391": {
+        "observed_frames": 134,
+        "triangle_min_m": 0.0,
+        "frames_within_3mm": 128,
+        "isolated_or_sustained_windows": [
+          {
+            "first": 0,
+            "last": 127,
+            "frames": 128,
+            "span_s": 4.233333333
+          }
+        ],
+        "sustained_min3frames": true
+      }
+    }
+  },
+  "scene_hypotheses": [
+    {
+      "id": "nominal",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              0.2532,
+              -0.5126,
+              0.4354
+            ],
+            [
+              0.2055,
+              -0.4637,
+              0.4445
+            ],
+            [
+              0.0182,
+              -0.4658,
+              0.4588
+            ],
+            [
+              -0.1041,
+              -0.5776,
+              0.4559
+            ],
+            [
+              -0.1894,
+              -0.6978,
+              0.4491
+            ],
+            [
+              -0.042,
+              -0.8375,
+              0.4222
+            ],
+            [
+              0.0489,
+              -0.893,
+              0.409
+            ],
+            [
+              0.1303,
+              -0.91,
+              0.4008
+            ],
+            [
+              0.1707,
+              -0.9091,
+              0.3978
+            ],
+            [
+              0.1937,
+              -0.8696,
+              0.4004
+            ],
+            [
+              0.267,
+              -0.5516,
+              0.43
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "multi-frame finite surface selected from target-surface, local footprint and static stereo evidence"
+        }
+      ]
+    },
+    {
+      "id": "surface_calibrated",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              0.2901,
+              -0.6397,
+              0.4123
+            ],
+            [
+              0.2896,
+              -0.6252,
+              0.4123
+            ],
+            [
+              0.2882,
+              -0.6108,
+              0.4123
+            ],
+            [
+              0.2858,
+              -0.5965,
+              0.4123
+            ],
+            [
+              0.2826,
+              -0.5824,
+              0.4123
+            ],
+            [
+              0.2783,
+              -0.5685,
+              0.4123
+            ],
+            [
+              0.2732,
+              -0.555,
+              0.4123
+            ],
+            [
+              0.2673,
+              -0.5418,
+              0.4123
+            ],
+            [
+              0.2604,
+              -0.529,
+              0.4123
+            ],
+            [
+              0.2528,
+              -0.5167,
+              0.4123
+            ],
+            [
+              0.2443,
+              -0.5049,
+              0.4123
+            ],
+            [
+              0.2352,
+              -0.4937,
+              0.4123
+            ],
+            [
+              0.2253,
+              -0.4831,
+              0.4123
+            ],
+            [
+              0.2147,
+              -0.4732,
+              0.4123
+            ],
+            [
+              0.2035,
+              -0.464,
+              0.4123
+            ],
+            [
+              0.1917,
+              -0.4556,
+              0.4123
+            ],
+            [
+              0.1794,
+              -0.448,
+              0.4123
+            ],
+            [
+              0.1666,
+              -0.4411,
+              0.4123
+            ],
+            [
+              0.1534,
+              -0.4351,
+              0.4123
+            ],
+            [
+              0.1399,
+              -0.43,
+              0.4123
+            ],
+            [
+              0.126,
+              -0.4258,
+              0.4123
+            ],
+            [
+              0.1119,
+              -0.4225,
+              0.4123
+            ],
+            [
+              0.0976,
+              -0.4202,
+              0.4123
+            ],
+            [
+              0.0832,
+              -0.4188,
+              0.4123
+            ],
+            [
+              0.0687,
+              -0.4183,
+              0.4123
+            ],
+            [
+              0.0542,
+              -0.4188,
+              0.4123
+            ],
+            [
+              0.0398,
+              -0.4202,
+              0.4123
+            ],
+            [
+              0.0255,
+              -0.4225,
+              0.4123
+            ],
+            [
+              0.0114,
+              -0.4258,
+              0.4123
+            ],
+            [
+              -0.0024,
+              -0.43,
+              0.4123
+            ],
+            [
+              -0.016,
+              -0.4351,
+              0.4123
+            ],
+            [
+              -0.0292,
+              -0.4411,
+              0.4123
+            ],
+            [
+              -0.042,
+              -0.448,
+              0.4123
+            ],
+            [
+              -0.0543,
+              -0.4556,
+              0.4123
+            ],
+            [
+              -0.066,
+              -0.464,
+              0.4123
+            ],
+            [
+              -0.0772,
+              -0.4732,
+              0.4123
+            ],
+            [
+              -0.0878,
+              -0.4831,
+              0.4123
+            ],
+            [
+              -0.0977,
+              -0.4937,
+              0.4123
+            ],
+            [
+              -0.1069,
+              -0.5049,
+              0.4123
+            ],
+            [
+              -0.1153,
+              -0.5167,
+              0.4123
+            ],
+            [
+              -0.123,
+              -0.529,
+              0.4123
+            ],
+            [
+              -0.1298,
+              -0.5418,
+              0.4123
+            ],
+            [
+              -0.1358,
+              -0.555,
+              0.4123
+            ],
+            [
+              -0.1409,
+              -0.5685,
+              0.4123
+            ],
+            [
+              -0.1451,
+              -0.5824,
+              0.4123
+            ],
+            [
+              -0.1484,
+              -0.5965,
+              0.4123
+            ],
+            [
+              -0.1508,
+              -0.6108,
+              0.4123
+            ],
+            [
+              -0.1522,
+              -0.6252,
+              0.4123
+            ],
+            [
+              -0.1527,
+              -0.6397,
+              0.4123
+            ],
+            [
+              -0.1522,
+              -0.6541,
+              0.4123
+            ],
+            [
+              -0.1508,
+              -0.6686,
+              0.4123
+            ],
+            [
+              -0.1484,
+              -0.6829,
+              0.4123
+            ],
+            [
+              -0.1451,
+              -0.697,
+              0.4123
+            ],
+            [
+              -0.1409,
+              -0.7108,
+              0.4123
+            ],
+            [
+              -0.1358,
+              -0.7244,
+              0.4123
+            ],
+            [
+              -0.1298,
+              -0.7376,
+              0.4123
+            ],
+            [
+              -0.123,
+              -0.7504,
+              0.4123
+            ],
+            [
+              -0.1153,
+              -0.7627,
+              0.4123
+            ],
+            [
+              -0.1069,
+              -0.7744,
+              0.4123
+            ],
+            [
+              -0.0977,
+              -0.7856,
+              0.4123
+            ],
+            [
+              -0.0878,
+              -0.7962,
+              0.4123
+            ],
+            [
+              -0.0772,
+              -0.8061,
+              0.4123
+            ],
+            [
+              -0.066,
+              -0.8153,
+              0.4123
+            ],
+            [
+              -0.0543,
+              -0.8237,
+              0.4123
+            ],
+            [
+              -0.042,
+              -0.8314,
+              0.4123
+            ],
+            [
+              -0.0292,
+              -0.8382,
+              0.4123
+            ],
+            [
+              -0.016,
+              -0.8442,
+              0.4123
+            ],
+            [
+              -0.0024,
+              -0.8493,
+              0.4123
+            ],
+            [
+              0.0114,
+              -0.8535,
+              0.4123
+            ],
+            [
+              0.0255,
+              -0.8568,
+              0.4123
+            ],
+            [
+              0.0398,
+              -0.8592,
+              0.4123
+            ],
+            [
+              0.0542,
+              -0.8606,
+              0.4123
+            ],
+            [
+              0.0687,
+              -0.861,
+              0.4123
+            ],
+            [
+              0.0832,
+              -0.8606,
+              0.4123
+            ],
+            [
+              0.0976,
+              -0.8592,
+              0.4123
+            ],
+            [
+              0.1119,
+              -0.8568,
+              0.4123
+            ],
+            [
+              0.126,
+              -0.8535,
+              0.4123
+            ],
+            [
+              0.1399,
+              -0.8493,
+              0.4123
+            ],
+            [
+              0.1534,
+              -0.8442,
+              0.4123
+            ],
+            [
+              0.1666,
+              -0.8382,
+              0.4123
+            ],
+            [
+              0.1794,
+              -0.8314,
+              0.4123
+            ],
+            [
+              0.1917,
+              -0.8237,
+              0.4123
+            ],
+            [
+              0.2035,
+              -0.8153,
+              0.4123
+            ],
+            [
+              0.2147,
+              -0.8061,
+              0.4123
+            ],
+            [
+              0.2253,
+              -0.7962,
+              0.4123
+            ],
+            [
+              0.2352,
+              -0.7856,
+              0.4123
+            ],
+            [
+              0.2443,
+              -0.7744,
+              0.4123
+            ],
+            [
+              0.2528,
+              -0.7627,
+              0.4123
+            ],
+            [
+              0.2604,
+              -0.7504,
+              0.4123
+            ],
+            [
+              0.2673,
+              -0.7376,
+              0.4123
+            ],
+            [
+              0.2732,
+              -0.7244,
+              0.4123
+            ],
+            [
+              0.2783,
+              -0.7108,
+              0.4123
+            ],
+            [
+              0.2826,
+              -0.697,
+              0.4123
+            ],
+            [
+              0.2858,
+              -0.6829,
+              0.4123
+            ],
+            [
+              0.2882,
+              -0.6686,
+              0.4123
+            ],
+            [
+              0.2896,
+              -0.6541,
+              0.4123
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "Source-visible static neighbor bases establish the tabletop height. Shared visible front rim across three registered left-eye frames under the gravity-level orientation prior."
+        }
+      ],
+      "actual_data": "data/clip-001134.surface_calibrated.json",
+      "steps": 887,
+      "end_displacement_from_nominal_m": 2.9137678457206864
+    }
+  ],
+  "source_cad_instances": [
+    {
+      "uid": "4111539686391",
+      "body_name": "target",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 256,
+      "mass_kg": 1.5,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    },
+    {
+      "uid": "27078911029651",
+      "body_name": "object_27078911029651",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 256,
+      "mass_kg": 2.2699999809265137,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    }
+  ],
+  "task": {
+    "episode_id": "clip-001134",
+    "task_scope": "single_robot",
+    "task_type": "place",
+    "semantic_objective": "Reproduce the source rigid motion of flask and the observed hand-surface contacts.",
+    "source_semantics": "researcher interpretation of source images, rigid trajectory and hand/object surfaces; exact source action labels unavailable",
+    "task_feature": "registered_pose_and_contact",
+    "interaction_partner": null,
+    "primary_side": "right",
+    "required_sides": [
+      "right"
+    ],
+    "required_object_uids": {
+      "right": [
+        "4111539686391"
+      ]
+    },
+    "initial_support": "air",
+    "final_support": "support",
+    "contact_windows": {
+      "right_4111539686391": [
+        0.0,
+        4.266666666
+      ]
+    },
+    "contact_applicable": true,
+    "source_frame_ids": [
+      0,
+      133
+    ],
+    "reference": "source_actor_tracks.npz",
+    "interpretation": "measured object rigid path; no inferred electronic, liquid, deformation or ink outcome",
+    "requires_release": true,
+    "release_source": {
+      "measure": "near 3 mm and clear above 7 mm from pairwise triangle distance; final min(150 ms,20% duration) with at least 80% clear for each required target-hand",
+      "per_side": {
+        "right": {
+          "valid_frames": 5,
+          "tail_frames": 5,
+          "clear_over7mm_frames": 5,
+          "last_sustained_or_transient_contact_s": 4.233333333
+        }
+      },
+      "decision": "observed place followed by hand withdrawal"
+    }
+  },
+  "gravity_evidence": "device-specific source-world up prior, Aria +Z and Quest +Y; no per-clip gravity field in HOT3D Clips",
+  "source_pose_error_m": 3.344546861683284e-15,
+  "zero_start_velocity": 0.0,
+  "hidden_warmup_steps": 0,
+  "surface_calibration": {
+    "episode": "clip-001134",
+    "hypothesis": "surface_calibrated",
+    "original_hypothesis_sha256": "ad4343dd20ca868ed52d45083ad5c741f3408f356540c408af3d5b4e7dfb1f0f",
+    "new_hypothesis_sha256": "5f6926d9193acacf88620240afad716fda12d883decea2a9d4bac5f453bacc59",
+    "source_registry": "Stationary anchors manually identified on the same furniture in registered stereo images. Target samples and robot outcomes were excluded from fitting.",
+    "target_uid_excluded": "4111539686391",
+    "anchors": {
+      "27078911029651": {
+        "name": "dumbbell_5lb",
+        "bop_id": 22,
+        "center_travel_m": 0.0010771847464087498,
+        "old_signed_minimum_m": -0.03922627062217804,
+        "calibrated_signed_minimum_m": 0.0
+      }
+    },
+    "boundary": {
+      "source_frames": [
+        0,
+        66,
+        133
+      ],
+      "rectified_left_perimeter_samples": [
+        [
+          [
+            335,
+            126
+          ],
+          [
+            350,
+            141
+          ],
+          [
+            370,
+            153
+          ],
+          [
+            390,
+            160
+          ],
+          [
+            410,
+            164
+          ],
+          [
+            433,
+            166
+          ],
+          [
+            454,
+            163
+          ],
+          [
+            472,
+            157
+          ]
+        ],
+        [
+          [
+            291,
+            67
+          ],
+          [
+            303,
+            84
+          ],
+          [
+            320,
+            101
+          ],
+          [
+            340,
+            113
+          ],
+          [
+            363,
+            122
+          ],
+          [
+            390,
+            126
+          ],
+          [
+            411,
+            126
+          ],
+          [
+            433,
+            121
+          ],
+          [
+            454,
+            112
+          ],
+          [
+            470,
+            98
+          ],
+          [
+            482,
+            77
+          ]
+        ],
+        [
+          [
+            256,
+            70
+          ],
+          [
+            271,
+            92
+          ],
+          [
+            291,
+            109
+          ],
+          [
+            315,
+            120
+          ],
+          [
+            339,
+            127
+          ],
+          [
+            364,
+            129
+          ],
+          [
+            386,
+            127
+          ],
+          [
+            410,
+            120
+          ],
+          [
+            431,
+            111
+          ],
+          [
+            452,
+            94
+          ],
+          [
+            466,
+            75
+          ]
+        ]
+      ],
+      "fitted_radius_m": 0.2213765299265621,
+      "leave_one_view_out_median_radial_error_m": [
+        0.0017038023979732697,
+        0.0003406496141237503,
+        0.001486956532904149
+      ],
+      "fit_median_radial_error_m": 0.0007388465064274014,
+      "selection": "Shared visible front rim across three registered left-eye frames under the gravity-level orientation prior."
+    },
+    "source_task": "pose_surrogate",
+    "normal_change_deg": 7.705542774552137,
+    "height_change_at_target_witness_along_new_normal_m": -0.03398266569048233,
+    "calibrated_target_full_CAD_signed_gap_t0_m": 0.020199963484001826,
+    "old_target_full_CAD_signed_gap_t0_m": -0.01803942965179528,
+    "corrected_target_witness_above_finite_patch_at_t0": true,
+    "original_and_new_source_initial_poses_identical": true,
+    "native_old_depth_by_uid_m": {
+      "4111539686391": 0.015399889943465197,
+      "27078911029651": 0.030404208008023823
+    },
+    "native_new_depth_by_uid_m": {
+      "4111539686391": 0.0,
+      "27078911029651": 0.0
+    },
+    "native_old_target_t0_penetration_m": 0.015399889943465197,
+    "native_new_target_t0_penetration_m": 0.0,
+    "same_physical_qpos0_qvel0_full_control_and_clock": true,
+    "initial_actor_transform_change": 0.0,
+    "source_t0_pose_max_error": 3.344546861683284e-15,
+    "native_steps": 887,
+    "change_in_final_free_object_position_m": 2.9137678457206864
+  },
+  "registered_calibrated_task": {
+    "episode_id": "clip-001134",
+    "task_scope": "single_robot",
+    "task_type": "pose_surrogate",
+    "semantic_objective": "Reproduce the source rigid motion of flask and the observed hand-surface contacts.",
+    "source_semantics": "researcher interpretation of source images, rigid trajectory and hand/object surfaces; exact source action labels unavailable",
+    "task_feature": "registered_pose_and_contact",
+    "interaction_partner": null,
+    "primary_side": "right",
+    "required_sides": [
+      "right"
+    ],
+    "required_object_uids": {
+      "right": [
+        "4111539686391"
+      ]
+    },
+    "initial_support": "air",
+    "final_support": "ambiguous",
+    "contact_windows": {
+      "right_4111539686391": [
+        0.0,
+        4.266666666
+      ]
+    },
+    "contact_applicable": true,
+    "source_frame_ids": [
+      0,
+      133
+    ],
+    "reference": "source_actor_tracks.npz",
+    "interpretation": "measured object rigid path; no inferred electronic, liquid, deformation or ink outcome",
+    "requires_release": false,
+    "release_source": {
+      "measure": "near 3 mm and clear above 7 mm from pairwise triangle distance; final min(150 ms,20% duration) with at least 80% clear for each required target-hand",
+      "per_side": {
+        "right": {
+          "valid_frames": 5,
+          "tail_frames": 5,
+          "clear_over7mm_frames": 5,
+          "last_sustained_or_transient_contact_s": 4.233333333
+        }
+      },
+      "decision": "source does not establish withdrawal at the end of a place"
+    },
+    "environment_hypothesis": "surface_calibrated"
+  }
+}

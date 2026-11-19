@@ -1,0 +1,407 @@
+{
+  "episode": "clip-002364",
+  "source": "P0009_b1e71d7f",
+  "group": "CORE",
+  "device": "Aria",
+  "target_name": "food_waffles",
+  "scope": "single_robot",
+  "required_sides": [
+    "right"
+  ],
+  "replay_s": 0.9700000000000008,
+  "steps": 194,
+  "expected_steps": 194,
+  "status": "completed",
+  "hypotheses": 2,
+  "alternative_steps": 194,
+  "alternative_runs": 1,
+  "surfaces": 1,
+  "environment_mode": "finite_surface",
+  "depth_frames": 15,
+  "reconstruction_points": 2904,
+  "max_target_environment_penetration_mm": 9.356450270775209,
+  "primary_collision": "published_PhysX_cooking_export",
+  "shape_count": 2,
+  "depth_source": "official HOT3D cameras + metric binocular SGBM fusion",
+  "data": "data/clip-002364.json",
+  "stereo": "media/clip-002364.mp4",
+  "evidence": "media/clip-002364-fusion.jpg",
+  "participant": "P0009",
+  "roles": {
+    "left": {
+      "required": false,
+      "driven_object_uids": [],
+      "valid_at_t0": true,
+      "first_valid_frame": 0,
+      "contact_windows": {},
+      "source_labels": {}
+    },
+    "right": {
+      "required": true,
+      "driven_object_uids": [
+        "253405647833885"
+      ],
+      "valid_at_t0": true,
+      "first_valid_frame": 0,
+      "contact_windows": {
+        "253405647833885": [
+          {
+            "first": 0,
+            "last": 23,
+            "frames": 24,
+            "span_s": 0.766680939
+          }
+        ]
+      },
+      "source_labels": {
+        "253405647833885": "hands/right/labels.npz"
+      }
+    }
+  },
+  "source_hand_target": {
+    "left": {
+      "106957734975303": {
+        "observed_frames": 30,
+        "triangle_min_m": 0.3304985523436327,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "253405647833885": {
+        "observed_frames": 30,
+        "triangle_min_m": 0.42562454941930156,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "4111539686391": {
+        "observed_frames": 30,
+        "triangle_min_m": 0.24329283448106198,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      }
+    },
+    "right": {
+      "106957734975303": {
+        "observed_frames": 30,
+        "triangle_min_m": 0.09710066007270732,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "253405647833885": {
+        "observed_frames": 30,
+        "triangle_min_m": 0.0,
+        "frames_within_3mm": 24,
+        "isolated_or_sustained_windows": [
+          {
+            "first": 0,
+            "last": 23,
+            "frames": 24,
+            "span_s": 0.766680939
+          }
+        ],
+        "sustained_min3frames": true
+      },
+      "4111539686391": {
+        "observed_frames": 30,
+        "triangle_min_m": 0.2889494257927839,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      }
+    }
+  },
+  "scene_hypotheses": [
+    {
+      "id": "nominal",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              -0.1611,
+              -0.2066,
+              -0.7295
+            ],
+            [
+              -0.261,
+              -0.2097,
+              -0.7333
+            ],
+            [
+              -0.4161,
+              -0.6615,
+              -0.7501
+            ],
+            [
+              -0.4243,
+              -0.7282,
+              -0.752
+            ],
+            [
+              -0.2395,
+              -0.8069,
+              -0.7472
+            ],
+            [
+              -0.2018,
+              -0.7955,
+              -0.7455
+            ],
+            [
+              -0.1191,
+              -0.4555,
+              -0.7341
+            ],
+            [
+              -0.1201,
+              -0.4101,
+              -0.733
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "multi-frame finite surface selected from target-surface, local footprint and static stereo evidence"
+        }
+      ]
+    },
+    {
+      "id": "surface_calibrated",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              -0.1611,
+              -0.2066,
+              -0.7474
+            ],
+            [
+              -0.261,
+              -0.2097,
+              -0.7474
+            ],
+            [
+              -0.4161,
+              -0.6615,
+              -0.7474
+            ],
+            [
+              -0.4243,
+              -0.7282,
+              -0.7474
+            ],
+            [
+              -0.2395,
+              -0.8069,
+              -0.7474
+            ],
+            [
+              -0.2018,
+              -0.7955,
+              -0.7474
+            ],
+            [
+              -0.1191,
+              -0.4555,
+              -0.7474
+            ],
+            [
+              -0.1201,
+              -0.4101,
+              -0.7474
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "Source-visible static neighbor bases establish the tabletop height. Original finite stereo silhouette projected onto the independently re-estimated tabletop plane."
+        }
+      ],
+      "actual_data": "data/clip-002364.surface_calibrated.json",
+      "steps": 194,
+      "end_displacement_from_nominal_m": 0.0076033996819147714
+    }
+  ],
+  "source_cad_instances": [
+    {
+      "uid": "253405647833885",
+      "body_name": "target",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 2,
+      "mass_kg": 0.25,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    },
+    {
+      "uid": "106957734975303",
+      "body_name": "object_106957734975303",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 98,
+      "mass_kg": 0.20000000298023224,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    }
+  ],
+  "task": {
+    "episode_id": "clip-002364",
+    "task_scope": "single_robot",
+    "task_type": "pose_surrogate",
+    "semantic_objective": "Reproduce the source rigid motion of food_waffles and the observed hand-surface contacts.",
+    "source_semantics": "researcher interpretation of source images, rigid trajectory and hand/object surfaces; exact source action labels unavailable",
+    "task_feature": "registered_pose_and_contact",
+    "interaction_partner": null,
+    "primary_side": "right",
+    "required_sides": [
+      "right"
+    ],
+    "required_object_uids": {
+      "right": [
+        "253405647833885"
+      ]
+    },
+    "initial_support": "support",
+    "final_support": "support",
+    "contact_windows": {
+      "right_253405647833885": [
+        0.0,
+        0.800000994
+      ]
+    },
+    "contact_applicable": true,
+    "source_frame_ids": [
+      0,
+      29
+    ],
+    "reference": "source_actor_tracks.npz",
+    "interpretation": "measured object rigid path; no inferred electronic, liquid, deformation or ink outcome",
+    "requires_release": false,
+    "release_source": {
+      "measure": "near 3 mm and clear above 7 mm from pairwise triangle distance; final min(150 ms,20% duration) with at least 80% clear for each required target-hand",
+      "per_side": {
+        "right": {
+          "valid_frames": 5,
+          "tail_frames": 5,
+          "clear_over7mm_frames": 5,
+          "last_sustained_or_transient_contact_s": 0.766680939
+        }
+      },
+      "decision": "source does not establish withdrawal at the end of a place"
+    }
+  },
+  "gravity_evidence": "device-specific source-world up prior, Aria +Z and Quest +Y; no per-clip gravity field in HOT3D Clips",
+  "source_pose_error_m": 4.773959005888173e-15,
+  "zero_start_velocity": 0.0,
+  "hidden_warmup_steps": 0,
+  "surface_calibration": {
+    "episode": "clip-002364",
+    "hypothesis": "surface_calibrated",
+    "original_hypothesis_sha256": "eb4e7c04910f5d5881ad606dd8b8d2eedaeedf190e62f4b96471c66a23acd4f1",
+    "new_hypothesis_sha256": "eeb0457c09dd237838ca66b48786faf1ad48cc1894dcade3ea5dbc461a7e36e1",
+    "source_registry": "Stationary anchors manually identified on the same furniture in registered stereo images. Target samples and robot outcomes were excluded from fitting.",
+    "target_uid_excluded": "253405647833885",
+    "anchors": {
+      "106957734975303": {
+        "name": "puzzle_toy",
+        "bop_id": 30,
+        "center_travel_m": 0.0003271609555694836,
+        "old_signed_minimum_m": -0.013206147032328475,
+        "calibrated_signed_minimum_m": -0.0004984106278599354,
+        "leave_one_anchor_out_signed_minimum_m": -0.0009360988342765886
+      },
+      "125863066770940": {
+        "name": "carton_milk",
+        "bop_id": 17,
+        "center_travel_m": 0.0002754124058763974,
+        "old_signed_minimum_m": -0.02056648976176545,
+        "calibrated_signed_minimum_m": 0.0008753764128334174,
+        "leave_one_anchor_out_signed_minimum_m": 0.0011245817267633296
+      },
+      "4111539686391": {
+        "name": "flask",
+        "bop_id": 19,
+        "center_travel_m": 0.0004457978572293634,
+        "old_signed_minimum_m": -0.013346470771693264,
+        "calibrated_signed_minimum_m": 0.0,
+        "leave_one_anchor_out_signed_minimum_m": -0.000188482892486741
+      }
+    },
+    "boundary": {
+      "selection": "Original finite stereo silhouette projected onto the independently re-estimated tabletop plane."
+    },
+    "source_task": "pose_surrogate",
+    "normal_change_deg": 2.5324025101821515,
+    "height_change_at_target_witness_along_new_normal_m": -0.005845015129561679,
+    "calibrated_target_full_CAD_signed_gap_t0_m": -0.002350418591500869,
+    "old_target_full_CAD_signed_gap_t0_m": -0.008225013531986236,
+    "corrected_target_witness_above_finite_patch_at_t0": true,
+    "original_and_new_source_initial_poses_identical": true,
+    "native_old_depth_by_uid_m": {
+      "253405647833885": 0.00764900718459713,
+      "106957734975303": 0.012875835402217145
+    },
+    "native_new_depth_by_uid_m": {
+      "253405647833885": 0.0018138565918079943,
+      "106957734975303": 0.0010258008750075875
+    },
+    "native_old_target_t0_penetration_m": 0.00764900718459713,
+    "native_new_target_t0_penetration_m": 0.0018138565918079943,
+    "same_physical_qpos0_qvel0_full_control_and_clock": true,
+    "initial_actor_transform_change": 0.0,
+    "source_t0_pose_max_error": 4.773959005888173e-15,
+    "native_steps": 194,
+    "change_in_final_free_object_position_m": 0.0076033996819147714
+  },
+  "registered_calibrated_task": {
+    "episode_id": "clip-002364",
+    "task_scope": "single_robot",
+    "task_type": "pose_surrogate",
+    "semantic_objective": "Reproduce the source rigid motion of food_waffles and the observed hand-surface contacts.",
+    "source_semantics": "researcher interpretation of source images, rigid trajectory and hand/object surfaces; exact source action labels unavailable",
+    "task_feature": "registered_pose_and_contact",
+    "interaction_partner": null,
+    "primary_side": "right",
+    "required_sides": [
+      "right"
+    ],
+    "required_object_uids": {
+      "right": [
+        "253405647833885"
+      ]
+    },
+    "initial_support": "support",
+    "final_support": "support",
+    "contact_windows": {
+      "right_253405647833885": [
+        0.0,
+        0.800000994
+      ]
+    },
+    "contact_applicable": true,
+    "source_frame_ids": [
+      0,
+      29
+    ],
+    "reference": "source_actor_tracks.npz",
+    "interpretation": "measured object rigid path; no inferred electronic, liquid, deformation or ink outcome",
+    "requires_release": false,
+    "release_source": {
+      "measure": "near 3 mm and clear above 7 mm from pairwise triangle distance; final min(150 ms,20% duration) with at least 80% clear for each required target-hand",
+      "per_side": {
+        "right": {
+          "valid_frames": 5,
+          "tail_frames": 5,
+          "clear_over7mm_frames": 5,
+          "last_sustained_or_transient_contact_s": 0.766680939
+        }
+      },
+      "decision": "source does not establish withdrawal at the end of a place"
+    },
+    "environment_hypothesis": "surface_calibrated"
+  }
+}

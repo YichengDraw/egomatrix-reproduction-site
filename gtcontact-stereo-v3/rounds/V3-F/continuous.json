@@ -1,0 +1,962 @@
+{
+  "all/sharpa/B0/fixed_5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.0003028067355386717,
+        0.0007805960553442766
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.001775096409271898,
+        0.6984372493679711
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.27389209463220343,
+        0.0
+      ]
+    },
+    "hold_coverage": {
+      "measured": 4,
+      "sources": 4,
+      "baseline_median": 0.087742706237426,
+      "b3_median": 0.6270794392523376,
+      "paired_parent_median": 0.12437500000000003,
+      "median_ci95": [
+        -0.08411214953271029,
+        0.8400402414486917
+      ]
+    },
+    "first_correct_s": {
+      "measured": 0
+    },
+    "longest_loss_s": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 2.769999999999963,
+      "b3_median": 0.13999999999999702,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -4.634999999999919,
+        0.04500000000000004
+      ]
+    },
+    "position_m": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 15.707009220853884,
+      "b3_median": 0.18078181887282418,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -28.189826328626364,
+        0.01035702802863819
+      ]
+    },
+    "rotation_deg": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 75.81898061645119,
+      "b3_median": 75.7959247220823,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -44.347376597150856,
+        34.87264189084664
+      ]
+    },
+    "new_physical_reasons": {
+      "sustained_excess_speed": 1,
+      "joint_excess_rad": 2,
+      "sustained_penetration": 1
+    },
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_None": 1,
+        "False_to_False": 5
+      }
+    }
+  },
+  "all/sharpa/B2/fixed_5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.0018050545457226376,
+        0.0007540096876232793
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.03768625939845961,
+        0.659023229865316
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.17881805127476563,
+        0.0
+      ]
+    },
+    "hold_coverage": {
+      "measured": 4,
+      "sources": 4,
+      "baseline_median": 0.1582708752515115,
+      "b3_median": 0.6270794392523376,
+      "paired_parent_median": 0.1418750000000003,
+      "median_ci95": [
+        -0.13084112149532712,
+        0.6639839034205202
+      ]
+    },
+    "first_correct_s": {
+      "measured": 0
+    },
+    "longest_loss_s": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 2.769999999999963,
+      "b3_median": 0.13999999999999702,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -3.709999999999921,
+        0.07000000000000006
+      ]
+    },
+    "position_m": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 9.982882695249897,
+      "b3_median": 0.18078181887282418,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -19.582400373640002,
+        0.02183450242701393
+      ]
+    },
+    "rotation_deg": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 75.19399980924979,
+      "b3_median": 75.7959247220823,
+      "paired_parent_median": 0.0008097666252377955,
+      "median_ci95": [
+        -58.587009394477974,
+        19.096862312359946
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "None_to_None": 1,
+        "False_to_False": 5
+      }
+    }
+  },
+  "all/sharpa/B2/fixed_2p5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.0008798340025675273,
+        0.00043223181174546424
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.01147205619222523,
+        0.2562288707297835
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.2168130768553787,
+        0.0
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.09931292941911482,
+      "b3_median": 0.28018108651910645,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.13551401869158897,
+        0.2904434728294807
+      ]
+    },
+    "first_correct_s": {
+      "measured": 0
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.9675000000000282,
+      "b3_median": 2.181249999999959,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -1.0037499999999797,
+        0.03625000000000003
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.6007681390650306,
+      "b3_median": 0.6576941862871694,
+      "paired_parent_median": -4.566707404222124e-07,
+      "median_ci95": [
+        -9.948597376367124,
+        0.011173544067933949
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 91.24826582875606,
+      "b3_median": 83.30166718705885,
+      "paired_parent_median": 0.0003313828731243973,
+      "median_ci95": [
+        -28.653628788884276,
+        3.23803943848349
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 6
+      }
+    }
+  },
+  "all/shadow/B0/fixed_5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.00028731285162748193,
+      "b3_median": 0.00041450048295202705,
+      "paired_parent_median": 0.00021978024243567225,
+      "median_ci95": [
+        0.0,
+        0.001673107588504581
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.02358578170493344,
+      "b3_median": 0.1204472974349255,
+      "paired_parent_median": 0.00987248283232125,
+      "median_ci95": [
+        0.0001678496494762084,
+        5.5553718777270875
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 4,
+      "sources": 4,
+      "baseline_median": 0.02095592813601541,
+      "b3_median": 0.0018507371336627706,
+      "paired_parent_median": -0.019571612775965017,
+      "median_ci95": [
+        -0.16919686914763515,
+        0.0011386054656390848
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.22434607645875593,
+      "b3_median": 0.46728971962616833,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.16749999999999976,
+        0.3271028037383179
+      ]
+    },
+    "first_correct_s": {
+      "measured": 1,
+      "sources": 1,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 1.7749999999999733,
+      "b3_median": 0.6774999999999856,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -1.4874999999999716,
+        0.384999999999998
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.25369149460996065,
+      "b3_median": 0.16613177980860028,
+      "paired_parent_median": -0.014327891762131293,
+      "median_ci95": [
+        -0.08888889507071877,
+        5.624524413425009
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 73.24462126331191,
+      "b3_median": 75.60354479580789,
+      "paired_parent_median": -2.9830500430734666,
+      "median_ci95": [
+        -50.62515757103976,
+        50.90216959385371
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 5,
+        "True_to_False": 1
+      }
+    }
+  },
+  "all/shadow/B2/fixed_5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.0007764209319653302,
+      "b3_median": 0.00041450048295202705,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.004640280105426078,
+        0.0012825485438083385
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.13128419382059156,
+      "b3_median": 0.1204472974349255,
+      "paired_parent_median": 3.4738566922876135e-05,
+      "median_ci95": [
+        -2.8504846840388396,
+        0.3370038134523945
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 4,
+      "sources": 4,
+      "baseline_median": 0.04475843687398119,
+      "b3_median": 0.0018507371336627706,
+      "paired_parent_median": -0.026086606415384798,
+      "median_ci95": [
+        -0.3746398182777299,
+        -0.005778072588930257
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.09345794392523359,
+      "b3_median": 0.46728971962616833,
+      "paired_parent_median": 0.22743259085580153,
+      "median_ci95": [
+        -0.0010060362173038434,
+        0.4337499999999983
+      ]
+    },
+    "first_correct_s": {
+      "measured": 2,
+      "sources": 2,
+      "baseline_median": 0.3925000000000003,
+      "b3_median": 0.26666666650000004,
+      "paired_parent_median": -0.12583333350000026,
+      "median_ci95": [
+        -0.2516666670000005,
+        0.0
+      ]
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.634999999999955,
+      "b3_median": 0.6774999999999856,
+      "paired_parent_median": -0.1550000000000002,
+      "median_ci95": [
+        -2.1624999999999566,
+        0.0024999999999999467
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.8121239937251756,
+      "b3_median": 0.16613177980860028,
+      "paired_parent_median": -0.18705493952619723,
+      "median_ci95": [
+        -2.991704426315866,
+        -1.253975647605779e-06
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 97.80714173623375,
+      "b3_median": 75.60354479580789,
+      "paired_parent_median": -16.27875021975393,
+      "median_ci95": [
+        -42.966880536905734,
+        0.0
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 5,
+        "True_to_False": 1
+      }
+    }
+  },
+  "all/shadow/B2/fixed_2p5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.0003598026244788514,
+      "b3_median": 0.00026075515210718605,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.00784041010040181,
+        0.0004090778701428767
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.09491932514891999,
+      "b3_median": 0.04236374523818086,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -218.88317424561006,
+        0.0434736855212766
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 4,
+      "sources": 4,
+      "baseline_median": 0.0663294801460009,
+      "b3_median": 0.01300068056305691,
+      "paired_parent_median": -0.03371600629751051,
+      "median_ci95": [
+        -0.27265993581070636,
+        -0.006920214544179345
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.09305835010060225,
+      "b3_median": 0.14485981308411236,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.012888107791447057,
+        0.07943925233644873
+      ]
+    },
+    "first_correct_s": {
+      "measured": 1,
+      "sources": 1,
+      "baseline_median": 0.0,
+      "b3_median": 0.0,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.8725000000000303,
+      "b3_median": 2.840000000000031,
+      "paired_parent_median": -0.03249999999999931,
+      "median_ci95": [
+        -0.12249999999999872,
+        0.03125
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 3.2117555441151495,
+      "b3_median": 4.937702375432426,
+      "paired_parent_median": 0.021768525586649448,
+      "median_ci95": [
+        -0.00293298998116094,
+        2.080191249183799
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 94.89563655710998,
+      "b3_median": 97.68760179592763,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -17.25841028363874,
+        30.77829838413397
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 5,
+        "True_to_False": 1
+      }
+    }
+  },
+  "all/inspire/B0/fixed_5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.001939791357261616,
+      "b3_median": 0.006233100897489682,
+      "paired_parent_median": 0.004914068654429364,
+      "median_ci95": [
+        0.00010055969998970103,
+        0.01852051304004002
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.738037073847526,
+      "b3_median": 2.1524574175390723,
+      "paired_parent_median": 1.127424916049788,
+      "median_ci95": [
+        0.053001392353667465,
+        6.85840876565241
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.11125295623971238,
+      "b3_median": 0.013608454517624286,
+      "paired_parent_median": -0.01127354934680877,
+      "median_ci95": [
+        -0.2688400939453381,
+        0.08067332391637988
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.23212192262602965,
+      "b3_median": 0.8194607268464241,
+      "paired_parent_median": 0.1474999999999992,
+      "median_ci95": [
+        -0.15887850467289721,
+        0.8732394366197179
+      ]
+    },
+    "first_correct_s": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.049999999999999996,
+      "b3_median": 0.01,
+      "paired_parent_median": -0.039999999999999994,
+      "median_ci95": [
+        -0.9699999999999936,
+        0.0
+      ]
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 1.9099999999999704,
+      "b3_median": 0.1599999999999983,
+      "paired_parent_median": -0.3899999999999917,
+      "median_ci95": [
+        -3.877499999999927,
+        0.03750000000000003
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.1510856971791787,
+      "b3_median": 0.08630077472801104,
+      "paired_parent_median": -0.02217740297463438,
+      "median_ci95": [
+        -14.436980105981327,
+        2.7755575615628914e-17
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 25.435441512172332,
+      "b3_median": 46.52217357508573,
+      "paired_parent_median": 0.0014733081163157413,
+      "median_ci95": [
+        -54.45703549038607,
+        25.120435043221086
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 5,
+        "True_to_False": 1
+      }
+    }
+  },
+  "all/inspire/B2/fixed_5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.002948152493180245,
+      "b3_median": 0.006233100897489682,
+      "paired_parent_median": 0.00452807510134037,
+      "median_ci95": [
+        -0.0005218078828399342,
+        0.013139727948488635
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 1.1478471951187275,
+      "b3_median": 2.1524574175390723,
+      "paired_parent_median": 0.6099214268167469,
+      "median_ci95": [
+        0.053001392353667465,
+        2.637103385814163
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.1538616318669362,
+      "b3_median": 0.013608454517624286,
+      "paired_parent_median": -0.02723028486662153,
+      "median_ci95": [
+        -0.3275858975243178,
+        0.03806464828915607
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.2426729191090308,
+      "b3_median": 0.8194607268464241,
+      "paired_parent_median": 0.30124999999999846,
+      "median_ci95": [
+        0.0,
+        0.8712273641851103
+      ]
+    },
+    "first_correct_s": {
+      "measured": 2,
+      "sources": 2,
+      "baseline_median": 0.005,
+      "b3_median": 0.005,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.202499999999964,
+      "b3_median": 0.1599999999999983,
+      "paired_parent_median": -0.6899999999999855,
+      "median_ci95": [
+        -3.862499999999927,
+        0.0
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.22259135343129144,
+      "b3_median": 0.08630077472801104,
+      "paired_parent_median": -0.0780753474573638,
+      "median_ci95": [
+        -14.429762380939467,
+        2.7755575615628914e-17
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 62.82210778247625,
+      "b3_median": 46.52217357508573,
+      "paired_parent_median": -17.304105146045913,
+      "median_ci95": [
+        -63.106241230375126,
+        1.0056442467717077
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 5,
+        "True_to_False": 1
+      }
+    }
+  },
+  "all/inspire/B2/fixed_2p5": {
+    "cells": 6,
+    "independent_parents": 6,
+    "contact_coverage": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.0026134894842784646,
+      "b3_median": 0.0013681036197137164,
+      "paired_parent_median": 0.0,
+      "median_ci95": [
+        -0.0012453858645647485,
+        0.007974381884047286
+      ]
+    },
+    "correct_impulse_Ns": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.884695912017272,
+      "b3_median": 1.147105247638257,
+      "paired_parent_median": 0.22331525985791378,
+      "median_ci95": [
+        -0.43300686716422165,
+        1.0174424323876967
+      ]
+    },
+    "correct_impulse_lower": {
+      "measured": 3,
+      "sources": 3,
+      "baseline_median": 0.11568511051389808,
+      "b3_median": 0.12096423407609136,
+      "paired_parent_median": -0.034530906889564575,
+      "median_ci95": [
+        -0.2236809792712282,
+        0.024042908182835568
+      ]
+    },
+    "hold_coverage": {
+      "measured": 5,
+      "sources": 5,
+      "baseline_median": 0.24194493263033784,
+      "b3_median": 0.18394844756882833,
+      "paired_parent_median": 0.032710280373831724,
+      "median_ci95": [
+        -0.057996485061509506,
+        0.0900402414486904
+      ]
+    },
+    "first_correct_s": {
+      "measured": 2,
+      "sources": 2,
+      "baseline_median": 0.01,
+      "b3_median": 0.005,
+      "paired_parent_median": -0.005,
+      "median_ci95": [
+        -0.01,
+        0.0
+      ]
+    },
+    "longest_loss_s": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 2.1999999999999584,
+      "b3_median": 2.013750000000043,
+      "paired_parent_median": -0.08749999999999813,
+      "median_ci95": [
+        -0.5424999999999922,
+        0.0012500000000000011
+      ]
+    },
+    "position_m": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 0.2141134300141359,
+      "b3_median": 0.16801220720321614,
+      "paired_parent_median": -0.034077505420674864,
+      "median_ci95": [
+        -4.768337790362805,
+        0.020594895796059304
+      ]
+    },
+    "rotation_deg": {
+      "measured": 6,
+      "sources": 6,
+      "baseline_median": 59.45985394720222,
+      "b3_median": 57.18608401191691,
+      "paired_parent_median": 0.0012215640845343323,
+      "median_ci95": [
+        -4.960560954468463,
+        8.114157648267422
+      ]
+    },
+    "new_physical_reasons": {},
+    "classification": {
+      "S": {
+        "False_to_False": 5,
+        "None_to_None": 1
+      },
+      "C": {
+        "False_to_False": 6
+      },
+      "J": {
+        "False_to_False": 6
+      },
+      "S_pose": {
+        "False_to_False": 5,
+        "True_to_False": 1
+      }
+    }
+  }
+}

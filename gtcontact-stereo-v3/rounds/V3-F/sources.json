@@ -1,0 +1,115 @@
+{
+  "revision": "30fe9674782f32e1e5edba98476b6ff4300132c5",
+  "independent_parents": 6,
+  "exclusion_parent_count": 156,
+  "participant_disjoint": false,
+  "scope": "6 个新父录制，6 名参与者均曾出现在旧 30 段。三段 Aria 曾列入另一项前端研究的训练来源池。",
+  "source_gt_policy": "https://github.com/facebookresearch/hot3d/blob/main/README.md",
+  "parents": [
+    {
+      "episode": "clip-000850",
+      "parent": "P0013_0ec32d10",
+      "participant": "P0013",
+      "device": "Quest3",
+      "registered_frames": 150,
+      "task_frame_count": 150,
+      "source_frame_range": [
+        0,
+        149
+      ],
+      "target": "dino_toy",
+      "published_physx_object": true,
+      "required_sides": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "episode": "clip-003097",
+      "parent": "P0014_65c6a968",
+      "participant": "P0014",
+      "device": "Aria",
+      "registered_frames": 150,
+      "task_frame_count": 17,
+      "source_frame_range": [
+        0,
+        16
+      ],
+      "target": "cellphone",
+      "published_physx_object": true,
+      "required_sides": [
+        "left"
+      ]
+    },
+    {
+      "episode": "clip-001083",
+      "parent": "P0017_9f8076b0",
+      "participant": "P0017",
+      "device": "Quest3",
+      "registered_frames": 150,
+      "task_frame_count": 26,
+      "source_frame_range": [
+        124,
+        149
+      ],
+      "target": "bowl",
+      "published_physx_object": true,
+      "required_sides": [
+        "left"
+      ]
+    },
+    {
+      "episode": "clip-003327",
+      "parent": "P0015_c3e1f590",
+      "participant": "P0015",
+      "device": "Aria",
+      "registered_frames": 150,
+      "task_frame_count": 150,
+      "source_frame_range": [
+        0,
+        149
+      ],
+      "target": "aria_small",
+      "published_physx_object": true,
+      "required_sides": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "episode": "clip-001142",
+      "parent": "P0018_66239f6d",
+      "participant": "P0018",
+      "device": "Quest3",
+      "registered_frames": 150,
+      "task_frame_count": 107,
+      "source_frame_range": [
+        3,
+        109
+      ],
+      "target": "bottle_ranch",
+      "published_physx_object": false,
+      "required_sides": [
+        "right"
+      ]
+    },
+    {
+      "episode": "clip-002970",
+      "parent": "P0012_d6272ce1",
+      "participant": "P0012",
+      "device": "Aria",
+      "registered_frames": 150,
+      "task_frame_count": 139,
+      "source_frame_range": [
+        0,
+        138
+      ],
+      "target": "keyboard",
+      "published_physx_object": true,
+      "required_sides": [
+        "left",
+        "right"
+      ]
+    }
+  ]
+}

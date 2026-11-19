@@ -1,0 +1,290 @@
+{
+  "7327bb48a76b62370ae337515d519a91a455503e38ef66b713250256d3482b7a": {
+    "generation_steps": 994,
+    "wall_s": 6.838495791889727
+  },
+  "91950775d2a9526b3b67df368ba45f51bc540469cb248d80a9585683844f29a4": {
+    "generation_steps": 994,
+    "wall_s": 75.17818142939359
+  },
+  "fa734e54474d4602e508da374e474c7e4fdf8305b584faf5ade5cf8f24995cff": {
+    "generation_steps": 994,
+    "wall_s": 39.66306272801012
+  },
+  "541c8355b8afe5bcc2d084a73825c1596b9cff8b6e74165dd0f6e1944640ca15": {
+    "generation_steps": 503388,
+    "wall_s": 764.8082394134253
+  },
+  "525bdc1f0c67f8bbc1bcbdb512ee85f29ef82b4be19b0936cd56dd04864ca155": {
+    "generation_steps": 994,
+    "wall_s": 12.105927229858935
+  },
+  "df98c8bdde01c9684174889d8fb6842cf88e2cca4ce10434d5bb6c616059b62f": {
+    "generation_steps": 994,
+    "wall_s": 78.757005575113
+  },
+  "7f03d3cd6a453878b5e1569b69af3246024562d8c73fe7e6377ca314f5973c15": {
+    "generation_steps": 994,
+    "wall_s": 45.0971946278587
+  },
+  "d1f54f8a5b6a674ffdf5943b758b1ae524657e02470ad9c1aa941fdc67ad4205": {
+    "generation_steps": 503388,
+    "wall_s": 1331.7044865721837
+  },
+  "18ddad3fafd143145f13c256e930856750bb5d01ab94a91d6e53864522ee60bb": {
+    "generation_steps": 994,
+    "wall_s": 5.962100693024695
+  },
+  "32528bb75f8b81a9185db905feda590aeb4f07dab74e8fefafa290dffd8cb876": {
+    "generation_steps": 541,
+    "wall_s": 43.19046489242464
+  },
+  "2ebded8af48d4730b8cbb98e9b904227932c8882f0754745454aee55fdc3feb3": {
+    "generation_steps": 429,
+    "wall_s": 13.106887892819941
+  },
+  "3f19f600d5be052e237c3777d57fe00708ab2db71fc9a0bd2398351a4a31cfb8": {
+    "generation_steps": 504637,
+    "wall_s": 909.3355790227652
+  },
+  "dcd7983dcaef6a101df52e2b3e4357ab93e0d5f8816a24eb5116555301401816": {
+    "generation_steps": 167,
+    "wall_s": 0.19206881430000067
+  },
+  "219e38fa136c9fc9c834fe58a1060a6672be94d232fbdab81631dd794b1c99d4": {
+    "generation_steps": 167,
+    "wall_s": 3.9101150818169117
+  },
+  "c3c40bd4a6a605786d004af1e5d8b2eed6d9ccc837d785acdc6dd93a45628ed8": {
+    "generation_steps": 167,
+    "wall_s": 1.4516197703778744
+  },
+  "7f77d66d652be3074b9e0d286d04207f83c2806cf8b6fea7f56d94760c08c70d": {
+    "generation_steps": 51054,
+    "wall_s": 33.27216692827642
+  },
+  "fa3de1a21cbb7347be918e9388c76c948ac9d8b7bd8dda03568d4d7af85585cc": {
+    "generation_steps": 167,
+    "wall_s": 0.23084936290979385
+  },
+  "a0a588a06c9ab8e736c3d19ec76997f002a2399711506b7848791fb2f07d3af3": {
+    "generation_steps": 167,
+    "wall_s": 3.3117327680811286
+  },
+  "1483948b266e000b7f635c02fbbe02325dfd38344fc04835a452874d810b4ccc": {
+    "generation_steps": 167,
+    "wall_s": 1.0436430564150214
+  },
+  "491b09dada833f1403c6488ee81c397056e4fe1fd982922f87f70683408d9064": {
+    "generation_steps": 51054,
+    "wall_s": 35.96206410881132
+  },
+  "793a84203a2c19ba077db88f139ffd9f92ef694b110434cc2580170173ca6dce": {
+    "generation_steps": 167,
+    "wall_s": 0.272177685983479
+  },
+  "42cec9d6df6eae873f2a49387e259be46ae38f5ec296724e70c089d76c45f37f": {
+    "generation_steps": 167,
+    "wall_s": 3.756406574510038
+  },
+  "d4a5e127d3e759bb98f5731845fd2734e0633ed81daa62cdc9112cd1dcd2ecae": {
+    "generation_steps": 167,
+    "wall_s": 1.1471131676808
+  },
+  "ac52f1126129fe17a4c83b9016c23bf3698e935817eda68f88072ee232525522": {
+    "generation_steps": 51054,
+    "wall_s": 49.580787803046405
+  },
+  "0c6ab0a836b504e6024b6743bd6cfb810cab59a7d990f343fc88a35900f858f3": {
+    "generation_steps": 707,
+    "wall_s": 0.9278580956161022
+  },
+  "153a591c27e54eab436e2ff34d4b48ffef78df408809f13a47d30cc6a857689b": {
+    "generation_steps": 707,
+    "wall_s": 19.732147993519902
+  },
+  "082c7df18b576912a1fab4a4a7a91348729c09f092352f294f1b405c47b6106c": {
+    "generation_steps": 707,
+    "wall_s": 9.34328217804432
+  },
+  "87314e5fb0c1eee36f7b2f00e589a9b18f1dcd88220125299c3d99c1825c6bb2": {
+    "generation_steps": 318228,
+    "wall_s": 101.45808835607022
+  },
+  "6e5390ae7d59444cae15f12f06b8789af6d38a7efcf670f7936522d969460703": {
+    "generation_steps": 707,
+    "wall_s": 1.3825535783544183
+  },
+  "aaad50d0fc4cc0abd26cef0f3f652b8945c22342db5c6b5444e241e2f59d13dc": {
+    "generation_steps": 707,
+    "wall_s": 19.354459257796407
+  },
+  "75fdf45416f4e88fda8577e576aed333f213023d8003aab13adbc38070cb8bb7": {
+    "generation_steps": 707,
+    "wall_s": 8.788258054293692
+  },
+  "27160268b07caa51d79c74d67d60a22c2798a552160048a443b0e58ab0d478bf": {
+    "generation_steps": 320349,
+    "wall_s": 152.32212141528726
+  },
+  "a552a245d3c168d0f15935e0368420dda4880983bce907304bf735c77ed450e4": {
+    "generation_steps": 707,
+    "wall_s": 1.8164369175210595
+  },
+  "59850bb2f30f5d00cea51add03fe9bf9d7b08c308120320c8e004d8d87b909af": {
+    "generation_steps": 707,
+    "wall_s": 18.926734633743763
+  },
+  "11a39e72046300602bb393abf55c3e2c43368dad5a6f0d687310afb7f410e150": {
+    "generation_steps": 707,
+    "wall_s": 8.778150455094874
+  },
+  "3ae66baf54e02601b68044ab5e74628753495a28958fb41d24ed2cefbd58f3db": {
+    "generation_steps": 318228,
+    "wall_s": 151.65810765512288
+  },
+  "713c66aa84ae9cff10e3d98782912226c1f90853817b9fd2e80a0086ce52817f": {
+    "generation_steps": 920,
+    "wall_s": 2.5619820980355144
+  },
+  "16df396d856a651a0f224072b049bf846ef55bf25fbe2635279f5e2b9b3a13bb": {
+    "generation_steps": 920,
+    "wall_s": 169.37887107301503
+  },
+  "fd9c20afff48bec201e5173958083eb760e2594720ebbde3a6fdafc8aa6c329d": {
+    "generation_steps": 920,
+    "wall_s": 69.79638161603361
+  },
+  "5f2b0ce2976f63c2714803c065ce3789f27e80a706a252ac66f988420acf2de6": {
+    "generation_steps": 462180,
+    "wall_s": 474.8567107813433
+  },
+  "9e74adfafafa7b59a33e7c40ef4a23f59a0e706aacd926284cf7ad751b9f7138": {
+    "generation_steps": 920,
+    "wall_s": 7.590095277875662
+  },
+  "c2afa36ff033431918b318bd6880b9d98df13cefded6f7bc11f25cc74d6dd920": {
+    "generation_steps": 812,
+    "wall_s": 134.98622389510274
+  },
+  "23105cc8d2f412d8901fc7e17e4bff8c6dcc6fa1b8179e7b5d37c4c59f183e37": {
+    "generation_steps": 920,
+    "wall_s": 43.179370168596506
+  },
+  "cd6b326f9fd31aa4975439830890131d95ad35437353ee037eb5d80c3a1dee28": {
+    "generation_steps": 462180,
+    "wall_s": 659.0202192896977
+  },
+  "c5e162701efc2226c4f99496f87c4c7c4e0c405abc78f322cbb388c372eac2df": {
+    "generation_steps": 920,
+    "wall_s": 4.549100339412689
+  },
+  "d2379890ad3cb553c7dd9e40020d1e0dbc4d0acbf0450ad7e847edf859630b08": {
+    "generation_steps": 920,
+    "wall_s": 132.2039809646085
+  },
+  "2053847a7cb28f94bc048bcad8ddd17becea123f1db4d823c7e4f6ee6773b56c": {
+    "generation_steps": 920,
+    "wall_s": 33.97421872615814
+  },
+  "47e65b5cff0a0e5743691f4e029451a4afeee05a380488b464404ab2554e5d60": {
+    "generation_steps": 462180,
+    "wall_s": 585.899904511869
+  },
+  "b4f4217e0072a4d8af4d7afc9931834404aee4fa4f5c234077ae381ebe8a6d72": {
+    "generation_steps": 107,
+    "wall_s": 0.100497767329216
+  },
+  "19f4d22d3ddb7ee79b9276cba085175a18a0248bb89994303eaddc2559d60e7b": {
+    "generation_steps": 107,
+    "wall_s": 2.0279883993789554
+  },
+  "ecb010c2a53c461b8265904419f3f39b40cfa135d4d59f88e9450bac10198ccc": {
+    "generation_steps": 107,
+    "wall_s": 1.013127502053976
+  },
+  "a1e0e4b3e137c03e5766282951539f792734d804f8ae51f7af53842a0bd1027c": {
+    "generation_steps": 35988,
+    "wall_s": 23.589616908691823
+  },
+  "bd902b1272c000d2c70af5dbba48506232049345168693d2194d8795479a49f6": {
+    "generation_steps": 107,
+    "wall_s": 0.18133680429309607
+  },
+  "7efbef8aa59f0a68f003730d3fef7ec4db15f9e3e2c4355a6974ef476f698bc8": {
+    "generation_steps": 107,
+    "wall_s": 2.048829267732799
+  },
+  "450e3a9a09a920d51b3f5459d367f6039a8d989339f258d29fd9aa885eb840b2": {
+    "generation_steps": 107,
+    "wall_s": 0.935431613586843
+  },
+  "0a1ed516d3e839c2dd83888f462a7e1c5de2acf80ccc56d9a643f707b2925871": {
+    "generation_steps": 35988,
+    "wall_s": 22.068391147069633
+  },
+  "27f407fd87d2a5d594aacc74bfd8c7934e2430a3bd4a00cfe3af04c316111add": {
+    "generation_steps": 107,
+    "wall_s": 0.3483403855934739
+  },
+  "994047f1d4c47501efc817fcfdaf0d2a434d4ac9a33b6e0380e4ec26b63a18a4": {
+    "generation_steps": 107,
+    "wall_s": 2.195718896575272
+  },
+  "f85bac6705564c9e3bf9b564476d30504e955bd710b64c65808194252b97e7e4": {
+    "generation_steps": 107,
+    "wall_s": 1.1576628889888525
+  },
+  "f6bb700d15ac9244b76ccc380f2f67e665e4f76e06d4220305710985cc51d949": {
+    "generation_steps": 35988,
+    "wall_s": 46.80771585647017
+  },
+  "f281acf158335fbb6cb72d83f4e31c48665a74e23e5a299e1c7bf7092bc4c11c": {
+    "generation_steps": 994,
+    "wall_s": 3.3487651105970144
+  },
+  "a1fc7722dc9e77557096a96b117c9bb260664b05e090f1499d7c849d23ef4104": {
+    "generation_steps": 994,
+    "wall_s": 68.6551443906501
+  },
+  "8503e8ce5ecc5679c26e819b09407cec538f48431c787be8cee75d1b95a5ff8b": {
+    "generation_steps": 994,
+    "wall_s": 35.4100043810904
+  },
+  "4ddcf58638aa8f894db520cd38943f7cdd3978ca426c38bbec58ec1bec9dd57a": {
+    "generation_steps": 503388,
+    "wall_s": 703.7319556837901
+  },
+  "d4f1c4f21b3409a7b206545a4a1354eb82bad0bcacb38b5f5b52bf782b5718a9": {
+    "generation_steps": 994,
+    "wall_s": 5.839890751987696
+  },
+  "c779914d3c5a7e5bccb023b9e2140a0b170d1c97c2003a4802c5db4aaf58a014": {
+    "generation_steps": 994,
+    "wall_s": 68.21364084538072
+  },
+  "51f90e43e34b4d0acf1348a46911f5e0296a5c0b9a4b363080b387493d4ab5fa": {
+    "generation_steps": 994,
+    "wall_s": 34.074800815433264
+  },
+  "42a0d986b4dc8bb2bad8d53d9074e20270af6f3aafc2239a4e2167c544e78cc7": {
+    "generation_steps": 506370,
+    "wall_s": 865.8824421912432
+  },
+  "35162c7a35b28871fd7011b01752db5e520bbda8abd5213aedeb4ea70e86bb72": {
+    "generation_steps": 994,
+    "wall_s": 4.591230318881571
+  },
+  "562d2e08e9c59815b8923a51aaafc23ab419b7f1d4c7413cb5a6069b68a780fd": {
+    "generation_steps": 994,
+    "wall_s": 60.95536018256098
+  },
+  "08b4ef84fdab63616d9cd96804577fe0d68387de0554e120381845a835067a8a": {
+    "generation_steps": 994,
+    "wall_s": 29.38425417523831
+  },
+  "468291dfc791cb4ef0582d2021e1c0fb382906932fffcfab0ea326e3099c5a26": {
+    "generation_steps": 503388,
+    "wall_s": 1217.0285540828481
+  }
+}

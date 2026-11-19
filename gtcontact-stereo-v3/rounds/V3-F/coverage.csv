@@ -1,0 +1,7 @@
+episode,task_scope,registered,native_replay,observation_only
+clip-000850,bimanual_robot,True,True,False
+clip-003097,single_robot,True,True,False
+clip-001083,single_robot,True,True,False
+clip-003327,bimanual_robot,True,True,False
+clip-001142,single_robot,True,True,False
+clip-002970,bimanual_robot,True,True,False

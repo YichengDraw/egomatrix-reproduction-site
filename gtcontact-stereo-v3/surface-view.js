@@ -11,14 +11,15 @@
   const cadColors = colorRamp([207, 142, 73]);
 
   function get(name) {
-    if (cache.has(name)) {
-      const old = cache.get(name);
-      cache.delete(name);
-      cache.set(name, old);
+    const key=new URL('surfaces/'+name,mediaRoot()).href;
+    if (cache.has(key)) {
+      const old = cache.get(key);
+      cache.delete(key);
+      cache.set(key, old);
       return old;
     }
-    const promise = json(new URL('surfaces/' + name, root));
-    cache.set(name, promise);
+    const promise = json(key);
+    cache.set(key, promise);
     if (cache.size > 16) cache.delete(cache.keys().next().value);
     return promise;
   }
@@ -99,6 +100,8 @@
     }
     ctx.canvas.dataset.surfaceHand=String(result.hand);
     ctx.canvas.dataset.surfaceObject=String(result.object);
+    ctx.canvas.dataset.handMesh=String(result.hand);
+    ctx.canvas.dataset.objectMesh=String(result.object);
     return result;
   };
 })();

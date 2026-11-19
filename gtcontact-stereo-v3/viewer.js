@@ -1,6 +1,25 @@
 'use strict';
 const el=id=>document.getElementById(id), part=location.pathname.split('/rounds/')[0], base=part.endsWith('/')?part:part+'/', root=new URL(base,location.origin);
-const json=async u=>{const r=await fetch(u);if(!r.ok)throw Error(r.status+' '+u);if(String(u).endsWith(".json.gz"))return new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).json();return r.json()};
+function mediaRoot(){
+    return manifest?.media_revision && location.hostname.endsWith('github.io')
+        ? new URL('https://cdn.jsdelivr.net/gh/YichengDraw/egomatrix-reproduction-site@'+manifest.media_revision+'/') : root;
+}
+function assetURL(path){
+    return path?.startsWith('../../media/') && path.endsWith('.json.gz') && manifest?.media_revision
+        ? new URL('media/'+path.split('/').pop(),mediaRoot()) : new URL(path,folder);
+}
+async function json(u){
+    let url=new URL(u),r;
+    try{r=await fetch(url);if(!r.ok)throw Error(r.status+' '+url);}
+    catch(err){
+        if(url.hostname!=='cdn.jsdelivr.net')throw err;
+        const parts=url.pathname.match(/^\/gh\/([^/]+)\/([^@]+)@([^/]+)\/(.*)$/);
+        if(!parts)throw err;
+        r=await fetch('https://raw.githubusercontent.com/'+parts.slice(1).join('/'));if(!r.ok)throw Error(r.status+' '+url);
+    }
+    if(url.pathname.endsWith('.json.gz'))return new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json();
+    return r.json();
+}
 const lab=v=>v===true?'通过':v===false?'失败':'未知', fmt=v=>v==null?'—':String(v);
 let manifest,rows,active,playData,epoch=0,index=0,playing=false,folder;
 function select(id,values,all=true){const s=el(id),before=s.value;s.replaceChildren();for(const v of [...(all?['全部']:[]),...new Set(values)])s.add(new Option(v,v));if([...s.options].some(o=>o.value===before))s.value=before}
@@ -12,7 +31,7 @@ function key(){const r=rows[active];return JSON.stringify([manifest.round,r.sour
 async function show(i){const seq=++epoch;playing=false;el('play').textContent='播放';active=i;const r=rows[i];list();el('caseTitle').textContent=r.episode+' · '+r.robot+' · '+r.method;el('details').textContent=[r.object,'源帧 '+r.source_frames.join('–'),r.initial_state,r.variant,r.product,r.hypothesis,r.task_scope,r.task_type,r.reason,r.cost_text].filter(Boolean).join(' ｜ ');el('error').textContent='';el('player').hidden=true;playData=null;el("more").open=false;el("more").hidden=!r.score_record;el("metrics").textContent="";const n=reports()[key()]||{};el('vote').value=n.vote||'不确定';el('note').value=n.note||'';
 const baselineTitle=document.querySelector('[data-scene=baseline] figcaption');if(baselineTitle)baselineTitle.firstChild.textContent=r.baseline_label?'配对参照 · '+r.baseline_label:'直接执行 · B0';
 if(!r.media)return;
-try{const source=new URL(r.media.source,folder),tr=async path=>path?json(new URL(path,folder)):null;const [s,b,a,trace,world]=await Promise.all([json(source),tr(r.media.baseline),tr(r.media.actual),tr(r.timeline),tr(r.world)]);if(seq!==epoch)return;
+try{const source=assetURL(r.media.source),tr=async path=>path?json(assetURL(path)):null;const [s,b,a,trace,world]=await Promise.all([json(source),tr(r.media.baseline),tr(r.media.actual),tr(r.timeline),tr(r.world)]);if(seq!==epoch)return;
 playData={s,b,a,trace,world};configureWorldLayers(world,r.hypothesis);el('frame').max=s.time.length-1;setStereoSource(r);select('chart',s.charts||[],false);el('player').hidden=false;resetCamerasForEpisode();draw(0)}catch(e){if(seq===epoch)el('error').textContent='回放读取失败 '+e}}
 function setStereoSource(row) {
     const version = el('stereoOverlay').checked ? '.undistorted.mp4' : '.undistorted-clean.mp4';

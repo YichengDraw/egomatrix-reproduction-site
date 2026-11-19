@@ -1,5 +1,5 @@
 {
-  "round": "V3-D-material",
+  "round": "V3-B-observed-edges",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -14,7 +14,8 @@
     "V3-C-surface-calibrated",
     "V3-D-budget",
     "V3-D-feedback-centered",
-    "V3-D-material"
+    "V3-D-material",
+    "V3-B-observed-edges"
   ],
-  "manifest_sha256": "49e364c133fbe4fd00f7a46492614922aa8d7a0be14eed00d17f0dadb5b1f229"
+  "manifest_sha256": "27623ad0a387211c1debd5f4c03856166de989fb529e9e73144651c799d03e2e"
 }

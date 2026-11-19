@@ -1,0 +1,8 @@
+{
+  "distinct_controls": 21,
+  "generation_steps": 373809,
+  "candidate_steps": 373809,
+  "independent_steps": 40887,
+  "generation_seconds": 110.94898648373783,
+  "independent_seconds": 104.31637788098305
+}

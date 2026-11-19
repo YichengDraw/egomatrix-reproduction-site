@@ -1,0 +1,14 @@
+{
+  "other hand near the same target during more than 12% of source segment; horizontal task support not verified in both views": 168,
+  "horizontal task support not verified in both views": 144,
+  "physical_invalid / contact_gate_failed": 14,
+  "hold_support_failed / contact_gate_failed": 65,
+  "object_progress_or_target_failed / contact_gate_failed": 71,
+  "other hand near the same target during more than 12% of source segment": 24,
+  "source target penetrates the reconstructed support plane by over 10 mm": 24,
+  "physical_invalid / no_native_contact": 4,
+  "no sustained source hand/target evidence in registered recording": 24,
+  "object_progress_or_target_failed / no_native_contact": 13,
+  "task depends on another instrument, medium or contact environment; horizontal task support not verified in both views": 24,
+  "原生积分发散，最后有效时刻 1.290 秒": 1
+}

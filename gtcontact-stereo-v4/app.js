@@ -17,7 +17,7 @@ async function media(path){
  const r=await fetch(u,{headers:{Accept:'application/vnd.github.raw+json'}});if(!r.ok)throw Error('读取回放 '+r.status);
  return new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json();
 }
-function lab(x){return x===true?'通过':x===false?'失败':'—'}
+function lab(x){return x===true?'通过':x===false?'失败':x===null?'未知':'—'}
 function add(t,v,p){const e=document.createElement(t);e.textContent=v;p.append(e);return e}
 function table(){
  const f=$('search').value.trim().toLowerCase(),visible=rows.filter(r=>[r.episode,r.robot,r.method,r.track,r.status].join(' ').toLowerCase().includes(f));$('count').textContent=visible.length+' / '+rows.length+' 条记录';
@@ -59,11 +59,15 @@ async function show(r){
  table();if(r.reference)link('同源既有回放',r.reference);if(r.archive)link('观看这条原始回放',r.archive);if(r.detail)link('下载逐项数据',r.detail);if(r.stereo)link('打开去畸变双目视频',r.stereo);if(!r.media)return;
  $('status').textContent='正在读取原生回放…';try{const v=await media(r.media),g=await media(v.geom);if(seq!==id)return;data=v;parts=g;frame=0;$('frame').max=data.t.length-1;$('player').hidden=false;$('stereobox').hidden=!r.stereo;if(r.stereo)$('stereo').src=new URL(r.stereo,base);else $('stereo').removeAttribute('src');$('status').textContent='';reset()}catch(e){if(seq===id)$('status').textContent='回放读取失败 '+e}
 }
+let archivalScores;
+$('details').ontoggle=async()=>{if(!$('details').open || doc?.round!=='R0')return;const active=row;try{archivalScores??=get(new URL('r0-full.json.gz',base),true);const grades=await archivalScores;if(row===active)$('evidence').textContent=JSON.stringify({...active.score,...grades[active.id]},null,2)}catch(e){$('status').textContent='逐条证据读取失败 '+e}};
 function currentfile(){return new URL('rounds/'+doc.round+'/manifest.json',base)}
 async function init(){
  const list=await get(new URL('rounds.json',base));for(const r of list.rounds)$('round').add(new Option(r,r));
  const r=location.pathname.match(/\/rounds\/(R[\w-]+)/)?.[1]||q.get('round')||list.latest;$('round').value=r;$('round').onchange=()=>location.assign(new URL('rounds/'+$('round').value+'/',base));
- doc=await get(new URL('rounds/'+r+'/manifest.json',base));rows=doc.rows;$('heading').textContent=r+' · '+doc.title;$('intro').replaceChildren();for(const p of doc.summary)add('p',p,$('intro'));$('download').href=currentfile();
+ try{doc=await get(new URL('rounds/'+r+'/manifest.json.gz',base),true)}catch(e){doc=await get(new URL('rounds/'+r+'/manifest.json',base))};rows=doc.rows;$('heading').textContent=r+' · '+doc.title;$('intro').replaceChildren();for(const p of doc.summary)add('p',p,$('intro'));
+ const applicable=rows.filter(x=>x.score && Object.hasOwn(x.score,'J_validated'));if(applicable.length){const m=document.createElement('table'),h=m.createTHead().insertRow();for(const t of ['指标','通过','失败','未知','有该项判定的记录'])add('th',t,h);
+ for(const [k,label] of [['S_behavior','任务行为'],['Q_phys','运行物理'],['Q_geom','场景几何'],['C_native','原生接触'],['J_validated','联合验证']]){const vals=applicable.filter(x=>Object.hasOwn(x.score,k)).map(x=>x.score[k]),tr=m.insertRow();for(const v of [label,vals.filter(x=>x===true).length,vals.filter(x=>x===false).length,vals.filter(x=>x===null).length,vals.length])add('td',v,tr)}$('intro').append(m)}$('download').href=currentfile();
  $('search').oninput=table;const preferred=rows.find(x=>x.id===q.get('row'))||rows.find(x=>x.media)||rows[0];if(preferred)await show(preferred)
 }
 $('save').onclick=()=>{saved[row.id]=$('notes').value;localStorage.setItem('egowm-v4-notes',JSON.stringify(saved))};$('export').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(saved,null,2)]));a.download='v4-review.json';a.click()};$('import').onchange=async e=>{const x=JSON.parse(await e.target.files[0].text());for(const [k,v] of Object.entries(x))if(typeof v==='string')saved[k]=v;localStorage.setItem('egowm-v4-notes',JSON.stringify(saved));$('notes').value=saved[row.id]||''};

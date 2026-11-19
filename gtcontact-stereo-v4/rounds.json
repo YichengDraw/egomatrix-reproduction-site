@@ -1,7 +1,8 @@
 {
-  "latest": "R3",
+  "latest": "R0",
   "rounds": [
     "R2",
-    "R3"
+    "R3",
+    "R0"
   ]
 }

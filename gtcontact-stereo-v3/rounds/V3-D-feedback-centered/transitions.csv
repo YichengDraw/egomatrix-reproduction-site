@@ -1,0 +1,13 @@
+episode,robot,initial_state,variant,method,product,physics_dt,S,C,J
+clip-000170,shadow,contact,nominal,B3,fixed_actions,0.005,False,False,False
+clip-000170,shadow,contact,nominal,B3,frozen_feedback,0.005,False,False,False
+clip-000170,shadow,contact,half,B3,fixed_actions,0.0025,False,False,False
+clip-000170,shadow,contact,half,B3,frozen_feedback,0.0025,False,False,False
+clip-000170,shadow,contact,mass_080,B3,fixed_actions,0.005,False,False,False
+clip-000170,shadow,contact,mass_080,B3,frozen_feedback,0.005,False,False,False
+clip-000170,shadow,contact,mass_120,B3,fixed_actions,0.005,False,False,False
+clip-000170,shadow,contact,mass_120,B3,frozen_feedback,0.005,False,False,False
+clip-000170,shadow,contact,friction_080,B3,fixed_actions,0.005,False,False,False
+clip-000170,shadow,contact,friction_080,B3,frozen_feedback,0.005,False,False,False
+clip-000170,shadow,contact,friction_120,B3,fixed_actions,0.005,False,False,False
+clip-000170,shadow,contact,friction_120,B3,frozen_feedback,0.005,False,False,False

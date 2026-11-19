@@ -1,0 +1,74 @@
+{
+  "4f50e8571279474bc1de24b95e54d21cb41abab0b150d3b8bc520d518b099650": {
+    "native_steps": 994,
+    "candidate_steps": 0
+  },
+  "4a8960a13bf957b9f13b84f9156815faad429ab38f280853818d6adc22371abc": {
+    "native_steps": 26276,
+    "candidate_steps": 26276
+  },
+  "c3bccc15f45af104639ed24a5f6f9ad1a514f357933a13d6fc3bd35beba03c22": {
+    "native_steps": 994,
+    "candidate_steps": 0
+  },
+  "8c4a8e63ac11ce9da47008956e4a58c834fc43b2ef7ac0c8a40274cc198991c7": {
+    "native_steps": 26388,
+    "candidate_steps": 26388
+  },
+  "8fbed20cf978719c2108c006e0d2e08536d242b7aec77d686ccdfc5eb06ec8ac": {
+    "native_steps": 994,
+    "candidate_steps": 0
+  },
+  "0a52f5f9b29843cd37d1ba58605f5e405c23d895a8ceb73928f87177e2849d0e": {
+    "native_steps": 26548,
+    "candidate_steps": 26548
+  },
+  "cb457661e88dafe168a61c83e42bb0d2b17f0ab39bcf192ff7be313e0f1cff60": {
+    "native_steps": 874,
+    "candidate_steps": 0
+  },
+  "0dab6447417b51ec0f1a6f2462658f364082cbbcbda9763a3792d3e5762422e7": {
+    "native_steps": 22724,
+    "candidate_steps": 22724
+  },
+  "574207d1f58000ecb4705560dacd062d0ed90c7646efbc8ffc9ee47e4ad48c27": {
+    "native_steps": 874,
+    "candidate_steps": 0
+  },
+  "a2581ef921ecff84b3f47283187a9e778663b2d36e0d8ed89e32561e778d798f": {
+    "native_steps": 23364,
+    "candidate_steps": 23364
+  },
+  "0def14578418d9ce375052f584bc0985931b76c47f942e7c657be5bc28bc6bad": {
+    "native_steps": 874,
+    "candidate_steps": 0
+  },
+  "577b3008735fd25cda1837c8cf8c5d2887ed5afc735b0660c8660c64fb59d085": {
+    "native_steps": 22718,
+    "candidate_steps": 22718
+  },
+  "d24284b6156dd3a72fd255970033648a18e155fffcde8091e67d4bc168eb7e30": {
+    "native_steps": 414,
+    "candidate_steps": 0
+  },
+  "98923ed3c599d7d98013562115d6a7c51137d9ba0369b357866a9adb4313953d": {
+    "native_steps": 10298,
+    "candidate_steps": 10298
+  },
+  "aa7a833404ff47718adf0cf825bf2e64409ba34412ff0be38c88f7caf8815657": {
+    "native_steps": 414,
+    "candidate_steps": 0
+  },
+  "bb4892fe8c68b15d5ad75170c72fcd551ab32804f3cb4fccd032879e1082f3fe": {
+    "native_steps": 10378,
+    "candidate_steps": 10378
+  },
+  "a1d11e107122ab347d19a76934cde64f170d534ee97f6921d8e37659d9eb0c61": {
+    "native_steps": 414,
+    "candidate_steps": 0
+  },
+  "2f6099b7bcb5f098f458113bcb2071611b0cd1fa1c28ad57b0c761d9ef91e864": {
+    "native_steps": 12026,
+    "candidate_steps": 12026
+  }
+}

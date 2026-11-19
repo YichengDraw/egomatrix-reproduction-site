@@ -1,12 +1,13 @@
 {
-  "round": "V3-C-native-u0",
+  "round": "V3-B-sensitivity",
   "history": [
     "V3-A-focus",
     "V3-A-core",
     "V3-A-expanded-focus",
     "V3-A-expanded-core",
     "V3-B",
-    "V3-C-native-u0"
+    "V3-C-native-u0",
+    "V3-B-sensitivity"
   ],
-  "manifest_sha256": "306a454e25b002ba9bea6f83f8e34cb22213d485341c051d79fcc0dd7df91a0c"
+  "manifest_sha256": "989a707ce62f42060e5f9c8f0ce7f8885a240209c0c0d9f27f7ae7fce04fc4fb"
 }

@@ -1,0 +1,520 @@
+{
+  "stage": "GTS03b",
+  "variant": "close_gap",
+  "promoted": false,
+  "scientific_reason": "during 40.785 of 60.255 high-confidence source-seconds native contact had no positive normal force; replace one native finite difference direction by the bounded movement toward the active matching surface when contact is absent",
+  "reason": "no nominal rescue in S/C/J",
+  "promotion_lock": "c621b6baac8cd61fc65bcae16db69269c1e2f49d8c72cf2f1423ea536beb8439",
+  "nominal_n": 6,
+  "half_n": 6,
+  "per_dt": {
+    "5": {
+      "S": {
+        "baseline": 0,
+        "proposal": 0,
+        "damaged": 0,
+        "new_pass": 0
+      },
+      "C": {
+        "baseline": 0,
+        "proposal": 0,
+        "damaged": 0,
+        "new_pass": 0
+      },
+      "J": {
+        "baseline": 0,
+        "proposal": 0,
+        "damaged": 0,
+        "new_pass": 0
+      },
+      "support_recall": {
+        "paired_count": 6,
+        "mean_change": -7.992327368077215e-06
+      },
+      "impulse_lower": {
+        "paired_count": 6,
+        "mean_change": -0.0003248789997865654
+      },
+      "position_median_m": {
+        "paired_count": 6,
+        "mean_change": -0.006996176439200215
+      },
+      "support_time": {
+        "paired_count": 6,
+        "mean_change": -0.0023540489642184556
+      }
+    },
+    "2p5": {
+      "S": {
+        "baseline": 0,
+        "proposal": 0,
+        "damaged": 0,
+        "new_pass": 0
+      },
+      "C": {
+        "baseline": 0,
+        "proposal": 0,
+        "damaged": 0,
+        "new_pass": 0
+      },
+      "J": {
+        "baseline": 0,
+        "proposal": 0,
+        "damaged": 0,
+        "new_pass": 0
+      },
+      "support_recall": {
+        "paired_count": 6,
+        "mean_change": 0.0
+      },
+      "impulse_lower": {
+        "paired_count": 6,
+        "mean_change": 0.0
+      },
+      "position_median_m": {
+        "paired_count": 6,
+        "mean_change": 0.011113123130071878
+      },
+      "support_time": {
+        "paired_count": 6,
+        "mean_change": -0.019067796610169493
+      }
+    }
+  },
+  "cost": {
+    "candidate_and_generation_steps": 75788,
+    "independent_physics_steps": 8892,
+    "rows": [
+      {
+        "episode": "clip-003070",
+        "robot": "sharpa",
+        "candidate_and_generation_steps": 10458,
+        "budget": 275546,
+        "within_budget": true,
+        "full_control_hash": "c1b045cc9f4cc390cade05bde380501aaf5a7fac9d50e244921f1b1636b362b5",
+        "max_active_directions": 4,
+        "fallback": false,
+        "elapsed_s": 1.573531398549676,
+        "official_independent_5ms_steps": 414,
+        "official_independent_2p5ms_steps": 828
+      },
+      {
+        "episode": "clip-003070",
+        "robot": "shadow",
+        "candidate_and_generation_steps": 10464,
+        "budget": 275546,
+        "within_budget": true,
+        "full_control_hash": "c26219a318505cb3022fa70bb9f2ac987dee0f63622673dcba25e8af4f4c9ded",
+        "max_active_directions": 4,
+        "fallback": false,
+        "elapsed_s": 2.617502477951348,
+        "official_independent_5ms_steps": 414,
+        "official_independent_2p5ms_steps": 828
+      },
+      {
+        "episode": "clip-003070",
+        "robot": "inspire",
+        "candidate_and_generation_steps": 11972,
+        "budget": 275546,
+        "within_budget": true,
+        "full_control_hash": "b1450f99b82d2192738f5d73d581c15651e756f7ae8a54cb53b5cdef77b9e380",
+        "max_active_directions": 4,
+        "fallback": false,
+        "elapsed_s": 3.6625953130424023,
+        "official_independent_5ms_steps": 414,
+        "official_independent_2p5ms_steps": 828
+      },
+      {
+        "episode": "clip-000170",
+        "robot": "sharpa",
+        "candidate_and_generation_steps": 13898,
+        "budget": 382223,
+        "within_budget": true,
+        "full_control_hash": "c544b14a35ac0ba5a0854447764e41a176b662925b305751d553f713ebf36ae5",
+        "max_active_directions": 4,
+        "fallback": false,
+        "elapsed_s": 2.026939984411001,
+        "official_independent_5ms_steps": 574,
+        "official_independent_2p5ms_steps": 1148
+      },
+      {
+        "episode": "clip-000170",
+        "robot": "shadow",
+        "candidate_and_generation_steps": 14698,
+        "budget": 382223,
+        "within_budget": true,
+        "full_control_hash": "abc2dce5e4fd4118b84f61613f6b2992dcc02e30d8b3f361808d40f0d4f90d0e",
+        "max_active_directions": 4,
+        "fallback": false,
+        "elapsed_s": 3.8350656032562256,
+        "official_independent_5ms_steps": 574,
+        "official_independent_2p5ms_steps": 1148
+      },
+      {
+        "episode": "clip-000170",
+        "robot": "inspire",
+        "candidate_and_generation_steps": 14298,
+        "budget": 382223,
+        "within_budget": true,
+        "full_control_hash": "9b71838983cd2f21589599066db7fbea786386adc023213978edcc54ca869962",
+        "max_active_directions": 4,
+        "fallback": false,
+        "elapsed_s": 2.0255552046000957,
+        "official_independent_5ms_steps": 574,
+        "official_independent_2p5ms_steps": 1148
+      }
+    ]
+  },
+  "transition_counts": {
+    "S": {
+      "remained_failure": 6
+    },
+    "C": {
+      "remained_failure": 6
+    },
+    "J": {
+      "remained_failure": 6
+    }
+  },
+  "selected_backend": "incumbent",
+  "baseline_path": "diagnostics/pilot",
+  "proposal_path": "diagnostics/pilot_GTS03b",
+  "rows": [
+    {
+      "episode": "clip-003070",
+      "robot": "sharpa",
+      "device": "Aria",
+      "dt": "5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0033333333333333587,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.6419690333801559,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0033333333333333587,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.5529375224141002,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-003070",
+      "robot": "sharpa",
+      "device": "Aria",
+      "dt": "2p5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.7209233719798731,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.6593332799604854,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-003070",
+      "robot": "shadow",
+      "device": "Aria",
+      "dt": "5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.026666666666666845,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.5771925429590651,
+        "cause_task": "physical_invalid",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.026666666666666845,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.5767193515618936,
+        "cause_task": "physical_invalid",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-003070",
+      "robot": "shadow",
+      "device": "Aria",
+      "dt": "2p5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.020000000000000275,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 1.346072777416659,
+        "cause_task": "physical_invalid",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.020000000000000275,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 1.3532704306198398,
+        "cause_task": "physical_invalid",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-003070",
+      "robot": "inspire",
+      "device": "Aria",
+      "dt": "5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.5933333333333352,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.17629826703794463,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.5933333333333352,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.17627872625561722,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-003070",
+      "robot": "inspire",
+      "device": "Aria",
+      "dt": "2p5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.6066666666666691,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.15077454392970535,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.6066666666666691,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.15069013687543123,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-000170",
+      "robot": "sharpa",
+      "device": "Quest3",
+      "dt": "5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.19524705158039943,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.24804035643028077,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-000170",
+      "robot": "sharpa",
+      "device": "Quest3",
+      "dt": "2p5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.1948184430316204,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.24048802016995252,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-000170",
+      "robot": "shadow",
+      "device": "Quest3",
+      "dt": "5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 4.7953964208463296e-05,
+        "impulse_lower": 0.0019492739987193924,
+        "position_median_m": 0.25172914944602376,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.2453238224991208,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-000170",
+      "robot": "shadow",
+      "device": "Quest3",
+      "dt": "2p5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.11440677966101695,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.22514429631433358,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.263889118416403,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-000170",
+      "robot": "inspire",
+      "device": "Quest3",
+      "dt": "5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.014124293785310733,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.2290088558790382,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.23016806248641308,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    },
+    {
+      "episode": "clip-000170",
+      "robot": "inspire",
+      "device": "Quest3",
+      "dt": "2p5",
+      "baseline": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.22548192004674486,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      },
+      "proposal": {
+        "S": false,
+        "C": false,
+        "J": false,
+        "support_time": 0.0,
+        "support_recall": 0.0,
+        "impulse_lower": 0.0,
+        "position_median_m": 0.26222310545725563,
+        "cause_task": "hold_support_failed",
+        "cause_contact": "contact_gate_failed"
+      }
+    }
+  ]
+}

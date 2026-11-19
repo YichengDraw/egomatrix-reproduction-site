@@ -1,0 +1,10 @@
+{
+  "distinct_controls": 0,
+  "generation_steps": 0,
+  "candidate_steps": 0,
+  "independent_steps": 0,
+  "generation_seconds": 0,
+  "independent_seconds": 0,
+  "new_pilot_generation_steps": 75788,
+  "new_pilot_independent_steps": 8892
+}

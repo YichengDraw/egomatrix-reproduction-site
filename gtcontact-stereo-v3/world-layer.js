@@ -1,10 +1,11 @@
 'use strict';
-function configureWorldLayers(world) {
+function configureWorldLayers(world,activeHypothesis) {
     const panel=document.getElementById('worldLayers');
     panel.hidden=!world;
     if (!world) return;
     const selector=document.getElementById('worldHypothesis');
     selector.replaceChildren(...Object.keys(world.hypotheses).map(k=>new Option(k,k)));
+    if(activeHypothesis && world.hypotheses[activeHypothesis])selector.value=activeHypothesis;
     const text=document.getElementById('worldDescription');
     const update=()=>{const h=world.hypotheses[selector.value];text.textContent=h.description;requestOrbitDraw();};
     selector.onchange=update;

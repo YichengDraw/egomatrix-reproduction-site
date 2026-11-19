@@ -15,9 +15,9 @@
 <p>手部网格通过 Meta 的官方工具生成。Hand surfaces use the official UmeTrack full-mesh forward kinematics.
 <a href="https://github.com/facebookresearch/hand_tracking_toolkit/tree/bc628e9286c18444b47a0971a89d075ea6f00747">Hand Tracking Toolkit, Apache 2.0</a>.</p>
 <p>相机和影像处理依据 Meta 发布的 <a href="https://github.com/facebookresearch/hot3d/blob/2aaf8d1c265feba21f2d05610188983481b13b23/hot3d/clips/vis_clips.py#L109-L117">HOT3D-Clips 去畸变入口</a>、<a href="https://github.com/facebookresearch/hot3d/blob/2aaf8d1c265feba21f2d05610188983481b13b23/hot3d/clips/vis_clips.py#L183-L189">画面方向</a>与 <a href="https://github.com/facebookresearch/hand_tracking_toolkit/blob/bc628e9286c18444b47a0971a89d075ea6f00747/hand_tracking_toolkit/dataset.py#L160-L207">Hand Tracking Toolkit 反向映射</a>。</p>
-<h2 id="collision-scope">这五轮实际参与碰撞的模型</h2>
+<h2 id="collision-scope">旧版五轮与 v3 采样对照的碰撞模型</h2>
 <p>Sharpa 每只手使用 15 个胶囊和 1 个掌部盒子，来自项目历史场景。厂家另有现成的 Wave 左右手仿真资产。Shadow 使用 MuJoCo Menagerie 发布的转换模型，Inspire 使用 Correll Lab 的转换模型并经过项目适配。主比较里的六件物体使用 HOT3D 的评估用简化 CAD，经 CoACD 凸分解后参与碰撞。支撑面是无限平面，质量和摩擦含估计值。网页中手的形状按实际碰撞模型绘制，物体按参考 CAD 显示。<a href="https://github.com/sharpa-robotics/sharpa-urdf-usd-xml">Sharpa 厂家资产</a></p>
-<h2>机器手模型 · Robot models</h2>
+<h2>v3 初握与控制实验所用资产</h2><p>Sharpa W01 使用厂家发布的左右手模型，每只手 26 个碰撞网格、28 个驱动。Shadow 使用 Menagerie 的左右手模型。Inspire 使用 Correll Lab 的六通道适配，厂商提供的 STEP 支持形状核对。33 件物体使用 HOT3D 同实例的高分辨率模型；其中 25 件有 NVIDIA RoboLab 发布的同实例 USD，碰撞形状取自 PhysX 实际编译的凸块。其余 8 件以原始 CAD 构建碰撞体。物体质量与摩擦的估计值保留在实验登记中。</p><h2>历史资产来源 · Robot models</h2>
 <p>页面显示仿真时采样的实际机器人表面点。研究中复用了以下模型和驱动定义，并为仿真建立浮腕、碰撞配置与表面坐标。
 The viewer plots samples from the simulated robot surfaces. Floating carriers, collision configurations, and surface coordinates were prepared for this study.</p>
 <ul>

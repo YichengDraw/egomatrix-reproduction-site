@@ -36,7 +36,7 @@ function draw(){
  function dot(v,color,r){const [x,y]=proj(v);ctx.beginPath();ctx.arc(x,y,r,0,2*Math.PI);ctx.fillStyle=color;ctx.fill()}
  if($('hand').checked && data.source?.joints?.[k]){let j=data.source.joints[k];ctx.lineWidth=2;ctx.strokeStyle='#5744ae';for(const chain of [[5,6,7,0],[5,8,9,10,1],[5,11,12,13,2],[5,14,15,16,3],[5,17,18,19,4]]){ctx.beginPath();chain.forEach((i,n)=>{const [x,y]=proj(j[i]);n?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke()}}
  if($('points').checked)for(const v of data.target[k])dot(v,'#4634a1',2.7);
- if($('sourceobject').checked && data.source?.object_T?.[k]){const t=data.source.object_T[k];ctx.strokeStyle='#854a9e';ctx.lineWidth=.8;
+ if($('sourceobject')?.checked && data.source?.object_T?.[k]){const t=data.source.object_T[k];ctx.strokeStyle='#854a9e';ctx.lineWidth=.8;
  for(const part of parts.filter(a=>a.k==='object')){const vs=part.v.map(v=>proj(t.slice(0,3).map(r=>r[3]+r[0]*v[0]+r[1]*v[1]+r[2]*v[2])));ctx.beginPath();for(const [i,j,l] of part.f){ctx.moveTo(...vs[i].slice(0,2));ctx.lineTo(...vs[j].slice(0,2));ctx.lineTo(...vs[l].slice(0,2));}ctx.stroke()}}
  const marks=data.witness[k];if($('forces').checked)for(const v of marks){const col={matched:'#0b9a29',wrong:'#d52d1f',unknown:'#afa124',unmapped:'#313131'}[v[4]];
  dot(v.slice(0,3),col,Math.min(9,3+Math.sqrt(v[3])));if(v[8]){const f=v[8],sc=.025/Math.max(1,Math.hypot(...f)),a=proj(v.slice(0,3)),b=proj(v.slice(0,3).map((x,i)=>x+sc*f[i]));
@@ -49,7 +49,7 @@ function tick(t){if(!playing||!data)return;const time=(t-clocktime)/1000;while(f
 function stop(){playing=false;$('play').textContent='播放';$('stereo').pause()}
 function reset(){Object.assign(camera,{yaw:.55,pitch:-.23,scale:1,px:0,py:0});draw()}
 $('frame').oninput=()=>{stop();sync(+$('frame').value)};$('play').onclick=()=>{if(playing){stop();return}if(frame===data.t.length-1)sync(0);playing=true;clocktime=performance.now()-data.t[frame]*1000;$('play').textContent='暂停';if(row.stereo){$('stereo').currentTime=data.t[frame];$('stereo').play().catch(()=>{})}requestAnimationFrame(tick)};
-for(const k of ['hand','points','forces','sourceobject'])$(k).onchange=draw;
+for(const k of ['hand','points','forces','sourceobject']){if($(k))$(k).onchange=draw};
 function zoom(v){camera.scale=Math.max(.15,Math.min(16,camera.scale*v));draw()}
 $('reset').onclick=reset;$('zoomin').onclick=()=>zoom(1.3);$('zoomout').onclick=()=>zoom(1/1.3);$('full').onclick=()=>cn.requestFullscreen();
 let old=null;cn.onpointerdown=e=>{old=[e.clientX,e.clientY,e.shiftKey||e.button!==0];cn.setPointerCapture(e.pointerId)};cn.onpointermove=e=>{if(!old)return;const dx=e.clientX-old[0],dy=e.clientY-old[1];if(old[2]){camera.px+=dx*cn.width/cn.clientWidth;camera.py+=dy*cn.height/cn.clientHeight}else{camera.yaw+=dx*.009;camera.pitch=Math.min(1.55,Math.max(-1.55,camera.pitch+dy*.009))}old=[e.clientX,e.clientY,old[2]];draw()};cn.onpointerup=cn.onpointercancel=()=>old=null;cn.oncontextmenu=e=>e.preventDefault();cn.onwheel=e=>{e.preventDefault();zoom(Math.exp(-Math.sign(e.deltaY)*.15))};cn.addEventListener('wheel',()=>{},{passive:false});

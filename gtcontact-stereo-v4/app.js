@@ -32,7 +32,7 @@ function table(){
  const b=t.createTBody();for(const r of shown){const tr=b.insertRow();tr.dataset.key=r.id;tr.setAttribute('aria-selected',r===row);[r.episode,r.robot,r.method+(r.seed?' · '+r.seed:'')+(r.physics_dt?' · '+(1000*r.physics_dt)+' ms':''),r.track,r.status,...['S_behavior','Q_phys','Q_geom','C_native','J_validated'].map(k=>lab(r.score?.[k]))].forEach(v=>add('td',v||'—',tr));tr.onclick=()=>show(r)}
 }
 function pose(v,t){const [x,y,z,w]=t.slice(3),[a,b,c]=v,k=2*(y*c-z*b),l=2*(z*a-x*c),m=2*(x*b-y*a);return [t[0]+a+w*k+y*m-z*l,t[1]+b+w*l+z*k-x*m,t[2]+c+w*m+x*l-y*k]}
-function proj(v){const c=data.center,[a,b,e]=v.map((x,i)=>x-c[i]),co=Math.cos(camera.yaw),si=Math.sin(camera.yaw),cp=Math.cos(camera.pitch),sp=Math.sin(camera.pitch),h=si*a+co*b,s=Math.min(cn.width,cn.height)*2.8*camera.scale;return [cn.width/2+s*(co*a-si*b)+camera.px,cn.height/2-s*(cp*e-sp*h)+camera.py,cp*h+sp*e]}
+function proj(v){const c=camera.focus||data.center,[a,b,e]=v.map((x,i)=>x-c[i]),co=Math.cos(camera.yaw),si=Math.sin(camera.yaw),cp=Math.cos(camera.pitch),sp=Math.sin(camera.pitch),h=si*a+co*b,s=Math.min(cn.width,cn.height)*2.8*camera.scale;return [cn.width/2+s*(co*a-si*b)+camera.px,cn.height/2-s*(cp*e-sp*h)+camera.py,cp*h+sp*e]}
 const palette={matched:'#098848',wrong:'#c63728',unknown:'#b18912',unmapped:'#42484c'};
 function graphData(){const classes=Object.keys(palette),heat={};const force=data.witness.map(ws=>{const a=[0,0,0,0];for(const v of ws){const i=classes.indexOf(v[4]);if(i>=0)a[i]+=v[3];if(!v[6])continue;const bins=heat[v[5]]??=new Float64Array(24*24),x=Math.max(0,Math.min(23,Math.floor(v[6][0]*24))),y=Math.max(0,Math.min(23,Math.floor(v[6][1]*24)));bins[x+24*y]+=v[3]}return a});graphs={force,heat,classes,peak:Math.max(1,...force.flat())}}
 function paintGraphs(k,marks,top){if(!$('historyplot')||!$('uvplot'))return;if(!graphs)graphData();
@@ -67,10 +67,28 @@ function stereoTime(k){return row.sourceVideoFPS&&data.source?.ids ? (data.sourc
 function sync(k,video=true){frame=Math.max(0,Math.min(data.t.length-1,k));draw();if(video&&row.stereo&&!playing&&Number.isFinite($('stereo').duration))$('stereo').currentTime=stereoTime(frame)}
 function tick(t){if(!playing||!data)return;const time=(t-clocktime)/1000;while(frame+1<data.t.length&&data.t[frame+1]<=time)frame++;draw();if(frame+1==data.t.length){stop();return}requestAnimationFrame(tick)}
 function stop(){playing=false;$('play').textContent='播放';$('stereo').pause()}
-function reset(){Object.assign(camera,{yaw:.55,pitch:-.23,scale:1,px:0,py:0});draw()}
+function reset(){
+ Object.assign(camera,{yaw:.55,pitch:-.23,scale:1,px:0,py:0,focus:null});
+ if(!data||!parts)return;
+ const vertices=[];
+ for(const part of parts){
+  if(part.k!=='hand'&&part.k!=='object')continue;
+  const transform=data.trans[frame][part.b];
+  for(const vertex of part.v)vertices.push(pose(vertex,transform));
+ }
+ if(vertices.length){
+  const low=[Infinity,Infinity,Infinity],high=[-Infinity,-Infinity,-Infinity];
+  for(const v of vertices)for(let i=0;i<3;i++){low[i]=Math.min(low[i],v[i]);high[i]=Math.max(high[i],v[i])}
+  camera.focus=low.map((v,i)=>(v+high[i])/2);
+  let rx=1,ry=1;
+  for(const v of vertices){const [x,y]=proj(v);rx=Math.max(rx,Math.abs(x-cn.width/2));ry=Math.max(ry,Math.abs(y-cn.height/2))}
+  camera.scale=Math.min(16,.44*cn.width/rx,.44*cn.height/ry);
+ }
+ draw()
+}
 $('frame').oninput=()=>{stop();sync(+$('frame').value)};$('play').onclick=()=>{if(playing){stop();return}if(frame===data.t.length-1)sync(0);playing=true;clocktime=performance.now()-data.t[frame]*1000;$('play').textContent='暂停';if(row.stereo){$('stereo').currentTime=stereoTime(frame);$('stereo').play().catch(()=>{})}requestAnimationFrame(tick)};
 for(const k of ['hand','points','forces','sourceobject']){if($(k))$(k).onchange=draw};
-function zoom(v){camera.scale=Math.max(.15,Math.min(16,camera.scale*v));draw()}
+function zoom(v){camera.scale=Math.max(.002,Math.min(16,camera.scale*v));draw()}
 $('reset').onclick=reset;$('zoomin').onclick=()=>zoom(1.3);$('zoomout').onclick=()=>zoom(1/1.3);$('full').onclick=()=>cn.requestFullscreen();
 let old=null;cn.onpointerdown=e=>{old=[e.clientX,e.clientY,e.shiftKey||e.button!==0];cn.setPointerCapture(e.pointerId)};cn.onpointermove=e=>{if(!old)return;const dx=e.clientX-old[0],dy=e.clientY-old[1];if(old[2]){camera.px+=dx*cn.width/cn.clientWidth;camera.py+=dy*cn.height/cn.clientHeight}else{camera.yaw+=dx*.009;camera.pitch=Math.min(1.55,Math.max(-1.55,camera.pitch+dy*.009))}old=[e.clientX,e.clientY,old[2]];draw()};cn.onpointerup=cn.onpointercancel=()=>old=null;cn.oncontextmenu=e=>e.preventDefault();cn.onwheel=e=>{e.preventDefault();zoom(Math.exp(-Math.sign(e.deltaY)*.15))};cn.addEventListener('wheel',()=>{},{passive:false});
 if($('compare'))$('compare').onchange=async()=>{const active=row;try{if($('compare').checked && comparison && !overlay){const v=await media(comparison.media),p=await media(v.geom);if(row!==active)return;overlay={data:v,parts:p}}draw()}catch(e){$('status').textContent='配对回放读取失败 '+e}};

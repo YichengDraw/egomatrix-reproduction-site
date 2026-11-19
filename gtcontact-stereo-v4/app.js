@@ -1,6 +1,6 @@
 'use strict';
 const $=x=>document.getElementById(x), base=new URL('./',document.currentScript.src), q=new URLSearchParams(location.search);
-$('models').href=new URL('assets.html',base);$('prior').href=new URL('../gtcontact-stereo-v3/research-summary.html',base);
+if($('contents'))$('contents').href=new URL('research.html',base);$('models').href=new URL('assets.html',base);$('prior').href=new URL('../gtcontact-stereo-v3/research-summary.html',base);
 let pageNumber=0;let graphs=null,overlay=null,comparison=null;
 let doc,rows=[],row,seq=0,data,parts,frame=0,playing=false,clocktime=0,saved=JSON.parse(localStorage.getItem('egowm-v4-notes')||'{}');
 const camera={yaw:.5,pitch:-.24,scale:1,px:0,py:0},cn=$('scene'),ctx=cn.getContext('2d');

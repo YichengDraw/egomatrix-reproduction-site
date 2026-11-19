@@ -1,5 +1,5 @@
 {
-  "round": "V3-D-final-development",
+  "round": "V3-E-friction-positive",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -17,7 +17,8 @@
     "V3-D-material",
     "V3-B-observed-edges",
     "V3-D-surface-calibrated",
-    "V3-D-final-development"
+    "V3-D-final-development",
+    "V3-E-friction-positive"
   ],
-  "manifest_sha256": "66010ebd4b281585f76a26ab3b8b0432aea7272fd6552b33046a5ab7ffcb265c"
+  "manifest_sha256": "db24c9bc619e77472f5127305cd77a24007071a25d333920c084c05d51f9bfa6"
 }

@@ -1,9 +1,10 @@
 {
-  "round": "GTS03a",
+  "round": "GTS03b",
   "history": [
     "GTS01",
     "GTS02",
-    "GTS03a"
+    "GTS03a",
+    "GTS03b"
   ],
-  "manifest_sha256": "4c1b76771a28c1c9d90183c85015637c950841b8aed30179b68bb43ae7d002f0"
+  "manifest_sha256": "16baf44224316dc51bff9da7b0c2698f916f22101b6b9333bb8ff7c6a7ffbf84"
 }

@@ -1,0 +1,13 @@
+episode,robot,initial_state,variant,method,product,physics_dt,S,C,J
+clip-000060,sharpa,ordinary,B2,B2,fixed_actions,0.005,False,False,False
+clip-000060,sharpa,ordinary,B3,B3,fixed_actions,0.005,False,False,False
+clip-000060,sharpa,contact,B2,B2,fixed_actions,0.005,False,False,False
+clip-000060,sharpa,contact,B3,B3,fixed_actions,0.005,False,False,False
+clip-000060,shadow,ordinary,B2,B2,fixed_actions,0.005,False,False,False
+clip-000060,shadow,ordinary,B3,B3,fixed_actions,0.005,False,False,False
+clip-000060,shadow,contact,B2,B2,fixed_actions,0.005,False,False,False
+clip-000060,shadow,contact,B3,B3,fixed_actions,0.005,False,False,False
+clip-000060,inspire,ordinary,B2,B2,fixed_actions,0.005,False,False,False
+clip-000060,inspire,ordinary,B3,B3,fixed_actions,0.005,False,False,False
+clip-000060,inspire,contact,B2,B2,fixed_actions,0.005,False,False,False
+clip-000060,inspire,contact,B3,B3,fixed_actions,0.005,False,False,False

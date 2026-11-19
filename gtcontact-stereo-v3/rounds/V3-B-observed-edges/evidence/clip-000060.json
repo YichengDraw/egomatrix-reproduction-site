@@ -1,0 +1,759 @@
+{
+  "episode": "clip-000060",
+  "source": "P0002_39fbd23d",
+  "group": "PILOT",
+  "device": "Quest3",
+  "target_name": "aria_small",
+  "scope": "bimanual_robot",
+  "required_sides": [
+    "left",
+    "right"
+  ],
+  "replay_s": 4.5349999999999255,
+  "steps": 907,
+  "expected_steps": 907,
+  "status": "completed",
+  "hypotheses": 3,
+  "alternative_steps": 1814,
+  "alternative_runs": 2,
+  "surfaces": 1,
+  "environment_mode": "finite_surface",
+  "depth_frames": 17,
+  "reconstruction_points": 27933,
+  "max_target_environment_penetration_mm": 8.37898933385228,
+  "primary_collision": "published_PhysX_cooking_export",
+  "shape_count": 256,
+  "depth_source": "official HOT3D cameras + metric binocular SGBM fusion",
+  "data": "data/clip-000060.json",
+  "stereo": "media/clip-000060.mp4",
+  "evidence": "media/clip-000060-fusion.jpg",
+  "participant": "P0002",
+  "roles": {
+    "left": {
+      "required": true,
+      "driven_object_uids": [
+        "111305855142671"
+      ],
+      "valid_at_t0": true,
+      "first_valid_frame": 2,
+      "contact_windows": {
+        "111305855142671": [
+          {
+            "first": 19,
+            "last": 54,
+            "frames": 36,
+            "span_s": 1.166666666
+          },
+          {
+            "first": 86,
+            "last": 126,
+            "frames": 41,
+            "span_s": 1.3333333330000001
+          }
+        ]
+      },
+      "source_labels": {
+        "111305855142671": "hands/left/labels.npz"
+      }
+    },
+    "right": {
+      "required": true,
+      "driven_object_uids": [
+        "111305855142671"
+      ],
+      "valid_at_t0": true,
+      "first_valid_frame": 2,
+      "contact_windows": {
+        "111305855142671": [
+          {
+            "first": 42,
+            "last": 94,
+            "frames": 53,
+            "span_s": 1.7333333340000001
+          }
+        ]
+      },
+      "source_labels": {
+        "111305855142671": "hands/right/labels.npz"
+      }
+    }
+  },
+  "source_hand_target": {
+    "left": {
+      "111305855142671": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.0,
+        "frames_within_3mm": 77,
+        "isolated_or_sustained_windows": [
+          {
+            "first": 19,
+            "last": 54,
+            "frames": 36,
+            "span_s": 1.166666666
+          },
+          {
+            "first": 86,
+            "last": 126,
+            "frames": 41,
+            "span_s": 1.3333333330000001
+          }
+        ],
+        "sustained_min3frames": true
+      },
+      "117658302265452": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.22142292838421118,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "163340972252026": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.12206283457114829,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "232501673989606": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.19356761053892058,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "238686662724712": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.20104094891059615,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "258906041248094": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.2455067348391399,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      }
+    },
+    "right": {
+      "111305855142671": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.0,
+        "frames_within_3mm": 53,
+        "isolated_or_sustained_windows": [
+          {
+            "first": 42,
+            "last": 94,
+            "frames": 53,
+            "span_s": 1.7333333340000001
+          }
+        ],
+        "sustained_min3frames": true
+      },
+      "117658302265452": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.09965566326713163,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "163340972252026": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.08742554840422562,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "232501673989606": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.2433048445505195,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "238686662724712": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.012698271288156256,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      },
+      "258906041248094": {
+        "observed_frames": 137,
+        "triangle_min_m": 0.026664765326764393,
+        "frames_within_3mm": 0,
+        "isolated_or_sustained_windows": [],
+        "sustained_min3frames": false
+      }
+    }
+  },
+  "scene_hypotheses": [
+    {
+      "id": "nominal",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              0.534,
+              0.6194,
+              0.7388
+            ],
+            [
+              0.5053,
+              0.6333,
+              0.7379
+            ],
+            [
+              -0.0,
+              0.6388,
+              0.7245
+            ],
+            [
+              -0.023,
+              0.6315,
+              0.7239
+            ],
+            [
+              -0.159,
+              0.5385,
+              0.7209
+            ],
+            [
+              -0.1951,
+              0.3748,
+              0.7211
+            ],
+            [
+              -0.2167,
+              0.1494,
+              0.7221
+            ],
+            [
+              -0.1569,
+              -0.0271,
+              0.725
+            ],
+            [
+              0.0152,
+              -0.1982,
+              0.7307
+            ],
+            [
+              0.4812,
+              -0.2404,
+              0.7434
+            ],
+            [
+              0.5474,
+              -0.0041,
+              0.7435
+            ],
+            [
+              0.5529,
+              0.3875,
+              0.7409
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "multi-frame finite surface selected from target-surface, local footprint and static stereo evidence"
+        }
+      ]
+    },
+    {
+      "id": "surface_calibrated",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              0.5342,
+              0.6194,
+              0.7298
+            ],
+            [
+              0.5055,
+              0.6332,
+              0.729
+            ],
+            [
+              0.0002,
+              0.6387,
+              0.7155
+            ],
+            [
+              -0.0228,
+              0.6314,
+              0.715
+            ],
+            [
+              -0.1587,
+              0.5385,
+              0.712
+            ],
+            [
+              -0.1949,
+              0.3748,
+              0.7122
+            ],
+            [
+              -0.2165,
+              0.1493,
+              0.7132
+            ],
+            [
+              -0.1567,
+              -0.0271,
+              0.716
+            ],
+            [
+              0.0154,
+              -0.1982,
+              0.7218
+            ],
+            [
+              0.4815,
+              -0.2404,
+              0.7344
+            ],
+            [
+              0.5477,
+              -0.0041,
+              0.7345
+            ],
+            [
+              0.5531,
+              0.3874,
+              0.7319
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "Source-visible static neighbor bases establish the tabletop height. Original finite stereo silhouette projected onto the independently re-estimated tabletop plane."
+        }
+      ],
+      "actual_data": "data/clip-000060.surface_calibrated.json",
+      "steps": 907,
+      "end_displacement_from_nominal_m": 0.030478909691787074
+    },
+    {
+      "id": "surface_observed_edges",
+      "surfaces": [
+        {
+          "name": "support",
+          "polygon": [
+            [
+              0.5342,
+              0.6194,
+              0.7298
+            ],
+            [
+              0.5055,
+              0.6332,
+              0.729
+            ],
+            [
+              0.0002,
+              0.6387,
+              0.7155
+            ],
+            [
+              -0.0228,
+              0.6314,
+              0.715
+            ],
+            [
+              -0.1587,
+              0.5385,
+              0.712
+            ],
+            [
+              -0.1949,
+              0.3748,
+              0.7122
+            ],
+            [
+              -0.2165,
+              0.1493,
+              0.7132
+            ],
+            [
+              -0.1582,
+              -0.0227,
+              0.7159
+            ],
+            [
+              0.5477,
+              -0.0038,
+              0.7345
+            ],
+            [
+              0.5531,
+              0.3874,
+              0.7319
+            ]
+          ],
+          "tier": "estimated",
+          "selection": "Visible front edge clips the pre-existing finite patch. Other sides retain the previous stereo limits."
+        }
+      ],
+      "actual_data": "data/clip-000060.surface_observed_edges.json",
+      "steps": 907,
+      "end_displacement_from_nominal_m": 0.03047890997239446
+    }
+  ],
+  "source_cad_instances": [
+    {
+      "uid": "111305855142671",
+      "body_name": "target",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 256,
+      "mass_kg": 0.10000000149011612,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    },
+    {
+      "uid": "163340972252026",
+      "body_name": "object_163340972252026",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 256,
+      "mass_kg": 1.5,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    },
+    {
+      "uid": "232501673989606",
+      "body_name": "object_232501673989606",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 256,
+      "mass_kg": 0.15000000596046448,
+      "dynamic_friction": 0.7,
+      "static_friction": 0.7,
+      "collision_source": "official_full_CAD_simulation_prior",
+      "inertia": "engineering prior computed on official instance CAD",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    },
+    {
+      "uid": "238686662724712",
+      "body_name": "object_238686662724712",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 203,
+      "mass_kg": 0.20000000298023224,
+      "dynamic_friction": 0.7,
+      "static_friction": 0.7,
+      "collision_source": "official_full_CAD_simulation_prior",
+      "inertia": "engineering prior computed on official instance CAD",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    },
+    {
+      "uid": "258906041248094",
+      "body_name": "object_258906041248094",
+      "body_frame": "original HOT3D CAD",
+      "num_collision_pieces": 256,
+      "mass_kg": 1.0,
+      "dynamic_friction": 2.0,
+      "static_friction": 2.0,
+      "collision_source": "published_PhysX_cooking_export",
+      "inertia": "instance PhysX cooking result",
+      "engine": "MuJoCo; native PhysX convex surfaces preserved across engine when published"
+    }
+  ],
+  "task": {
+    "episode_id": "clip-000060",
+    "task_scope": "bimanual_robot",
+    "task_type": "pose_surrogate",
+    "semantic_objective": "Reproduce the source rigid motion of aria_small and the observed hand-surface contacts.",
+    "source_semantics": "researcher interpretation of source images, rigid trajectory and hand/object surfaces; exact source action labels unavailable",
+    "task_feature": "registered_pose_and_contact",
+    "interaction_partner": null,
+    "primary_side": "left",
+    "required_sides": [
+      "left",
+      "right"
+    ],
+    "required_object_uids": {
+      "left": [
+        "111305855142671"
+      ],
+      "right": [
+        "111305855142671"
+      ]
+    },
+    "initial_support": "support",
+    "final_support": "support",
+    "contact_windows": {
+      "left_111305855142671": [
+        0.566666667,
+        4.166666667
+      ],
+      "right_111305855142671": [
+        1.3333333330000001,
+        3.1
+      ]
+    },
+    "contact_applicable": true,
+    "source_frame_ids": [
+      2,
+      138
+    ],
+    "reference": "source_actor_tracks.npz",
+    "interpretation": "measured object rigid path; no inferred electronic, liquid, deformation or ink outcome",
+    "requires_release": false,
+    "release_source": {
+      "measure": "near 3 mm and clear above 7 mm from pairwise triangle distance; final min(150 ms,20% duration) with at least 80% clear for each required target-hand",
+      "per_side": {
+        "left": {
+          "valid_frames": 5,
+          "tail_frames": 5,
+          "clear_over7mm_frames": 5,
+          "last_sustained_or_transient_contact_s": 4.133333333
+        },
+        "right": {
+          "valid_frames": 5,
+          "tail_frames": 5,
+          "clear_over7mm_frames": 5,
+          "last_sustained_or_transient_contact_s": 3.0666666670000002
+        }
+      },
+      "decision": "source does not establish withdrawal at the end of a place"
+    }
+  },
+  "gravity_evidence": "device-specific source-world up prior, Aria +Z and Quest +Y; no per-clip gravity field in HOT3D Clips",
+  "source_pose_error_m": 4.40619762898109e-15,
+  "zero_start_velocity": 0.0,
+  "hidden_warmup_steps": 0,
+  "image_derived_boundaries": {
+    "episode": "clip-000060",
+    "source_basis": "Visible front edge clips the pre-existing finite patch. Other sides retain the previous stereo limits.",
+    "selected_hypothesis": "surface_observed_edges",
+    "previous_hypothesis": "surface_calibrated",
+    "old_area_m2": 0.5903736782707697,
+    "new_area_m2": 0.46995024825331555,
+    "source_edge_observations": {
+      "front": {
+        "source_pixel_traces": [
+          {
+            "frame": 2,
+            "eye": "L",
+            "source_pixels": [
+              [
+                60,
+                315
+              ],
+              [
+                90,
+                316
+              ],
+              [
+                247,
+                313
+              ],
+              [
+                294,
+                315
+              ],
+              [
+                366,
+                317
+              ],
+              [
+                440,
+                320
+              ],
+              [
+                472,
+                321
+              ]
+            ]
+          },
+          {
+            "frame": 138,
+            "eye": "L",
+            "source_pixels": [
+              [
+                130,
+                395
+              ],
+              [
+                174,
+                388
+              ],
+              [
+                229,
+                378
+              ],
+              [
+                262,
+                373
+              ],
+              [
+                298,
+                368
+              ],
+              [
+                505,
+                338
+              ]
+            ]
+          },
+          {
+            "frame": 138,
+            "eye": "R",
+            "source_pixels": [
+              [
+                94,
+                394
+              ],
+              [
+                133,
+                388
+              ],
+              [
+                187,
+                379
+              ],
+              [
+                222,
+                374
+              ],
+              [
+                256,
+                368
+              ],
+              [
+                459,
+                338
+              ]
+            ]
+          }
+        ],
+        "leave_one_trace_out_median_distance_m": [
+          0.0021046271636817743,
+          0.0022395900127241478,
+          0.0020997075348688915
+        ],
+        "pointwise_median_error_m": 0.0014223496137384037
+      }
+    },
+    "other_plane_fields_and_gt_poses_unchanged": true,
+    "source_target_witness_before_after": [
+      {
+        "min_target_bottom_boundary_clearance_m": 0.18063132600272216,
+        "median_target_bottom_boundary_clearance_m": 0.32965427470361136,
+        "frames_witness_outside": 0,
+        "total_source_frames": 137,
+        "minimum_source_height_m": -0.0004437031584511031
+      },
+      {
+        "min_target_bottom_boundary_clearance_m": 0.11543918053580274,
+        "median_target_bottom_boundary_clearance_m": 0.2044888478187065,
+        "frames_witness_outside": 0,
+        "total_source_frames": 137,
+        "minimum_source_height_m": -0.0004437031584511031
+      }
+    ],
+    "same_q0_qvel0_controls_and_clock": true,
+    "steps": 907,
+    "calibrated_contacts_measured_against_new_edges": {
+      "target": {
+        "minimum_other_boundary_distance_m": 0.15571776982192934,
+        "steps_loaded": 785,
+        "steps_contacts_outside_other_boundary": 0,
+        "contact_samples_outside": 0
+      },
+      "other": {
+        "minimum_other_boundary_distance_m": 0.0026698119955168727,
+        "steps_loaded": 907,
+        "steps_contacts_outside_other_boundary": 0,
+        "contact_samples_outside": 0
+      }
+    },
+    "observed_edge_contacts_measured_against_previous_patch": {
+      "target": {
+        "minimum_other_boundary_distance_m": 0.25618424536016665,
+        "steps_loaded": 785,
+        "steps_contacts_outside_other_boundary": 0,
+        "contact_samples_outside": 0
+      },
+      "other": {
+        "minimum_other_boundary_distance_m": 0.06944851624167643,
+        "steps_loaded": 907,
+        "steps_contacts_outside_other_boundary": 0,
+        "contact_samples_outside": 0
+      }
+    },
+    "target_final_difference_m": 4.985328710605607e-10,
+    "target_max_trajectory_change_m": 4.985328710605607e-10,
+    "target_positive_support_impulse_Ns": [
+      5.003921150256411,
+      5.0039210998918175
+    ],
+    "target_normal_force_rms_change_N": 2.1468622108683013e-08
+  },
+  "previous_plane_fit": {
+    "episode": "clip-000060",
+    "hypothesis": "surface_calibrated",
+    "original_hypothesis_sha256": "d10ddc76fe718bf0e9e05b7ee8cff030e83e8fa1c1085d086ba2381b2708b9f5",
+    "new_hypothesis_sha256": "eb7615b7c7f685b8516666ba6e12184a9c2b5887a27bd1345dd288cb114551e6",
+    "source_registry": "Stationary anchors manually identified on the same furniture in registered stereo images. Target samples and robot outcomes were excluded from fitting.",
+    "target_uid_excluded": "111305855142671",
+    "anchors": {
+      "117658302265452": {
+        "name": "mug_patterned",
+        "bop_id": 8,
+        "center_travel_m": 0.0002929525245961534,
+        "old_signed_minimum_m": -0.008945930279445569,
+        "calibrated_signed_minimum_m": 0.0,
+        "leave_one_anchor_out_signed_minimum_m": -0.0006018193254307969
+      },
+      "163340972252026": {
+        "name": "vase",
+        "bop_id": 16,
+        "center_travel_m": 0.00039923968709227605,
+        "old_signed_minimum_m": -0.009063241574836622,
+        "calibrated_signed_minimum_m": -0.00011731129539105378,
+        "leave_one_anchor_out_signed_minimum_m": -0.000777786268517433
+      },
+      "232501673989606": {
+        "name": "holder_black",
+        "bop_id": 1,
+        "center_travel_m": 0.00027898107696064557,
+        "old_signed_minimum_m": -0.009742534652018575,
+        "calibrated_signed_minimum_m": -0.0007966043725730065,
+        "leave_one_anchor_out_signed_minimum_m": -0.0014570793456993858
+      },
+      "238686662724712": {
+        "name": "whiteboard_marker",
+        "bop_id": 32,
+        "center_travel_m": 0.0003825990132260986,
+        "old_signed_minimum_m": -0.00762498033319281,
+        "calibrated_signed_minimum_m": 0.0013209499462527585,
+        "leave_one_anchor_out_signed_minimum_m": 0.00137960559394823
+      },
+      "258906041248094": {
+        "name": "whiteboard_eraser",
+        "bop_id": 29,
+        "center_travel_m": 0.00023410348387572244,
+        "old_signed_minimum_m": -0.0067693071331785815,
+        "calibrated_signed_minimum_m": 0.002176623146266987,
+        "leave_one_anchor_out_signed_minimum_m": 0.0022352787939624585
+      }
+    },
+    "boundary": {
+      "selection": "Original finite stereo silhouette projected onto the independently re-estimated tabletop plane."
+    },
+    "source_task": "pose_surrogate",
+    "normal_change_deg": 0.0,
+    "height_change_at_target_witness_along_new_normal_m": -0.008945930279445567,
+    "calibrated_target_full_CAD_signed_gap_t0_m": 0.00048298760682397024,
+    "old_target_full_CAD_signed_gap_t0_m": -0.008462942672621598,
+    "corrected_target_witness_above_finite_patch_at_t0": true,
+    "original_and_new_source_initial_poses_identical": true
+  }
+}

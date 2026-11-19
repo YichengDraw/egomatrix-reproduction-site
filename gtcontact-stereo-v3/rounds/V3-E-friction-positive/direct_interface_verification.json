@@ -1,0 +1,60 @@
+{
+  "group": "V3-E-friction-positive",
+  "episode": "clip-001127",
+  "robot": "sharpa",
+  "arm": "B2 fixed",
+  "outside_pre_registered_477": true,
+  "selection": "source with engineering-prior target material and observed positive hand-object loads in registered nominal B2",
+  "source_status": "tomato-sauce can engineering material from original HOT3D geometry, same instance and original Sharpa W01",
+  "source_scene_sha256": "bb3ffb320853373a0120e3e31d2ed726b105dd1b06c3b80db122ffdeee9a6512",
+  "control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+  "source_states_and_every_action_equal": true,
+  "intervention": "Only the sliding material coefficient of the target geoms changes. Contact priority, all other material fields, original meshes, integrator, actuator commands, solver and mass retain their registered values.",
+  "direct_material_measure": "Read the friction coefficient from mjData.contact at every recorded active positive-pressure hand/object pair in the replay archives.",
+  "source_scenes": [
+    "rounds/V3-E/runs/clip-001127/sharpa/contact/B2/fixed_5",
+    "rounds/V3-E-friction-positive/clip-001127/sharpa/B2_fixed_mu1p4"
+  ],
+  "measurements": [
+    {
+      "material_mu": 0.7,
+      "source_control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+      "source_initial_state_id": "4a03ba3c19414be77e3b91ca21acce1c8a9509814064ced05b0691f45775ecb4",
+      "native_steps": 820,
+      "actual_positive_hand_contact_mu_histogram": {
+        "1.0": 7418
+      },
+      "native_positive_hand_contact_samples": 7418,
+      "steps_with_loaded_hand_contact": 254,
+      "native_positive_env_contact_samples": 0,
+      "hand_normal_impulse_Ns": 646.330884461417,
+      "hand_tangential_impulse_normsum_Ns": 129.64816012666387,
+      "load_weighted_slip_speed_mps": 0.047509069701203006,
+      "S": false,
+      "C": false,
+      "J": false,
+      "S_pose": false
+    },
+    {
+      "material_mu": 1.4,
+      "source_control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+      "source_initial_state_id": "4a03ba3c19414be77e3b91ca21acce1c8a9509814064ced05b0691f45775ecb4",
+      "native_steps": 820,
+      "actual_positive_hand_contact_mu_histogram": {
+        "1.4": 9132
+      },
+      "native_positive_hand_contact_samples": 9132,
+      "steps_with_loaded_hand_contact": 231,
+      "native_positive_env_contact_samples": 0,
+      "hand_normal_impulse_Ns": 278.36097521003364,
+      "hand_tangential_impulse_normsum_Ns": 89.26849178968295,
+      "load_weighted_slip_speed_mps": 0.04291915420076477,
+      "S": false,
+      "C": false,
+      "J": false,
+      "S_pose": false
+    }
+  ],
+  "final_target_position_delta_m": 3.5917756457208463,
+  "maximum_target_position_delta_m": 3.5917756457208463
+}

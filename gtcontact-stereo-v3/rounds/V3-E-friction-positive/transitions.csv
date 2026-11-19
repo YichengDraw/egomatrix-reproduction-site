@@ -1,0 +1,3 @@
+episode,robot,initial_state,variant,method,product,physics_dt,S,C,J
+clip-001127,sharpa,contact,原始材料 0.7,B2,fixed_actions,0.005,False,False,False
+clip-001127,sharpa,contact,界面正控 1.4,B2,fixed_actions,0.005,False,False,False

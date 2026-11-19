@@ -1,0 +1,169 @@
+{
+  "round": "V3-E-friction-positive",
+  "downloads": {
+    "逐接触实测摩擦、支撑冲量与滑速": "direct_interface_verification.json"
+  },
+  "scope": "独立诊断，取存在手物受力的番茄酱罐头录制，复用同一套 Sharpa 关节动作。将物体材料系数提高到 1.4，逐接触检查物理求解器实际使用的摩擦。两次回放均为 820 步，这项诊断单独列在已注册的主集环境比较之外。",
+  "rows": [
+    {
+      "episode": "clip-001127",
+      "robot": "sharpa",
+      "side": "left",
+      "source": "P0018_15ad9743",
+      "device": "Quest3",
+      "method": "B2",
+      "variant": "原始材料 0.7",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "seed": 1009,
+      "source_frames": [
+        0,
+        123
+      ],
+      "task_type": "carry_hold",
+      "object": "can_tomato_sauce",
+      "task_scope": "bimanual_robot",
+      "reason": "physical_invalid",
+      "control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+      "eligible": true,
+      "status": "complete",
+      "S": false,
+      "C": false,
+      "J": false,
+      "score_record": "5bfa64fca98b3cc1.json.gz",
+      "mass_factor": 1.0,
+      "friction_factor": 1.0,
+      "target_friction": null,
+      "eval_id": "GTS-native-v3.2",
+      "scene_sha256": "bb3ffb320853373a0120e3e31d2ed726b105dd1b06c3b80db122ffdeee9a6512",
+      "initial_state_id": "4a03ba3c19414be77e3b91ca21acce1c8a9509814064ced05b0691f45775ecb4",
+      "product": "fixed_actions",
+      "media": {
+        "source": "../../media/clip-001127-native.json.gz",
+        "stereo": "../../../gtcontact-stereo-v2/media/clip-001127.mp4",
+        "actual": "../../media/native-a014dea0699a384b4223005308.json.gz",
+        "baseline": "../../media/native-a014dea0699a384b4223005308.json.gz"
+      },
+      "surface_model": "native-sharpa-left-dual.json.gz",
+      "timeline": "timelines/5bfa64fca98b3cc1.json.gz",
+      "world": "../../media/clip-001127-world.json.gz",
+      "hypothesis": "nominal",
+      "baseline_label": "相同动作 · 原始界面 μ=1.0",
+      "cost_text": "目标材料系数 0.7，实际手物界面系数 1.0。7,418 个正压力接触样本，载荷加权滑速 47.51 mm/s。",
+      "effective_friction": {
+        "material_mu": 0.7,
+        "source_control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+        "source_initial_state_id": "4a03ba3c19414be77e3b91ca21acce1c8a9509814064ced05b0691f45775ecb4",
+        "native_steps": 820,
+        "actual_positive_hand_contact_mu_histogram": {
+          "1.0": 7418
+        },
+        "native_positive_hand_contact_samples": 7418,
+        "steps_with_loaded_hand_contact": 254,
+        "native_positive_env_contact_samples": 0,
+        "hand_normal_impulse_Ns": 646.330884461417,
+        "hand_tangential_impulse_normsum_Ns": 129.64816012666387,
+        "load_weighted_slip_speed_mps": 0.047509069701203006,
+        "S": false,
+        "C": false,
+        "J": false,
+        "S_pose": false
+      }
+    },
+    {
+      "episode": "clip-001127",
+      "robot": "sharpa",
+      "side": "left",
+      "source": "P0018_15ad9743",
+      "device": "Quest3",
+      "method": "B2",
+      "variant": "界面正控 1.4",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "seed": 1009,
+      "source_frames": [
+        0,
+        123
+      ],
+      "task_type": "carry_hold",
+      "object": "can_tomato_sauce",
+      "task_scope": "bimanual_robot",
+      "reason": "physical_invalid",
+      "control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+      "eligible": true,
+      "status": "complete",
+      "S": false,
+      "C": false,
+      "J": false,
+      "score_record": "1a645b83aa79ca6d.json.gz",
+      "mass_factor": 1.0,
+      "friction_factor": 1.0,
+      "target_friction": 1.4,
+      "eval_id": "GTS-native-v3.2",
+      "scene_sha256": "bb3ffb320853373a0120e3e31d2ed726b105dd1b06c3b80db122ffdeee9a6512",
+      "initial_state_id": "4a03ba3c19414be77e3b91ca21acce1c8a9509814064ced05b0691f45775ecb4",
+      "product": "fixed_actions",
+      "media": {
+        "source": "../../media/clip-001127-native.json.gz",
+        "stereo": "../../../gtcontact-stereo-v2/media/clip-001127.mp4",
+        "actual": "../../media/native-9d82b8544b3b3faa5b43628213.json.gz",
+        "baseline": "../../media/native-a014dea0699a384b4223005308.json.gz"
+      },
+      "surface_model": "native-sharpa-left-dual.json.gz",
+      "timeline": "timelines/1a645b83aa79ca6d.json.gz",
+      "world": "../../media/clip-001127-world.json.gz",
+      "hypothesis": "nominal",
+      "baseline_label": "相同动作 · 原始界面 μ=1.0",
+      "cost_text": "目标材料系数 1.4，实际手物界面系数 1.4。9,132 个正压力接触样本，载荷加权滑速 42.92 mm/s。",
+      "effective_friction": {
+        "material_mu": 1.4,
+        "source_control_id": "c75d29ba99cbbbe75da20c9c7c2d6ffd83c9b9a747f2c97c484b8333845efa8e",
+        "source_initial_state_id": "4a03ba3c19414be77e3b91ca21acce1c8a9509814064ced05b0691f45775ecb4",
+        "native_steps": 820,
+        "actual_positive_hand_contact_mu_histogram": {
+          "1.4": 9132
+        },
+        "native_positive_hand_contact_samples": 9132,
+        "steps_with_loaded_hand_contact": 231,
+        "native_positive_env_contact_samples": 0,
+        "hand_normal_impulse_Ns": 278.36097521003364,
+        "hand_tangential_impulse_normsum_Ns": 89.26849178968295,
+        "load_weighted_slip_speed_mps": 0.04291915420076477,
+        "S": false,
+        "C": false,
+        "J": false,
+        "S_pose": false
+      }
+    }
+  ],
+  "summary": [
+    {
+      "device": "Quest3",
+      "robot": "sharpa",
+      "method": "B2 / 原始材料 0.7",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "product": "fixed_actions",
+      "N": 1,
+      "C_known": 1,
+      "S": 0,
+      "C": 0,
+      "J": 0
+    },
+    {
+      "device": "Quest3",
+      "robot": "sharpa",
+      "method": "B2 / 界面正控 1.4",
+      "initial_state": "contact",
+      "physics_dt": 0.005,
+      "product": "fixed_actions",
+      "N": 1,
+      "C_known": 1,
+      "S": 0,
+      "C": 0,
+      "J": 0
+    }
+  ],
+  "raw_rows": 2,
+  "source_recordings": 1
+}

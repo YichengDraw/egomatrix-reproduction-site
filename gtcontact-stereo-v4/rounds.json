@@ -1,5 +1,5 @@
 {
-  "latest": "R6-correction",
+  "latest": "R7",
   "rounds": [
     "R0",
     "R1",
@@ -8,6 +8,7 @@
     "R3",
     "R4-development",
     "R6",
-    "R6-correction"
+    "R6-correction",
+    "R7"
   ]
 }

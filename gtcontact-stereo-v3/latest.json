@@ -1,5 +1,5 @@
 {
-  "round": "V3-D-feedback-frozen-mass",
+  "round": "V3-D-budget-16",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -19,7 +19,8 @@
     "V3-D-surface-calibrated",
     "V3-D-final-development",
     "V3-E-friction-positive",
-    "V3-D-feedback-frozen-mass"
+    "V3-D-feedback-frozen-mass",
+    "V3-D-budget-16"
   ],
-  "manifest_sha256": "e79211ec159b115c7b88a6b39def2280e927f221fedd81f5cb8c7368e056d93c"
+  "manifest_sha256": "879c9a1cff960cc6666251ff9b88554c9b0c130fc6ce36bc49803ea24a639df0"
 }

@@ -1,5 +1,5 @@
 {
-  "round": "V3-C-material",
+  "round": "V3-D-stages",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -8,7 +8,8 @@
     "V3-B",
     "V3-C-native-u0",
     "V3-B-sensitivity",
-    "V3-C-material"
+    "V3-C-material",
+    "V3-D-stages"
   ],
-  "manifest_sha256": "63e3b9f308903c755204343509aae9bae50cd0d3b15c519cdabe7c4805b3a23c"
+  "manifest_sha256": "e3379465a599ec547f382325bb9d17fd7470361214ac9c0f815e3031fd460660"
 }

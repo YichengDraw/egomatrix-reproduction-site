@@ -1,5 +1,5 @@
 {
-  "round": "V3-D-feedback-centered",
+  "round": "V3-D-material",
   "history": [
     "V3-A-focus",
     "V3-A-core",
@@ -13,7 +13,8 @@
     "V3-B-surface-calibrated",
     "V3-C-surface-calibrated",
     "V3-D-budget",
-    "V3-D-feedback-centered"
+    "V3-D-feedback-centered",
+    "V3-D-material"
   ],
-  "manifest_sha256": "0c13e00ec1539083deb144debf4e3652123972c7bd33ff60b7245c8e7d146037"
+  "manifest_sha256": "49e364c133fbe4fd00f7a46492614922aa8d7a0be14eed00d17f0dadb5b1f229"
 }

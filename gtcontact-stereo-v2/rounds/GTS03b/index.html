@@ -1,15 +1,43 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GTContact · 双目手物实验</title>
 <style>
 :root{font-family:"Source Sans 3",system-ui,sans-serif;color:#202626;background:#f8f9f6}*{box-sizing:border-box}body{max-width:1440px;margin:auto;padding:24px 4vw 60px}header{border-bottom:2px solid #273e3b;display:flex;align-items:center;justify-content:space-between}header a,a{color:#17645a}h1{font-size:clamp(25px,3.4vw,46px);letter-spacing:-.045em;margin:.5em 0}h2{font-size:20px;margin:1.5em 0 .5em}select,button,textarea,input{font:inherit}select,button{padding:5px 9px}button{cursor:pointer}p{max-width:90ch;line-height:1.55}.scroll{max-height:310px;overflow:auto;border:1px solid #ccd4cd}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:6px 10px;border-bottom:1px solid #d8ded8;text-align:left;white-space:nowrap}th{position:sticky;top:0;background:#e9efea}tbody tr[data-id]{cursor:pointer}tr.selected,tbody tr[data-id]:hover{background:#daede5}.flex{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.flex input[type=range]{flex:1;min-width:170px}.panels{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}figure{margin:0;background:#e9efea}figcaption{padding:7px 12px;font-weight:600}canvas{width:100%;display:block;touch-action:none;background:#f1f3ef}.contact{grid-template-columns:1fr 1fr}.video{background:#222;width:min(100%,850px);max-height:36vh}textarea{min-width:240px}small{color:#485d56}.message:empty{display:none}@media(max-width:700px){.panels{grid-template-columns:1fr}body{padding:16px}canvas{max-height:255px}h2{margin:1em 0 .4em}}
+
+body{max-width:1840px;padding:18px clamp(14px,3vw,48px) 60px}
+header{gap:12px}h1{font-size:clamp(24px,2.8vw,38px)}
+button,select{border:1px solid #afc1b8;border-radius:6px;background:white;color:#1b332d;min-height:36px}
+button:hover{background:#e4efe9}button:focus-visible,select:focus-visible,canvas:focus-visible{outline:3px solid #197967;outline-offset:2px}
+.round-info{margin:10px 0 14px}.round-info summary{cursor:pointer;font-weight:650}.round-info #roundTitle{display:inline;margin:0;font-size:inherit}
+#picker{scroll-margin-top:12px}.run-list{max-height:120px}#details{margin:.25em 0;max-width:none}
+#caseTitle{margin:.85em 0 .15em}#more{margin:.25em 0 .65em}#more summary{cursor:pointer}
+.camera-controls{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:10px 0}
+#sceneViews{gap:10px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.scene-card{overflow:hidden;border:1px solid #ced9d1;border-radius:9px;background:#f5f8f6}
+.scene-card figcaption{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 10px;background:#e8efea}
+.scene-card button{font-size:13px;min-height:30px;padding:3px 9px}
+.orbit-surface{width:100%;height:clamp(285px,39vh,540px);max-height:none;background:radial-gradient(ellipse at center,#fff,#edf3ee);cursor:grab}
+.orbit-surface:active{cursor:grabbing}
+#sceneViews[data-expanded]{grid-template-columns:minmax(0,1fr)}
+#sceneViews[data-expanded] .orbit-surface{height:clamp(360px,61vh,790px)}
+.stereo-options{margin:.4em 0 .65em}.stereo-options span{color:#43594e}.camera-help{color:#43594e;margin:.55em 0 1em;max-width:none;font-size:14px}
+.playbar{padding:8px 0}.video{width:min(100%,1180px);max-height:65vh;display:block}
+@media(max-width:760px){#sceneViews{grid-template-columns:minmax(0,1fr)}.orbit-surface{height:clamp(250px,42vh,360px)}
+#sceneViews[data-expanded] .orbit-surface{height:56vh;min-height:290px}.camera-controls{gap:5px}
+header{align-items:flex-start;flex-wrap:wrap}.camera-help{font-size:13px}}
 </style><header><h1>双目手物接触实验</h1><label>实验轮次 <select id="history"></select></label></header>
 <p>输入采用 HOT3D 人手真值。物体从片段首帧开始自由运动。S 表示任务与基本物理要求通过，C 表示同一次碰撞在物体和手面上的位置均达标，J 表示两项同时通过。</p>
-<h2 id="roundTitle"></h2><p id="scope"></p><div class="scroll"><table id="summary"></table></div>
-<p><a id="coverage">全部登记来源与覆盖原因</a> · <a id="changes">配对救回与损害表</a> · <a id="cost">本轮计算成本</a></p><p id="decisionLine" hidden><a id="decision">开发集改动与晋级记录</a></p><h2>逐条回放</h2><label id="splitBox" hidden>回放集合 <select id="split"><option value="core">主比较 CORE</option><option value="pilot">本轮改动 PILOT</option></select></label><div class="flex"><label>设备 <select id="device"></select></label><label>机器手 <select id="robot"></select></label><label>方法 <select id="method"></select></label><label>积分步长 <select id="dt"></select></label></div><div class="scroll"><table id="rows"></table></div>
+<details class="round-info"><summary><span id="roundTitle"></span> · 本轮统计与数据</summary><p id="scope"></p><div class="scroll"><table id="summary"></table></div>
+<p><a id="coverage">全部登记来源与覆盖原因</a> · <a id="changes">配对救回与损害表</a> · <a id="cost">本轮计算成本</a></p><p id="decisionLine" hidden><a id="decision">开发集改动与晋级记录</a></p></details><h2 id="picker">选择回放</h2><label id="splitBox" hidden>回放集合 <select id="split"><option value="core">主比较 CORE</option><option value="pilot">本轮改动 PILOT</option></select></label><div class="flex"><label>设备 <select id="device"></select></label><label>机器手 <select id="robot"></select></label><label>方法 <select id="method"></select></label><label>积分步长 <select id="dt"></select></label></div><div class="scroll run-list"><table id="rows"></table></div>
 <h2 id="caseTitle"></h2><p id="details"></p><details id="more"><summary>查看本条评分与容差曲线</summary><pre style="white-space:pre-wrap;max-height:250px;overflow:auto" id="metrics"></pre></details><p class="message" id="error" role="status"></p>
-<section id="player" hidden><div class="panels"><figure><figcaption>人手与物体真值</figcaption><canvas id="gt"></canvas></figure><figure><figcaption>直接执行 · B0</figcaption><canvas id="baseline"></canvas></figure><figure><figcaption>所选方法实际回放</figcaption><canvas id="actual"></canvas></figure></div><p><small>拖动旋转三维视角。蓝色为手，橙色为物体，红点为实际受力接触，绿色为真值几何推导的接触目标。</small></p>
-<div class="flex"><button id="play">播放</button><input id="frame" type="range" min="0" value="0"><output id="clock"></output></div>
-<h2>同步双目输入</h2><video id="stereo" class="video" muted playsinline preload="metadata"></video>
-<h2>物体位置误差与受力接触</h2><canvas id="timeline" height="80"></canvas><small>橙线为物体位置误差，底部绿线为真值目标时段，红线为实际接触。点击可跳到对应源帧。</small><h2>双侧接触位置</h2><div class="panels contact"><figure><figcaption>物体原始 CAD 坐标</figcaption><canvas id="cad"></canvas></figure><figure><figcaption>同一手面区域的相对坐标</figcaption><select id="chart"></select><canvas id="uv"></canvas></figure></div><p id="instant"></p></section>
+<section id="player" hidden>
+<div class="camera-controls" aria-label="三维视角控制">
+<label>取景 <select id="focusTarget"><option value="pair">手和物体一起看</option><option value="object">各自物体</option><option value="hand">各自手部</option><option value="world">共同世界坐标</option></select></label>
+<button id="zoomOut" aria-label="缩小视图">−</button><button id="zoomIn" aria-label="放大视图">＋</button>
+<button id="fitView">适应当前帧</button><button id="resetView">复位视角</button>
+</div><div class="panels" id="sceneViews"><figure class="scene-card" data-scene="gt"><figcaption>人手与物体真值<button data-expand="gt" aria-pressed="false" aria-label="放大人手与物体真值">单独查看</button></figcaption><canvas class="orbit-surface" id="gt" tabindex="0" aria-label="人手与物体真值三维视图"></canvas></figure><figure class="scene-card" data-scene="baseline"><figcaption>直接执行 · B0<button data-expand="baseline" aria-pressed="false" aria-label="放大直接执行 · B0">单独查看</button></figcaption><canvas class="orbit-surface" id="baseline" tabindex="0" aria-label="直接执行 · B0三维视图"></canvas></figure><figure class="scene-card" data-scene="actual"><figcaption>所选方法实际回放<button data-expand="actual" aria-pressed="false" aria-label="放大所选方法实际回放">单独查看</button></figcaption><canvas class="orbit-surface" id="actual" tabindex="0" aria-label="所选方法实际回放三维视图"></canvas></figure></div>
+<p class="camera-help">拖动旋转，Shift＋拖动或右键拖动平移，滚轮缩放。触屏用双指平移或捏合。蓝色为手，橙色为物体，绿色为目标接触，红色为实际受力点。</p>
+<div class="flex playbar"><button id="play">播放</button><input id="frame" type="range" min="0" value="0"><output id="clock"></output></div>
+<h2>同步双目输入</h2><div class="flex stereo-options"><span>HOT3D 官方针孔去畸变 · 左眼 / 右眼</span><label><input type="checkbox" id="stereoOverlay"> 叠加手部与物体标注</label></div><video id="stereo" class="video" muted playsinline preload="metadata"></video>
+<h2>物体位置误差与受力接触</h2><canvas id="timeline" height="80"></canvas><small>橙线为物体位置误差，底部绿线为真值目标时段，红线为实际接触。点击可跳到对应源帧。</small><h2>双侧接触位置</h2><div class="panels contact"><figure><figcaption>物体原始 CAD 坐标</figcaption><canvas class="orbit-surface" id="cad" tabindex="0" aria-label="物体局部接触三维视图"></canvas><button id="resetCad">复位物体视角</button></figure><figure><figcaption>同一手面区域的相对坐标</figcaption><select id="chart"></select><canvas id="uv"></canvas></figure></div><p id="instant"></p></section>
 <h2>个人复核</h2><div class="flex"><select id="vote"><option>不确定</option><option>成功</option><option>失败</option></select><textarea id="note" rows="2" placeholder="备注"></textarea><button id="save">保存</button><button id="export">导出 JSON</button><label>导入 <input id="import" type="file" accept="application/json"></label><output id="saved"></output></div>
 <p><a id="manifest">本轮数据清单</a> · <a href="https://facebookresearch.github.io/hot3d/">HOT3D 数据来源</a> · <a href="attribution.html">数据、模型与使用条款</a></p>
-<script src="viewer.js"></script></html>
+<script src="surface-view.js?v=20261119-orbit"></script><script src="viewer.js?v=20261119-orbit"></script></html>

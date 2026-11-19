@@ -1,0 +1,1751 @@
+{
+  "passed": true,
+  "clips": 29,
+  "video_count": 58,
+  "source_times": 2954,
+  "decoded_eye_checks": 174,
+  "maximum_thumbnail_pixel_mae": 3.0435383319854736,
+  "overlays_with_in_view_markers": 144,
+  "rows": [
+    {
+      "episode": "clip-000060",
+      "frames": 137,
+      "samples": [
+        {
+          "frame": 2,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.726915121078491,
+          "original_fisheye_mae": 22.48546028137207,
+          "projected_marker_pixels": 712,
+          "overlay_marker_mae": 24.22003746032715,
+          "clean_marker_mae": 98.39606475830078
+        },
+        {
+          "frame": 2,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.715521812438965,
+          "original_fisheye_mae": 22.18942642211914,
+          "projected_marker_pixels": 741,
+          "overlay_marker_mae": 23.83580780029297,
+          "clean_marker_mae": 98.99010467529297
+        },
+        {
+          "frame": 70,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.667236328125,
+          "original_fisheye_mae": 21.01250457763672,
+          "projected_marker_pixels": 728,
+          "overlay_marker_mae": 25.735347747802734,
+          "clean_marker_mae": 95.70650482177734
+        },
+        {
+          "frame": 70,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7287325859069824,
+          "original_fisheye_mae": 19.94764518737793,
+          "projected_marker_pixels": 628,
+          "overlay_marker_mae": 25.292993545532227,
+          "clean_marker_mae": 97.21656036376953
+        },
+        {
+          "frame": 138,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.729790687561035,
+          "original_fisheye_mae": 19.44232940673828,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 27.18702507019043,
+          "clean_marker_mae": 98.59329223632812
+        },
+        {
+          "frame": 138,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7122395038604736,
+          "original_fisheye_mae": 18.4794921875,
+          "projected_marker_pixels": 751,
+          "overlay_marker_mae": 28.310253143310547,
+          "clean_marker_mae": 101.05592346191406
+        }
+      ]
+    },
+    {
+      "episode": "clip-000125",
+      "frames": 30,
+      "samples": [
+        {
+          "frame": 79,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.733696937561035,
+          "original_fisheye_mae": 17.62337303161621,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 24.011186599731445,
+          "clean_marker_mae": 84.9467544555664
+        },
+        {
+          "frame": 79,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7287869453430176,
+          "original_fisheye_mae": 17.76161003112793,
+          "projected_marker_pixels": 746,
+          "overlay_marker_mae": 23.748882293701172,
+          "clean_marker_mae": 85.40036010742188
+        },
+        {
+          "frame": 94,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.702528238296509,
+          "original_fisheye_mae": 22.28632354736328,
+          "projected_marker_pixels": 736,
+          "overlay_marker_mae": 29.505887985229492,
+          "clean_marker_mae": 84.00588989257812
+        },
+        {
+          "frame": 94,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7455782890319824,
+          "original_fisheye_mae": 21.35934829711914,
+          "projected_marker_pixels": 746,
+          "overlay_marker_mae": 28.498659133911133,
+          "clean_marker_mae": 80.82305908203125
+        },
+        {
+          "frame": 108,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.720025062561035,
+          "original_fisheye_mae": 21.63777732849121,
+          "projected_marker_pixels": 741,
+          "overlay_marker_mae": 28.60413932800293,
+          "clean_marker_mae": 82.59918975830078
+        },
+        {
+          "frame": 108,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.736273765563965,
+          "original_fisheye_mae": 21.40432357788086,
+          "projected_marker_pixels": 738,
+          "overlay_marker_mae": 28.420053482055664,
+          "clean_marker_mae": 79.96928405761719
+        }
+      ]
+    },
+    {
+      "episode": "clip-000170",
+      "frames": 87,
+      "samples": [
+        {
+          "frame": 63,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7985026836395264,
+          "original_fisheye_mae": 30.81117057800293,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 24.974496841430664,
+          "clean_marker_mae": 84.42729187011719
+        },
+        {
+          "frame": 63,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7863497734069824,
+          "original_fisheye_mae": 29.05376434326172,
+          "projected_marker_pixels": 747,
+          "overlay_marker_mae": 24.27353858947754,
+          "clean_marker_mae": 83.07987213134766
+        },
+        {
+          "frame": 106,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.702745199203491,
+          "original_fisheye_mae": 32.75908660888672,
+          "projected_marker_pixels": 584,
+          "overlay_marker_mae": 26.97602653503418,
+          "clean_marker_mae": 85.5513687133789
+        },
+        {
+          "frame": 106,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.669732093811035,
+          "original_fisheye_mae": 34.33756637573242,
+          "projected_marker_pixels": 583,
+          "overlay_marker_mae": 27.831331253051758,
+          "clean_marker_mae": 84.12464141845703
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.703314781188965,
+          "original_fisheye_mae": 33.20711135864258,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 27.970022201538086,
+          "clean_marker_mae": 86.31678009033203
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.695936441421509,
+          "original_fisheye_mae": 34.44091796875,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 28.002683639526367,
+          "clean_marker_mae": 85.54988861083984
+        }
+      ]
+    },
+    {
+      "episode": "clip-000373",
+      "frames": 132,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.711371421813965,
+          "original_fisheye_mae": 16.50629425048828,
+          "projected_marker_pixels": 730,
+          "overlay_marker_mae": 24.6196346282959,
+          "clean_marker_mae": 82.024658203125
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.736436605453491,
+          "original_fisheye_mae": 17.29801368713379,
+          "projected_marker_pixels": 727,
+          "overlay_marker_mae": 24.233379364013672,
+          "clean_marker_mae": 83.53095245361328
+        },
+        {
+          "frame": 66,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.643174886703491,
+          "original_fisheye_mae": 17.90641212463379,
+          "projected_marker_pixels": 705,
+          "overlay_marker_mae": 27.18817901611328,
+          "clean_marker_mae": 79.94609832763672
+        },
+        {
+          "frame": 66,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6511502265930176,
+          "original_fisheye_mae": 18.17624282836914,
+          "projected_marker_pixels": 705,
+          "overlay_marker_mae": 26.5971622467041,
+          "clean_marker_mae": 80.59526824951172
+        },
+        {
+          "frame": 131,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7695040702819824,
+          "original_fisheye_mae": 16.71956443786621,
+          "projected_marker_pixels": 730,
+          "overlay_marker_mae": 25.816438674926758,
+          "clean_marker_mae": 80.37899780273438
+        },
+        {
+          "frame": 131,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.785536050796509,
+          "original_fisheye_mae": 17.060546875,
+          "projected_marker_pixels": 742,
+          "overlay_marker_mae": 25.658580780029297,
+          "clean_marker_mae": 80.37825775146484
+        }
+      ]
+    },
+    {
+      "episode": "clip-000570",
+      "frames": 103,
+      "samples": [
+        {
+          "frame": 25,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7387423515319824,
+          "original_fisheye_mae": 29.11797332763672,
+          "projected_marker_pixels": 752,
+          "overlay_marker_mae": 24.764184951782227,
+          "clean_marker_mae": 84.5625
+        },
+        {
+          "frame": 25,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7416179180145264,
+          "original_fisheye_mae": 31.49604034423828,
+          "projected_marker_pixels": 744,
+          "overlay_marker_mae": 24.76344108581543,
+          "clean_marker_mae": 83.32706451416016
+        },
+        {
+          "frame": 76,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7030436992645264,
+          "original_fisheye_mae": 28.83167839050293,
+          "projected_marker_pixels": 748,
+          "overlay_marker_mae": 29.03253173828125,
+          "clean_marker_mae": 83.99866485595703
+        },
+        {
+          "frame": 76,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.679090738296509,
+          "original_fisheye_mae": 32.00119400024414,
+          "projected_marker_pixels": 754,
+          "overlay_marker_mae": 28.97170639038086,
+          "clean_marker_mae": 83.885498046875
+        },
+        {
+          "frame": 127,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7548556327819824,
+          "original_fisheye_mae": 38.106689453125,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 26.585681915283203,
+          "clean_marker_mae": 81.29977416992188
+        },
+        {
+          "frame": 127,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7162272930145264,
+          "original_fisheye_mae": 37.82478713989258,
+          "projected_marker_pixels": 747,
+          "overlay_marker_mae": 25.974119186401367,
+          "clean_marker_mae": 81.42971801757812
+        }
+      ]
+    },
+    {
+      "episode": "clip-000726",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.746690511703491,
+          "original_fisheye_mae": 12.954535484313965,
+          "projected_marker_pixels": 572,
+          "overlay_marker_mae": 25.071678161621094,
+          "clean_marker_mae": 103.50291442871094
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7744412422180176,
+          "original_fisheye_mae": 12.356987953186035,
+          "projected_marker_pixels": 715,
+          "overlay_marker_mae": 25.004196166992188,
+          "clean_marker_mae": 105.64708709716797
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.738661050796509,
+          "original_fisheye_mae": 13.58127212524414,
+          "projected_marker_pixels": 733,
+          "overlay_marker_mae": 26.84538459777832,
+          "clean_marker_mae": 101.57662200927734
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7337238788604736,
+          "original_fisheye_mae": 13.85451889038086,
+          "projected_marker_pixels": 743,
+          "overlay_marker_mae": 26.04665756225586,
+          "clean_marker_mae": 100.25796508789062
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.779676675796509,
+          "original_fisheye_mae": 16.08119010925293,
+          "projected_marker_pixels": 325,
+          "overlay_marker_mae": 26.812307357788086,
+          "clean_marker_mae": 86.17845916748047
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7781574726104736,
+          "original_fisheye_mae": 16.35300064086914,
+          "projected_marker_pixels": 462,
+          "overlay_marker_mae": 27.908369064331055,
+          "clean_marker_mae": 86.65296173095703
+        }
+      ]
+    },
+    {
+      "episode": "clip-000751",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7360026836395264,
+          "original_fisheye_mae": 17.96479034423828,
+          "projected_marker_pixels": 736,
+          "overlay_marker_mae": 24.294836044311523,
+          "clean_marker_mae": 93.98686218261719
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.739122152328491,
+          "original_fisheye_mae": 18.49701690673828,
+          "projected_marker_pixels": 740,
+          "overlay_marker_mae": 24.55450439453125,
+          "clean_marker_mae": 93.28874206542969
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.638292074203491,
+          "original_fisheye_mae": 17.88414192199707,
+          "projected_marker_pixels": 744,
+          "overlay_marker_mae": 29.00806427001953,
+          "clean_marker_mae": 92.26567840576172
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6266818046569824,
+          "original_fisheye_mae": 17.87312889099121,
+          "projected_marker_pixels": 747,
+          "overlay_marker_mae": 28.719322204589844,
+          "clean_marker_mae": 92.21910095214844
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7837185859680176,
+          "original_fisheye_mae": 19.11292839050293,
+          "projected_marker_pixels": 750,
+          "overlay_marker_mae": 27.3613338470459,
+          "clean_marker_mae": 94.13111114501953
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.794053792953491,
+          "original_fisheye_mae": 19.58596420288086,
+          "projected_marker_pixels": 751,
+          "overlay_marker_mae": 28.465158462524414,
+          "clean_marker_mae": 93.52596282958984
+        }
+      ]
+    },
+    {
+      "episode": "clip-000900",
+      "frames": 37,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.727837562561035,
+          "original_fisheye_mae": 24.69661521911621,
+          "projected_marker_pixels": 700,
+          "overlay_marker_mae": 23.814762115478516,
+          "clean_marker_mae": 94.45523834228516
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.738471031188965,
+          "original_fisheye_mae": 24.68123435974121,
+          "projected_marker_pixels": 718,
+          "overlay_marker_mae": 24.118385314941406,
+          "clean_marker_mae": 95.83612060546875
+        },
+        {
+          "frame": 18,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.680121421813965,
+          "original_fisheye_mae": 25.68272590637207,
+          "projected_marker_pixels": 697,
+          "overlay_marker_mae": 26.37398338317871,
+          "clean_marker_mae": 96.79579162597656
+        },
+        {
+          "frame": 18,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6920573711395264,
+          "original_fisheye_mae": 23.95931053161621,
+          "projected_marker_pixels": 694,
+          "overlay_marker_mae": 26.338136672973633,
+          "clean_marker_mae": 97.46781921386719
+        },
+        {
+          "frame": 36,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6986491680145264,
+          "original_fisheye_mae": 24.12554168701172,
+          "projected_marker_pixels": 709,
+          "overlay_marker_mae": 25.394922256469727,
+          "clean_marker_mae": 90.98307800292969
+        },
+        {
+          "frame": 36,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.706732749938965,
+          "original_fisheye_mae": 22.96402931213379,
+          "projected_marker_pixels": 700,
+          "overlay_marker_mae": 25.759523391723633,
+          "clean_marker_mae": 93.73238372802734
+        }
+      ]
+    },
+    {
+      "episode": "clip-001039",
+      "frames": 79,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7694499492645264,
+          "original_fisheye_mae": 41.42005920410156,
+          "projected_marker_pixels": 735,
+          "overlay_marker_mae": 23.406803131103516,
+          "clean_marker_mae": 87.3165512084961
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7879230976104736,
+          "original_fisheye_mae": 40.26584243774414,
+          "projected_marker_pixels": 713,
+          "overlay_marker_mae": 24.267414093017578,
+          "clean_marker_mae": 88.57597351074219
+        },
+        {
+          "frame": 39,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6435275077819824,
+          "original_fisheye_mae": 44.93080139160156,
+          "projected_marker_pixels": 718,
+          "overlay_marker_mae": 26.985143661499023,
+          "clean_marker_mae": 83.86119079589844
+        },
+        {
+          "frame": 39,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.631591796875,
+          "original_fisheye_mae": 44.29177474975586,
+          "projected_marker_pixels": 729,
+          "overlay_marker_mae": 26.343393325805664,
+          "clean_marker_mae": 83.79378509521484
+        },
+        {
+          "frame": 78,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.773247718811035,
+          "original_fisheye_mae": 42.25857162475586,
+          "projected_marker_pixels": 735,
+          "overlay_marker_mae": 26.883899688720703,
+          "clean_marker_mae": 85.69841003417969
+        },
+        {
+          "frame": 78,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7765841484069824,
+          "original_fisheye_mae": 42.80276107788086,
+          "projected_marker_pixels": 738,
+          "overlay_marker_mae": 27.047876358032227,
+          "clean_marker_mae": 84.9430923461914
+        }
+      ]
+    },
+    {
+      "episode": "clip-001052",
+      "frames": 23,
+      "samples": [
+        {
+          "frame": 127,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7378201484680176,
+          "original_fisheye_mae": 38.51120376586914,
+          "projected_marker_pixels": 744,
+          "overlay_marker_mae": 24.093637466430664,
+          "clean_marker_mae": 79.21684265136719
+        },
+        {
+          "frame": 127,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.734320640563965,
+          "original_fisheye_mae": 40.14078903198242,
+          "projected_marker_pixels": 746,
+          "overlay_marker_mae": 24.48838233947754,
+          "clean_marker_mae": 80.21224212646484
+        },
+        {
+          "frame": 138,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.655164957046509,
+          "original_fisheye_mae": 37.78586196899414,
+          "projected_marker_pixels": 744,
+          "overlay_marker_mae": 27.464157104492188,
+          "clean_marker_mae": 81.23880004882812
+        },
+        {
+          "frame": 138,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6417644023895264,
+          "original_fisheye_mae": 36.056640625,
+          "projected_marker_pixels": 748,
+          "overlay_marker_mae": 27.28119468688965,
+          "clean_marker_mae": 80.34091186523438
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.771782875061035,
+          "original_fisheye_mae": 35.28019332885742,
+          "projected_marker_pixels": 744,
+          "overlay_marker_mae": 27.48476791381836,
+          "clean_marker_mae": 85.86514282226562
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.884033203125,
+          "original_fisheye_mae": 34.68239974975586,
+          "projected_marker_pixels": 742,
+          "overlay_marker_mae": 27.517520904541016,
+          "clean_marker_mae": 86.46810150146484
+        }
+      ]
+    },
+    {
+      "episode": "clip-001127",
+      "frames": 124,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.747015953063965,
+          "original_fisheye_mae": 40.97439193725586,
+          "projected_marker_pixels": 735,
+          "overlay_marker_mae": 26.299774169921875,
+          "clean_marker_mae": 98.07029724121094
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.755967855453491,
+          "original_fisheye_mae": 42.13031768798828,
+          "projected_marker_pixels": 747,
+          "overlay_marker_mae": 25.65104866027832,
+          "clean_marker_mae": 97.72200012207031
+        },
+        {
+          "frame": 62,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7565646171569824,
+          "original_fisheye_mae": 39.86428451538086,
+          "projected_marker_pixels": 737,
+          "overlay_marker_mae": 27.742650985717773,
+          "clean_marker_mae": 92.61646270751953
+        },
+        {
+          "frame": 62,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.765625,
+          "original_fisheye_mae": 40.69767379760742,
+          "projected_marker_pixels": 747,
+          "overlay_marker_mae": 27.331995010375977,
+          "clean_marker_mae": 93.74877166748047
+        },
+        {
+          "frame": 123,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.735215902328491,
+          "original_fisheye_mae": 34.38278579711914,
+          "projected_marker_pixels": 479,
+          "overlay_marker_mae": 26.047321319580078,
+          "clean_marker_mae": 94.77592468261719
+        },
+        {
+          "frame": 123,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7469074726104736,
+          "original_fisheye_mae": 34.50273895263672,
+          "projected_marker_pixels": 265,
+          "overlay_marker_mae": 27.179874420166016,
+          "clean_marker_mae": 96.93710327148438
+        }
+      ]
+    },
+    {
+      "episode": "clip-001134",
+      "frames": 134,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.767225503921509,
+          "original_fisheye_mae": 32.87166213989258,
+          "projected_marker_pixels": 752,
+          "overlay_marker_mae": 24.98404312133789,
+          "clean_marker_mae": 87.32978820800781
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7549099922180176,
+          "original_fisheye_mae": 32.66151428222656,
+          "projected_marker_pixels": 730,
+          "overlay_marker_mae": 24.744291305541992,
+          "clean_marker_mae": 85.89954376220703
+        },
+        {
+          "frame": 67,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6242403984069824,
+          "original_fisheye_mae": 34.89271545410156,
+          "projected_marker_pixels": 156,
+          "overlay_marker_mae": 27.730770111083984,
+          "clean_marker_mae": 89.96367645263672
+        },
+        {
+          "frame": 67,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.654730796813965,
+          "original_fisheye_mae": 35.22941207885742,
+          "projected_marker_pixels": 169,
+          "overlay_marker_mae": 27.7495059967041,
+          "clean_marker_mae": 89.64497375488281
+        },
+        {
+          "frame": 133,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.768690347671509,
+          "original_fisheye_mae": 34.10932159423828,
+          "projected_marker_pixels": 416,
+          "overlay_marker_mae": 26.725160598754883,
+          "clean_marker_mae": 81.78605651855469
+        },
+        {
+          "frame": 133,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7917752265930176,
+          "original_fisheye_mae": 31.81068229675293,
+          "projected_marker_pixels": 416,
+          "overlay_marker_mae": 26.830127716064453,
+          "clean_marker_mae": 82.5272445678711
+        }
+      ]
+    },
+    {
+      "episode": "clip-001191",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7855632305145264,
+          "original_fisheye_mae": 40.12627410888672,
+          "projected_marker_pixels": 749,
+          "overlay_marker_mae": 25.41699981689453,
+          "clean_marker_mae": 94.72185516357422
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7903103828430176,
+          "original_fisheye_mae": 40.12272262573242,
+          "projected_marker_pixels": 728,
+          "overlay_marker_mae": 25.94230842590332,
+          "clean_marker_mae": 96.22618865966797
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.729736328125,
+          "original_fisheye_mae": 45.42824935913086,
+          "projected_marker_pixels": 745,
+          "overlay_marker_mae": 29.48277473449707,
+          "clean_marker_mae": 98.86666870117188
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.761420249938965,
+          "original_fisheye_mae": 49.24690628051758,
+          "projected_marker_pixels": 753,
+          "overlay_marker_mae": 29.838424682617188,
+          "clean_marker_mae": 98.98937225341797
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.823920249938965,
+          "original_fisheye_mae": 40.31098175048828,
+          "projected_marker_pixels": 748,
+          "overlay_marker_mae": 29.401960372924805,
+          "clean_marker_mae": 94.0053482055664
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.807264566421509,
+          "original_fisheye_mae": 44.38164520263672,
+          "projected_marker_pixels": 749,
+          "overlay_marker_mae": 28.494436264038086,
+          "clean_marker_mae": 94.4864273071289
+        }
+      ]
+    },
+    {
+      "episode": "clip-001193",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.80908203125,
+          "original_fisheye_mae": 43.19352340698242,
+          "projected_marker_pixels": 754,
+          "overlay_marker_mae": 25.41998291015625,
+          "clean_marker_mae": 98.754638671875
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.808159828186035,
+          "original_fisheye_mae": 48.65937042236328,
+          "projected_marker_pixels": 746,
+          "overlay_marker_mae": 25.35344123840332,
+          "clean_marker_mae": 98.38829040527344
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.717909097671509,
+          "original_fisheye_mae": 44.07622528076172,
+          "projected_marker_pixels": 741,
+          "overlay_marker_mae": 29.800270080566406,
+          "clean_marker_mae": 97.69590759277344
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6332736015319824,
+          "original_fisheye_mae": 45.16938018798828,
+          "projected_marker_pixels": 707,
+          "overlay_marker_mae": 29.38378143310547,
+          "clean_marker_mae": 99.4144287109375
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.8906521797180176,
+          "original_fisheye_mae": 49.73334503173828,
+          "projected_marker_pixels": 750,
+          "overlay_marker_mae": 29.796443939208984,
+          "clean_marker_mae": 92.77510833740234
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.8896756172180176,
+          "original_fisheye_mae": 49.51020050048828,
+          "projected_marker_pixels": 738,
+          "overlay_marker_mae": 28.993677139282227,
+          "clean_marker_mae": 95.24525451660156
+        }
+      ]
+    },
+    {
+      "episode": "clip-001852",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.8158366680145264,
+          "original_fisheye_mae": 29.56667709350586,
+          "projected_marker_pixels": 695,
+          "overlay_marker_mae": 25.50599479675293,
+          "clean_marker_mae": 101.54148864746094
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.854356527328491,
+          "original_fisheye_mae": 32.82204818725586,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.805040121078491,
+          "original_fisheye_mae": 32.82107162475586,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.8050944805145264,
+          "original_fisheye_mae": 29.2744140625,
+          "projected_marker_pixels": 724,
+          "overlay_marker_mae": 29.927255630493164,
+          "clean_marker_mae": 119.57044219970703
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.711127281188965,
+          "original_fisheye_mae": 28.222412109375,
+          "projected_marker_pixels": 706,
+          "overlay_marker_mae": 27.905099868774414,
+          "clean_marker_mae": 113.06373596191406
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.809922933578491,
+          "original_fisheye_mae": 32.60709762573242,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        }
+      ]
+    },
+    {
+      "episode": "clip-001976",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7486979961395264,
+          "original_fisheye_mae": 43.41357421875,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.769829750061035,
+          "original_fisheye_mae": 53.91552734375,
+          "projected_marker_pixels": 728,
+          "overlay_marker_mae": 25.35714340209961,
+          "clean_marker_mae": 117.12454223632812
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.773301839828491,
+          "original_fisheye_mae": 42.54250717163086,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.697157144546509,
+          "original_fisheye_mae": 56.58656311035156,
+          "projected_marker_pixels": 715,
+          "overlay_marker_mae": 30.593006134033203,
+          "clean_marker_mae": 118.0289077758789
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7417805194854736,
+          "original_fisheye_mae": 48.42667770385742,
+          "projected_marker_pixels": 606,
+          "overlay_marker_mae": 31.390539169311523,
+          "clean_marker_mae": 124.77008056640625
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.862196207046509,
+          "original_fisheye_mae": 53.41511917114258,
+          "projected_marker_pixels": 26,
+          "overlay_marker_mae": 31.461538314819336,
+          "clean_marker_mae": 89.62820434570312
+        }
+      ]
+    },
+    {
+      "episode": "clip-002103",
+      "frames": 138,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.739990234375,
+          "original_fisheye_mae": 45.41764450073242,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.745306968688965,
+          "original_fisheye_mae": 33.33156967163086,
+          "projected_marker_pixels": 687,
+          "overlay_marker_mae": 23.584182739257812,
+          "clean_marker_mae": 103.51770782470703
+        },
+        {
+          "frame": 69,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.5418293476104736,
+          "original_fisheye_mae": 46.35593032836914,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 69,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6247286796569824,
+          "original_fisheye_mae": 33.69596481323242,
+          "projected_marker_pixels": 687,
+          "overlay_marker_mae": 28.837942123413086,
+          "clean_marker_mae": 105.37360382080078
+        },
+        {
+          "frame": 137,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.663465738296509,
+          "original_fisheye_mae": 49.52357482910156,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 137,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7643229961395264,
+          "original_fisheye_mae": 46.77658462524414,
+          "projected_marker_pixels": 675,
+          "overlay_marker_mae": 27.13234519958496,
+          "clean_marker_mae": 107.12394714355469
+        }
+      ]
+    },
+    {
+      "episode": "clip-002160",
+      "frames": 60,
+      "samples": [
+        {
+          "frame": 73,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.735948324203491,
+          "original_fisheye_mae": 42.59659957885742,
+          "projected_marker_pixels": 604,
+          "overlay_marker_mae": 23.81401824951172,
+          "clean_marker_mae": 86.70308685302734
+        },
+        {
+          "frame": 73,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.781114339828491,
+          "original_fisheye_mae": 53.4892578125,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 103,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.836317300796509,
+          "original_fisheye_mae": 42.51120376586914,
+          "projected_marker_pixels": 655,
+          "overlay_marker_mae": 26.991857528686523,
+          "clean_marker_mae": 88.87786102294922
+        },
+        {
+          "frame": 103,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6935222148895264,
+          "original_fisheye_mae": 54.30520248413086,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 132,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.694200277328491,
+          "original_fisheye_mae": 42.59893035888672,
+          "projected_marker_pixels": 139,
+          "overlay_marker_mae": 29.880096435546875,
+          "clean_marker_mae": 81.82014465332031
+        },
+        {
+          "frame": 132,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.781114339828491,
+          "original_fisheye_mae": 49.54793167114258,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        }
+      ]
+    },
+    {
+      "episode": "clip-002340",
+      "frames": 58,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.8177082538604736,
+          "original_fisheye_mae": 51.58848571777344,
+          "projected_marker_pixels": 728,
+          "overlay_marker_mae": 24.72527503967285,
+          "clean_marker_mae": 88.88323974609375
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7853732109069824,
+          "original_fisheye_mae": 50.08940887451172,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 29,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.686631917953491,
+          "original_fisheye_mae": 54.85267639160156,
+          "projected_marker_pixels": 610,
+          "overlay_marker_mae": 26.469945907592773,
+          "clean_marker_mae": 83.95246124267578
+        },
+        {
+          "frame": 29,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.871636390686035,
+          "original_fisheye_mae": 55.05094528198242,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 57,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.641357421875,
+          "original_fisheye_mae": 53.36219787597656,
+          "projected_marker_pixels": 208,
+          "overlay_marker_mae": 29.10416603088379,
+          "clean_marker_mae": 74.69711303710938
+        },
+        {
+          "frame": 57,
+          "eye": "1201-2",
+          "source_pixel_mae": 3.0435383319854736,
+          "original_fisheye_mae": 55.723388671875,
+          "projected_marker_pixels": 479,
+          "overlay_marker_mae": 28.13152313232422,
+          "clean_marker_mae": 93.95824432373047
+        }
+      ]
+    },
+    {
+      "episode": "clip-002364",
+      "frames": 30,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7457683086395264,
+          "original_fisheye_mae": 36.37722396850586,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.732855796813965,
+          "original_fisheye_mae": 38.09510803222656,
+          "projected_marker_pixels": 658,
+          "overlay_marker_mae": 22.97467041015625,
+          "clean_marker_mae": 92.67274475097656
+        },
+        {
+          "frame": 15,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7342936992645264,
+          "original_fisheye_mae": 34.52628707885742,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 15,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.643310546875,
+          "original_fisheye_mae": 38.17626953125,
+          "projected_marker_pixels": 635,
+          "overlay_marker_mae": 27.60682487487793,
+          "clean_marker_mae": 92.0871353149414
+        },
+        {
+          "frame": 29,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.8380534648895264,
+          "original_fisheye_mae": 37.01600646972656,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 29,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.763129234313965,
+          "original_fisheye_mae": 37.70497131347656,
+          "projected_marker_pixels": 661,
+          "overlay_marker_mae": 26.448814392089844,
+          "clean_marker_mae": 87.5930404663086
+        }
+      ]
+    },
+    {
+      "episode": "clip-002441",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.756971597671509,
+          "original_fisheye_mae": 32.9638671875,
+          "projected_marker_pixels": 216,
+          "overlay_marker_mae": 25.49691390991211,
+          "clean_marker_mae": 121.90277862548828
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.788954019546509,
+          "original_fisheye_mae": 44.05452346801758,
+          "projected_marker_pixels": 298,
+          "overlay_marker_mae": 25.062639236450195,
+          "clean_marker_mae": 122.82438659667969
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6819660663604736,
+          "original_fisheye_mae": 32.37847137451172,
+          "projected_marker_pixels": 133,
+          "overlay_marker_mae": 28.303258895874023,
+          "clean_marker_mae": 92.7869644165039
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7107746601104736,
+          "original_fisheye_mae": 47.89436721801758,
+          "projected_marker_pixels": 480,
+          "overlay_marker_mae": 28.24305534362793,
+          "clean_marker_mae": 105.50833129882812
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.8615994453430176,
+          "original_fisheye_mae": 31.76665496826172,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.6438801288604736,
+          "original_fisheye_mae": 48.87868881225586,
+          "projected_marker_pixels": 698,
+          "overlay_marker_mae": 29.710124969482422,
+          "clean_marker_mae": 108.7879638671875
+        }
+      ]
+    },
+    {
+      "episode": "clip-002519",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7582736015319824,
+          "original_fisheye_mae": 29.53879165649414,
+          "projected_marker_pixels": 22,
+          "overlay_marker_mae": 26.984848022460938,
+          "clean_marker_mae": 92.1212158203125
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.780707359313965,
+          "original_fisheye_mae": 44.61447525024414,
+          "projected_marker_pixels": 549,
+          "overlay_marker_mae": 25.904674530029297,
+          "clean_marker_mae": 114.1669692993164
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6453449726104736,
+          "original_fisheye_mae": 31.53740692138672,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.64013671875,
+          "original_fisheye_mae": 46.00651168823242,
+          "projected_marker_pixels": 556,
+          "overlay_marker_mae": 29.423261642456055,
+          "clean_marker_mae": 99.46343231201172
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7504069805145264,
+          "original_fisheye_mae": 36.08379364013672,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.846055746078491,
+          "original_fisheye_mae": 52.753662109375,
+          "projected_marker_pixels": 712,
+          "overlay_marker_mae": 27.584270477294922,
+          "clean_marker_mae": 94.25701904296875
+        }
+      ]
+    },
+    {
+      "episode": "clip-002749",
+      "frames": 150,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7684733867645264,
+          "original_fisheye_mae": 35.19219207763672,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7901203632354736,
+          "original_fisheye_mae": 42.26803970336914,
+          "projected_marker_pixels": 631,
+          "overlay_marker_mae": 25.076597213745117,
+          "clean_marker_mae": 120.57421875
+        },
+        {
+          "frame": 75,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6397297382354736,
+          "original_fisheye_mae": 36.45420837402344,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 75,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.620225667953491,
+          "original_fisheye_mae": 46.08696746826172,
+          "projected_marker_pixels": 581,
+          "overlay_marker_mae": 30.140562057495117,
+          "clean_marker_mae": 116.32874298095703
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7740070819854736,
+          "original_fisheye_mae": 39.85221481323242,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.691840171813965,
+          "original_fisheye_mae": 50.19493103027344,
+          "projected_marker_pixels": 633,
+          "overlay_marker_mae": 25.35755729675293,
+          "clean_marker_mae": 87.87361907958984
+        }
+      ]
+    },
+    {
+      "episode": "clip-002778",
+      "frames": 138,
+      "samples": [
+        {
+          "frame": 12,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.8351237773895264,
+          "original_fisheye_mae": 36.88262176513672,
+          "projected_marker_pixels": 291,
+          "overlay_marker_mae": 23.446735382080078,
+          "clean_marker_mae": 96.61053466796875
+        },
+        {
+          "frame": 12,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7676053047180176,
+          "original_fisheye_mae": 47.42388153076172,
+          "projected_marker_pixels": 428,
+          "overlay_marker_mae": 24.0,
+          "clean_marker_mae": 94.13551330566406
+        },
+        {
+          "frame": 81,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6886935234069824,
+          "original_fisheye_mae": 45.34383010864258,
+          "projected_marker_pixels": 388,
+          "overlay_marker_mae": 31.143470764160156,
+          "clean_marker_mae": 87.3144302368164
+        },
+        {
+          "frame": 81,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.8196072578430176,
+          "original_fisheye_mae": 54.28312301635742,
+          "projected_marker_pixels": 148,
+          "overlay_marker_mae": 28.213964462280273,
+          "clean_marker_mae": 89.54279327392578
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.728814125061035,
+          "original_fisheye_mae": 50.29158401489258,
+          "projected_marker_pixels": 191,
+          "overlay_marker_mae": 28.51308822631836,
+          "clean_marker_mae": 79.71553039550781
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7877604961395264,
+          "original_fisheye_mae": 43.80704879760742,
+          "projected_marker_pixels": 100,
+          "overlay_marker_mae": 27.21666717529297,
+          "clean_marker_mae": 88.73332977294922
+        }
+      ]
+    },
+    {
+      "episode": "clip-002889",
+      "frames": 126,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7519259452819824,
+          "original_fisheye_mae": 46.596435546875,
+          "projected_marker_pixels": 78,
+          "overlay_marker_mae": 24.594017028808594,
+          "clean_marker_mae": 101.96154022216797
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.734619140625,
+          "original_fisheye_mae": 53.95781707763672,
+          "projected_marker_pixels": 201,
+          "overlay_marker_mae": 24.41625213623047,
+          "clean_marker_mae": 94.43614959716797
+        },
+        {
+          "frame": 63,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.816948890686035,
+          "original_fisheye_mae": 29.49020767211914,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 63,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.9123806953430176,
+          "original_fisheye_mae": 41.15803909301758,
+          "projected_marker_pixels": 687,
+          "overlay_marker_mae": 28.307132720947266,
+          "clean_marker_mae": 91.10626220703125
+        },
+        {
+          "frame": 125,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.856879234313965,
+          "original_fisheye_mae": 28.32272720336914,
+          "projected_marker_pixels": 415,
+          "overlay_marker_mae": 28.9100399017334,
+          "clean_marker_mae": 94.35260772705078
+        },
+        {
+          "frame": 125,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7814669609069824,
+          "original_fisheye_mae": 42.79413604736328,
+          "projected_marker_pixels": 387,
+          "overlay_marker_mae": 29.77605438232422,
+          "clean_marker_mae": 98.10939025878906
+        }
+      ]
+    },
+    {
+      "episode": "clip-003033",
+      "frames": 17,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.720757484436035,
+          "original_fisheye_mae": 36.58395767211914,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7674152851104736,
+          "original_fisheye_mae": 46.87538146972656,
+          "projected_marker_pixels": 690,
+          "overlay_marker_mae": 23.767148971557617,
+          "clean_marker_mae": 120.11497497558594
+        },
+        {
+          "frame": 8,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7421061992645264,
+          "original_fisheye_mae": 36.23928451538086,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 8,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7342936992645264,
+          "original_fisheye_mae": 46.83585739135742,
+          "projected_marker_pixels": 689,
+          "overlay_marker_mae": 25.399612426757812,
+          "clean_marker_mae": 120.5026626586914
+        },
+        {
+          "frame": 16,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.691786050796509,
+          "original_fisheye_mae": 40.08479690551758,
+          "projected_marker_pixels": 13,
+          "overlay_marker_mae": 34.33333206176758,
+          "clean_marker_mae": 132.23077392578125
+        },
+        {
+          "frame": 16,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7861056327819824,
+          "original_fisheye_mae": 50.75108337402344,
+          "projected_marker_pixels": 693,
+          "overlay_marker_mae": 26.8302059173584,
+          "clean_marker_mae": 120.52236938476562
+        }
+      ]
+    },
+    {
+      "episode": "clip-003070",
+      "frames": 63,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.776014566421509,
+          "original_fisheye_mae": 50.37429428100586,
+          "projected_marker_pixels": 143,
+          "overlay_marker_mae": 24.529136657714844,
+          "clean_marker_mae": 101.00932312011719
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7771267890930176,
+          "original_fisheye_mae": 37.33534240722656,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 31,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.6903483867645264,
+          "original_fisheye_mae": 53.07503128051758,
+          "projected_marker_pixels": 688,
+          "overlay_marker_mae": 28.335756301879883,
+          "clean_marker_mae": 100.0029067993164
+        },
+        {
+          "frame": 31,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.900743246078491,
+          "original_fisheye_mae": 40.49894332885742,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 62,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.704942464828491,
+          "original_fisheye_mae": 53.06328582763672,
+          "projected_marker_pixels": 690,
+          "overlay_marker_mae": 27.68502426147461,
+          "clean_marker_mae": 96.30145263671875
+        },
+        {
+          "frame": 62,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.7158474922180176,
+          "original_fisheye_mae": 45.35340881347656,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        }
+      ]
+    },
+    {
+      "episode": "clip-003297",
+      "frames": 25,
+      "samples": [
+        {
+          "frame": 125,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7252604961395264,
+          "original_fisheye_mae": 33.48372268676758,
+          "projected_marker_pixels": 351,
+          "overlay_marker_mae": 23.384614944458008,
+          "clean_marker_mae": 96.54131317138672
+        },
+        {
+          "frame": 125,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.8041720390319824,
+          "original_fisheye_mae": 56.02183532714844,
+          "projected_marker_pixels": 373,
+          "overlay_marker_mae": 22.79267120361328,
+          "clean_marker_mae": 89.52010345458984
+        },
+        {
+          "frame": 137,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.801405191421509,
+          "original_fisheye_mae": 34.04755401611328,
+          "projected_marker_pixels": 336,
+          "overlay_marker_mae": 25.165674209594727,
+          "clean_marker_mae": 99.43551635742188
+        },
+        {
+          "frame": 137,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.811224937438965,
+          "original_fisheye_mae": 51.533935546875,
+          "projected_marker_pixels": 551,
+          "overlay_marker_mae": 25.69631004333496,
+          "clean_marker_mae": 95.60375213623047
+        },
+        {
+          "frame": 149,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7081706523895264,
+          "original_fisheye_mae": 33.37575912475586,
+          "projected_marker_pixels": 147,
+          "overlay_marker_mae": 30.06122398376465,
+          "clean_marker_mae": 109.6621322631836
+        },
+        {
+          "frame": 149,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.853569984436035,
+          "original_fisheye_mae": 52.06797790527344,
+          "projected_marker_pixels": 663,
+          "overlay_marker_mae": 27.843639373779297,
+          "clean_marker_mae": 93.30870056152344
+        }
+      ]
+    },
+    {
+      "episode": "clip-003329",
+      "frames": 63,
+      "samples": [
+        {
+          "frame": 0,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7584636211395264,
+          "original_fisheye_mae": 39.85142517089844,
+          "projected_marker_pixels": 505,
+          "overlay_marker_mae": 25.992738723754883,
+          "clean_marker_mae": 98.99604034423828
+        },
+        {
+          "frame": 0,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.818467855453491,
+          "original_fisheye_mae": 57.84071350097656,
+          "projected_marker_pixels": 155,
+          "overlay_marker_mae": 26.39569854736328,
+          "clean_marker_mae": 88.0731201171875
+        },
+        {
+          "frame": 31,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7102322578430176,
+          "original_fisheye_mae": 40.81141662597656,
+          "projected_marker_pixels": 629,
+          "overlay_marker_mae": 24.22893524169922,
+          "clean_marker_mae": 102.44355773925781
+        },
+        {
+          "frame": 31,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.696722984313965,
+          "original_fisheye_mae": 51.028564453125,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        },
+        {
+          "frame": 62,
+          "eye": "1201-1",
+          "source_pixel_mae": 2.7318522930145264,
+          "original_fisheye_mae": 36.67119598388672,
+          "projected_marker_pixels": 702,
+          "overlay_marker_mae": 28.52659034729004,
+          "clean_marker_mae": 104.62630462646484
+        },
+        {
+          "frame": 62,
+          "eye": "1201-2",
+          "source_pixel_mae": 2.8468425273895264,
+          "original_fisheye_mae": 37.79426956176758,
+          "projected_marker_pixels": 0,
+          "overlay_marker_mae": null,
+          "clean_marker_mae": null
+        }
+      ]
+    }
+  ]
+}

@@ -264,7 +264,7 @@ for (const button of document.querySelectorAll('[data-expand]')) {
 }
 el('focusTarget').onchange=el('fitView').onclick=()=>{fitComparison();requestOrbitDraw();};
 el('resetView').onclick=()=>{
-    el('focusTarget').value='object';
+    el('focusTarget').value='pair';
     Object.assign(comparisonCamera,cameraDefaults());fitComparison();requestOrbitDraw();
 };
 el('zoomIn').onclick=()=>{zoomAt(comparisonCamera,1.3);requestOrbitDraw();};

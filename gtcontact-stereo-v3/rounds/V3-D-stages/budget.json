@@ -1,0 +1,122 @@
+{
+  "456154dbf0d05d50caa98a5468bf6c320ee413fee77741fc6041ffd9532ba955": {
+    "generation_steps": 414,
+    "wall_s": 7.298903790302575
+  },
+  "1e44d2bdde22e9d0b7149ee3852f7c81debff01d86ba913fa9a3ff5a5c063105": {
+    "generation_steps": 193194,
+    "wall_s": 73.34211699105799
+  },
+  "689f2fe56bc0a3a8622587c68491c9a8ec7f5b9acd7ae012ff87e088c06450b1": {
+    "generation_steps": 193194,
+    "wall_s": 461.78043652139604
+  },
+  "b23d2ebc35147179d796260a7d9c8e8be8b5158e84e54045f71d57679fbbabdc": {
+    "generation_steps": 193608,
+    "wall_s": 192.9860912039876
+  },
+  "89821b7ceff618f6435ad524ec785f67ab675b24c0bc4ba5c9d3c79e0f754c6e": {
+    "generation_steps": 193608,
+    "wall_s": 191.60416667349637
+  },
+  "98a985ef30aee4b79d6b8a580c7d3e1730ce13895ab491d684e37642fca73621": {
+    "generation_steps": 414,
+    "wall_s": 6.881625080481172
+  },
+  "87f069d103adcc3c5a8a2c4c1eee7d63ff1de840e36a1ef5fa0e7782486dde5e": {
+    "generation_steps": 193194,
+    "wall_s": 95.45249635446817
+  },
+  "e14f8132b309fc93401343073c95098145f0e2d214cd66038055c92408c0eb16": {
+    "generation_steps": 193194,
+    "wall_s": 235.39799175970256
+  },
+  "08da0ba46ff80da68ca4a846adc4d497158d099e9f75a35e1205e1776a92bb49": {
+    "generation_steps": 193608,
+    "wall_s": 244.26498308312148
+  },
+  "98fcdf49b289355c434fdb2960ebc12bbd87685ffbb145125796eaa4ca293f86": {
+    "generation_steps": 193608,
+    "wall_s": 182.69463114626706
+  },
+  "fa2cfa35564deac2d7f7e899065d70ae96d57438f7e53a55bfb136c04cdc9d92": {
+    "generation_steps": 414,
+    "wall_s": 10.913613538257778
+  },
+  "36d77325d2dc4de85e7a43797033d1bf658a9ac0832140b52ddb22169e78471f": {
+    "generation_steps": 193194,
+    "wall_s": 75.3222289448604
+  },
+  "263ee50501854d80201a67f2b32a2d2c455e4d34bf25f513c4b6ac89db450215": {
+    "generation_steps": 193194,
+    "wall_s": 265.1286894865334
+  },
+  "85bdd51fc7a32bdabb262504ea7216c8d1e6e1101f82de7a7ff7422530bec913": {
+    "generation_steps": 193608,
+    "wall_s": 270.98690671194345
+  },
+  "1a9e1b1677ebeb5aa26db2cedb5c637f1c9abeed659c18ba8a277eae6908c8ed": {
+    "generation_steps": 193608,
+    "wall_s": 275.58696038182825
+  },
+  "068d1f1f6aae9395168f182506ee96045480e3fcb410ecf9f56f0ca3f4daa81c": {
+    "generation_steps": 574,
+    "wall_s": 6.692975679412484
+  },
+  "3973ab4fd9e211c27db8953fd1dfd25320be4b8255cdfc166afe988e3de777b7": {
+    "generation_steps": 261786,
+    "wall_s": 165.62934720981866
+  },
+  "141fcddd173d6e72283892a38268e111b03ee1e086902e188fdc9f8b4287e24e": {
+    "generation_steps": 261786,
+    "wall_s": 317.706899211742
+  },
+  "22a2d9788194fa3f5cc6668b2b72adab78d7f40eb58126d77aab8c28e2ec97d1": {
+    "generation_steps": 262360,
+    "wall_s": 321.2355661774054
+  },
+  "5c1f38c7c605067c70f1e9e1639deea83d8c8d856f0acd4150a25d806241d140": {
+    "generation_steps": 262360,
+    "wall_s": 319.80412909481674
+  },
+  "0438d6d0d0499d41b2d540e052d7da62297b6d6476bdc9da82306ac4151f5edf": {
+    "generation_steps": 574,
+    "wall_s": 6.5675069922581315
+  },
+  "1bcc8292ec06e4fec8ba65e911bb111e26ba3d18a1892a8be3214b15734e511e": {
+    "generation_steps": 261786,
+    "wall_s": 145.9552943231538
+  },
+  "705dc5d1c912fdc6f3014cb5712956d08186f085e9e42d1a19189428ba26e8dd": {
+    "generation_steps": 261786,
+    "wall_s": 315.17799692507833
+  },
+  "0c248173ceba86da94084c4eb6f87fdb2919ae8e23cdd7f271c1b0f72864b740": {
+    "generation_steps": 262360,
+    "wall_s": 358.2024093847722
+  },
+  "dfb33a40d0b3fb04b31384a4b7417c501931872bac3b624752b0dc173aee6803": {
+    "generation_steps": 262360,
+    "wall_s": 358.39182375743985
+  },
+  "500191ef24c8d616d314b6ff757fa5f49ad87297efd390ba2c0ddbde20b0b08d": {
+    "generation_steps": 574,
+    "wall_s": 8.142504456453025
+  },
+  "566bf4db32db6e72d85d37b22101d608264b0075acd0a651a26838f8b2cbf54f": {
+    "generation_steps": 261786,
+    "wall_s": 113.5405377279967
+  },
+  "9cc056dec6ef23eb4bd9e06a7f973d54b12b42def48492f5cc11edb94982d9d4": {
+    "generation_steps": 261786,
+    "wall_s": 288.749360636808
+  },
+  "0c4f766a09abe20c618f54183ea8cc96c83751afc4f3bc2998ab259ab5423281": {
+    "generation_steps": 262360,
+    "wall_s": 275.53002122882754
+  },
+  "a5bc6e5336ac8624d4f00b380d0b4ae6065a2f0895e57d149ddc7f0a5f295b2f": {
+    "generation_steps": 262360,
+    "wall_s": 274.2741872565821
+  }
+}

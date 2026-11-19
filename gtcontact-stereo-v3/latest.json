@@ -1,7 +1,8 @@
 {
-  "round": "V3-A-focus",
+  "round": "V3-A-core",
   "history": [
-    "V3-A-focus"
+    "V3-A-focus",
+    "V3-A-core"
   ],
-  "manifest_sha256": "6cb8722f52e8f9eaef7df2f5c532dd4c078929949e63a933da76aca3d093f4ec"
+  "manifest_sha256": "7d15eb4603b23b6e48c6c6026ce6550c20dd19d615fed0cb64e21f46ad4bbf50"
 }
